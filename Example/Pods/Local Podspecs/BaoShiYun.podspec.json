@@ -1,0 +1,22 @@
+{
+  "name": "BaoShiYun",
+  "version": "0.1.0",
+  "summary": "A short description of BaoShiYun.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/duanguangming@gmail.com/BaoShiYun",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "duanguangming@gmail.com": "bsy_rd@baoshiyun.com"
+  },
+  "source": {
+    "git": "https://github.com/duanguangming@gmail.com/BaoShiYun.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "BaoShiYun/Classes/**/*"
+}

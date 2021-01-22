@@ -1,0 +1,6 @@
+framework module BSYRtc {
+  umbrella header "BSYRtc.h"
+
+  export *
+  module * { export * }
+}

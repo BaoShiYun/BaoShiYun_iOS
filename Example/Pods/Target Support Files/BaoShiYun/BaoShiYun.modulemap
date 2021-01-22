@@ -1,0 +1,6 @@
+framework module BaoShiYun {
+  umbrella header "BaoShiYun-umbrella.h"
+
+  export *
+  module * { export * }
+}

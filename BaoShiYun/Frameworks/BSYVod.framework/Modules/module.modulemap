@@ -1,0 +1,6 @@
+framework module BSYVod {
+  umbrella header "BSYVod.h"
+
+  export *
+  module * { export * }
+}

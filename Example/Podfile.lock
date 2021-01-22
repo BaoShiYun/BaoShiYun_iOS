@@ -1,0 +1,16 @@
+PODS:
+  - BaoShiYun (0.1.0)
+
+DEPENDENCIES:
+  - BaoShiYun (from `../`)
+
+EXTERNAL SOURCES:
+  BaoShiYun:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BaoShiYun: d06e7061847ada312c963eafea0ae92922ec690a
+
+PODFILE CHECKSUM: a5cc253d76f9ebe3961194a3507fb2f10ffc11c5
+
+COCOAPODS: 1.10.0

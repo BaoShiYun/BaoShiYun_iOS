@@ -1,0 +1,6 @@
+framework module BSYLib {
+  umbrella header "BSYLib.h"
+
+  export *
+  module * { export * }
+}

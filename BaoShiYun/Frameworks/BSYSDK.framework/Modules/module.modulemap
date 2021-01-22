@@ -1,0 +1,6 @@
+framework module BSYSDK {
+  umbrella header "BSYSDK.h"
+
+  export *
+  module * { export * }
+}

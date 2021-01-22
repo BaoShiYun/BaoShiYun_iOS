@@ -1,0 +1,6 @@
+framework module BSYLiveDataLayer {
+  umbrella header "BSYLiveDataLayer.h"
+
+  export *
+  module * { export * }
+}

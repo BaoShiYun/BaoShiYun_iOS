@@ -1,0 +1,6 @@
+framework module BSYReport {
+  umbrella header "BSYReport.h"
+
+  export *
+  module * { export * }
+}

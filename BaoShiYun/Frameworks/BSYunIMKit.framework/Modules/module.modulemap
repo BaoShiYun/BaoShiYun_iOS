@@ -1,0 +1,6 @@
+framework module BSYunIMKit {
+  umbrella header "BSYunIMKit.h"
+
+  export *
+  module * { export * }
+}

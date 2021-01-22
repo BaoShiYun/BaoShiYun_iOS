@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaoShiYun'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BaoShiYun.'
+  s.version          = '1.0.0'
+  s.summary          = 'SDK of BaoShiYun.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,17 +21,21 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/duanguangming@gmail.com/BaoShiYun'
+  s.homepage         = 'https://github.com/BaoShiYun/BaoShiYun'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'duanguangming@gmail.com' => 'bsy_rd@baoshiyun.com' }
-  s.source           = { :git => 'https://github.com/duanguangming@gmail.com/BaoShiYun.git', :tag => s.version.to_s }
+  s.author           = { 'BaoShiYun' => 'bsy_rd@baoshiyun.com' }
+  s.source           = { :git => 'https://github.com/BaoShiYun/BaoShiYun.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'BaoShiYun/Classes/**/*'
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+
+  # s.source_files = 'BaoShiYun/Classes/**/*'
   
+  s.vendored_frameworks = "BaoShiYun/Frameworks/*.framework"
+
   # s.resource_bundles = {
   #   'BaoShiYun' => ['BaoShiYun/Assets/*.png']
   # }
@@ -39,4 +43,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  # s.dependency 'AgoraRtcEngine_iOS'
+  s.dependency 'TXIMSDK_iOS'
+
 end
