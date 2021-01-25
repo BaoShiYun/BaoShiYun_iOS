@@ -36,9 +36,13 @@
 		<data>
 		kK+/3vqW2/7XlajToAyWYZNs794=
 		</data>
+		<key>Headers/BSYSDKConfig+UC.h</key>
+		<data>
+		SqLq/E4m45SfY0UvycxsTWIV/UM=
+		</data>
 		<key>Headers/BSYSDKConfig.h</key>
 		<data>
-		2/Yzym5iiK0UcqD++QmWFzpJ7gw=
+		FMcYO4kwACEMbEtlc3oM1/fqNJE=
 		</data>
 		<key>Headers/BSYSDKConst.h</key>
 		<data>
@@ -147,15 +151,26 @@
 			ejQ9xDSlKofcNqnt5WdfGV870iJhQkPzzWpPh3UpPIU=
 			</data>
 		</dict>
+		<key>Headers/BSYSDKConfig+UC.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SqLq/E4m45SfY0UvycxsTWIV/UM=
+			</data>
+			<key>hash2</key>
+			<data>
+			pQG0mwhDNWgmf13QAX22QWtNhJOfSmocK9RvRPIP3Rw=
+			</data>
+		</dict>
 		<key>Headers/BSYSDKConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2/Yzym5iiK0UcqD++QmWFzpJ7gw=
+			FMcYO4kwACEMbEtlc3oM1/fqNJE=
 			</data>
 			<key>hash2</key>
 			<data>
-			+TGjwhY32Az4Mxn6yzFfUiqfn0uL+TgKPbZIYrAJAMQ=
+			aJcxwemr0/GGlLPwk+1f9QAWTuypHpbfLeAedBYW9vs=
 			</data>
 		</dict>
 		<key>Headers/BSYSDKConst.h</key>
