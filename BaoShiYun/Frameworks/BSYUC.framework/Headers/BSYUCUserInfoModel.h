@@ -6,6 +6,7 @@
 //
 
 #import <BSYUC/BSYUCModel.h>
+#import <BSYLib/BSYLibMacro.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,24 +27,27 @@ typedef NS_ENUM(NSInteger, BSYGender) {
 
 @property(nonatomic, assign) uintID uid;
 @property(nonatomic, strong) NSString *mobile;
+@property(nonatomic, strong) NSString *areaCode;
 @property(nonatomic, strong) NSString *nickName;
-@property(nonatomic, strong) NSString *realname;
-@property(nonatomic, strong) NSString *birthday;
-@property(nonatomic, strong) NSString *province;
-@property(nonatomic, strong) NSString *city;
-@property(nonatomic, strong) NSString *area;
-@property(nonatomic, strong) NSString *email;
 @property(nonatomic, assign) BSYGender gender;
 @property(nonatomic, strong) NSString *avatar;
-@property(nonatomic, strong) NSString *company;
-@property(nonatomic, assign) uintID industryId;
-@property(nonatomic, strong) NSString *industry;
 @property(nonatomic, assign) BOOL wechatIsBind;
 @property(nonatomic, strong) NSString *wechatNickName;
 @property(nonatomic, strong) NSString *wechatAvatar;
 
 @property(nonatomic, copy, nullable) NSDate *updateDate;
 @property(nonatomic, copy) NSString *uniqueId;
+
+
+@property(nonatomic, strong) NSString *realname BSYDeprecated("未启用");
+@property(nonatomic, strong) NSString *birthday BSYDeprecated("未启用");
+@property(nonatomic, strong) NSString *province BSYDeprecated("未启用");
+@property(nonatomic, strong) NSString *city BSYDeprecated("未启用");
+@property(nonatomic, strong) NSString *area BSYDeprecated("未启用");
+@property(nonatomic, strong) NSString *email BSYDeprecated("未启用");
+@property(nonatomic, strong) NSString *company BSYDeprecated("未启用");
+@property(nonatomic, assign) uintID industryId BSYDeprecated("未启用");
+@property(nonatomic, strong) NSString *industry BSYDeprecated("未启用");
 
 @end
 

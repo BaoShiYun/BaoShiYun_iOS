@@ -28,3 +28,4 @@ FOUNDATION_EXPORT const unsigned char BSYLiveSDKVersionString[];
 #import <BSYLiveSDK/BSYLiveResolutionModel.h>
 #import <BSYLiveSDK/BSYLiveEventNotifyModel.h>
 #import <BSYLiveSDK/BSYLiveNotifyTextStyleModel.h>
+#import <BSYLiveSDK/BSYLiveUserInfo.h>

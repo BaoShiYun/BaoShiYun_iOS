@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYSDKConfig (UC)
 
-- (void)getBSYUidWithTenantId:(uintID)tenantId tenantUid:(NSString *)tenantUid completion:(BSYSDKGetUidBlock)completion;
+- (void)getBSYUidWithTenantId:(uintID)tenantId tenantUid:(NSString *)tenantUid isSaasUser:(BOOL)isSaasUser completion:(BSYSDKGetUidBlock)completion;
 
 @end
 

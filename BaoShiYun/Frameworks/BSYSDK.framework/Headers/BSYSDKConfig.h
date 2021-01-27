@@ -27,14 +27,14 @@ typedef void(^BSYSDKGetUidBlock)(uintID uid, NSError * _Nullable error);
 // 租户Id
 @property (class, nonatomic, assign, readonly) uintID tenantId;
 
+// 自定义用户uid
+@property (class, nonatomic, assign, readonly) NSString *customUid;
+
 // 抱石云uid
 @property (class, nonatomic, assign, readonly) uintID uid;
 
-// 配置租户id和抱石云用户uid
-+ (void)configTenantId:(uintID)tenantId uid:(uintID)uid;
-
-// 配置租户id和自定义用户uid
-+ (void)configTenantId:(uintID)tenantId customUid:(NSString *)customUid;
+// 配置租户id和自定义用户uid，completion回调返回分配的抱石云uid
++ (void)configTenantId:(uintID)tenantId customUid:(NSString *)customUid completion:(BSYSDKGetUidBlock)completion;
 
 // 获取抱石云用户uid（异步获取，通过block返回）
 + (void)getBSYUid:(BSYSDKGetUidBlock)completion;

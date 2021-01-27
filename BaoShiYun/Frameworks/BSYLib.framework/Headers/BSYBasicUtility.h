@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BSYBasicUtility : NSObject
 
 + (NSString *)getAppCurrentVersion;
++ (NSString *)getAppBundleIdentifier;
 
 + (NSString *)platform;
 + (NSString *)getUniqueIdentifier;

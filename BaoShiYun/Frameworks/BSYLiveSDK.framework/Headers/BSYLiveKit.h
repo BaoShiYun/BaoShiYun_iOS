@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class BSYLiveParam;
+@class BSYLiveUserInfo;
 @class BSYLiveChatMsgModel;
 @class BSYLiveKeywordsWinnerModel;
 @class BSYLiveShelfModel;
@@ -170,8 +171,26 @@ NS_ASSUME_NONNULL_BEGIN
 //
 ///———————————————————————————————————————————————————————
 
+/**
+ *   @brief  获取问答列表
+ */
+- (void)getQuestionListSucc:(BSYLiveKitQuestionListSuccess)succ fail:(BSYLiveKitFail __nullable)fail;
 
+/**
+ *   @brief  获取问答Token 仅支持使用抱石云TES
+ */
+- (void)getQuestionTokenSucc:(BSYLiveKitQuestionTokenSuccess)succ fail:(BSYLiveKitFail __nullable)fail;
 
+///———————————————————————————————————————————————————————
+//
+//                                  活动相关接口
+//
+///———————————————————————————————————————————————————————
+
+/**
+ *   @brief  获取红包列表
+ */
+- (void)getActivityListSucc:(BSYLiveKitActivityListSuccess)succ fail:(BSYLiveKitFail __nullable)fail;
 
 
 @end
@@ -213,6 +232,13 @@ NS_ASSUME_NONNULL_BEGIN
  *   说明:sig过期后，如需继续使用直播间，则需要重新登录
  */
 - (void)onRecvUserSigExpired;
+
+
+/**
+ *   @brief 直播间登录的用户信息
+ *
+ */
+- (void)onRecvLiveUserInfo:(BSYLiveUserInfo *)userInfo;
 
 /**
  *   @brief 角色列表

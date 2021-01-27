@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/BSYLiveKit.h</key>
 		<data>
-		Py7JaLYLwTttPOYOLC+tHE03U4s=
+		S8eZ54nBRautM0EaLo9zZ9X8lGg=
 		</data>
 		<key>Headers/BSYLiveKitDefine.h</key>
 		<data>
-		Sf7Nymwu5/DXtMI83TMjDexPQgI=
+		A5L4Ule0AfEgrXhdDsTZ3Qr6KB4=
 		</data>
 		<key>Headers/BSYLiveLineModel.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/BSYLiveParam.h</key>
 		<data>
-		eimtTpbHGZmlRKauyb6dwKNz/e4=
+		xaeB58041NfZ/nZJaB4MnzVadzY=
 		</data>
 		<key>Headers/BSYLiveResolutionModel.h</key>
 		<data>
@@ -50,11 +50,15 @@
 		</data>
 		<key>Headers/BSYLiveSDK.h</key>
 		<data>
-		TbX9eLc9xMl1nGszMFlmgIyxTAU=
+		bJl6fim+tp9CUWNL27eQrbucwfI=
 		</data>
 		<key>Headers/BSYLiveShelfModel.h</key>
 		<data>
 		c60Q3cF1+3KT0/4l6QALCodtZsc=
+		</data>
+		<key>Headers/BSYLiveUserInfo.h</key>
+		<data>
+		5HF2bBtKsrpgGy+qoOpbT8klW0M=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -154,22 +158,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Py7JaLYLwTttPOYOLC+tHE03U4s=
+			S8eZ54nBRautM0EaLo9zZ9X8lGg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DR7fX6dWKJl0p5aipVLV3vGCtl+isv3SE4dMMAvU+FQ=
+			ppfYlDofqUvLlk8EKgg7id8ybCfdftWNFKuJKCURQX0=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveKitDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sf7Nymwu5/DXtMI83TMjDexPQgI=
+			A5L4Ule0AfEgrXhdDsTZ3Qr6KB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mex15N24sAcFNyL/+/Dea8H4vKh+UsnuHAABWo5reps=
+			vG01OVs0z56nnSFPpNwG1xE3+5/R4ZGDc6tDgSvpjsA=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveLineModel.h</key>
@@ -198,11 +202,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eimtTpbHGZmlRKauyb6dwKNz/e4=
+			xaeB58041NfZ/nZJaB4MnzVadzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Np0TrSBdtJ0rg/4W4jA/jr+6L6WThyT/kI6dLEhEqMA=
+			ne7txrGTzVMsZFts3etU2B7LsVE90RFxQALLsr2438k=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveResolutionModel.h</key>
@@ -220,11 +224,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TbX9eLc9xMl1nGszMFlmgIyxTAU=
+			bJl6fim+tp9CUWNL27eQrbucwfI=
 			</data>
 			<key>hash2</key>
 			<data>
-			9vFvI8J1Q4x9pB5ASkG4aFA8pyoUKS1/po0VE4udGfI=
+			0u4KaWtJG7lBEIHMro+xxMbhWn2TImwa5GsktTrCYRs=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveShelfModel.h</key>
@@ -236,6 +240,17 @@
 			<key>hash2</key>
 			<data>
 			rjQGPWKLSJguCUIv6M8VZF93DnZeBoEHSXCiOSYzGSg=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveUserInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5HF2bBtKsrpgGy+qoOpbT8klW0M=
+			</data>
+			<key>hash2</key>
+			<data>
+			oFKBzZSlyunsz1rWqXEQ86vENUlWhr4r+lHHmTcdvuQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
