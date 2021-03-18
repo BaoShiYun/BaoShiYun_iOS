@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @class BSYLiveIMImageMsgModel;
 @class BSYLiveCameraStreamStatusModel;
 @class BSYLiveSwitchMasterCameraModel;
+@class BSYLiveRtcRoomConfigModel;
+@class BSYLiveInviteBroadcastMsgModel;
+@class BSYLiveRemoveHandQueueMsgModel;
+@class BSYLiveInteractiveSeatModel;
 @protocol BSYLiveIMDelegate <NSObject>
 
 @optional
@@ -79,6 +83,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)recvChatTextMsg:(BSYLiveIMTextMsgModel *)textMsg;
 - (void)recvChatImageMsg:(BSYLiveIMImageMsgModel *)imgMsg;
 
+/*Rtc上麦*/
+//rtc配置更新
+- (void)recvLiveRtcRoomConfigMsg:(BSYLiveRtcRoomConfigModel *)roomConfig;
+//邀请上麦信令
+- (void)recvLiveRtcRoomInviteBroadcastMsg:(BSYLiveInviteBroadcastMsgModel *)inviteMsg;
+//移除举手队列
+- (void)recvLiveRtcRoomRemoveHandQueueMsg:(BSYLiveRemoveHandQueueMsgModel *)removeHandMsg;
+//席位变更
+- (void)recvLiveRtcRoomSeatListUpdatMsg:(NSArray<BSYLiveInteractiveSeatModel *> *)seatList;
+//席位变更
+- (void)recvLiveRtcRoomSelfSeatUpdatMsg:(BSYLiveSelfSeatUpdateType)isOnSeat;
+- (void)recvLiveRtcRoomSelfVideoDisableMsg:(BOOL)disable;
+- (void)recvLiveRtcRoomSelfAudioDisableMsg:(BOOL)disable;
 
 @end
 

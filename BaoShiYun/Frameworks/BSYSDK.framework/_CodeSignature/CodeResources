@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/BSYRequest.h</key>
 		<data>
-		R+Iq55hHU79VDPuFFzVw6DEYWvs=
+		65VtJbsexvHWsydxD3UvCp6Vtcg=
 		</data>
 		<key>Headers/BSYResponseModel.h</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Headers/BSYSDKDataType.h</key>
 		<data>
-		JHmwgEUxy+xbZzLdAVGB/htG8uQ=
+		O7MOr5OUuihlRLKrQTap9VGkTr8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zm++bVfVFLk8Wbd7sFQlu43FPjE=
+		nULG5YAx/L1ACXIimlSCdJ0TOys=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,11 +122,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R+Iq55hHU79VDPuFFzVw6DEYWvs=
+			65VtJbsexvHWsydxD3UvCp6Vtcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZPrIGov/v9VlQodWVTWX62cgX9Znq5h/bqtve8jUYYM=
+			P+mvGu3h+CRChdi+kwFY2hMLK1vRsIVuyTIodrqerNg=
 			</data>
 		</dict>
 		<key>Headers/BSYResponseModel.h</key>
@@ -188,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JHmwgEUxy+xbZzLdAVGB/htG8uQ=
+			O7MOr5OUuihlRLKrQTap9VGkTr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VnZzlYg9UEGtYTL4b3FJcnVcBOGRE6BFATnpt7Et48w=
+			GeM1WzH7laNs83lShY1cE1fIwwlH+vPRYs8vnCVN9yM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -175,10 +175,26 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BaoShiYun/BaoShiYun.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLib.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveDataLayer.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveSDK.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYReport.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYRtc.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYSDK.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYUC.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYunIMKit.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYVod.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BaoShiYun/BaoShiYun.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLib.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveDataLayer.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveSDK.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYReport.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYRtc.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYSDK.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYUC.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYunIMKit.framework"
+  install_framework "${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYVod.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

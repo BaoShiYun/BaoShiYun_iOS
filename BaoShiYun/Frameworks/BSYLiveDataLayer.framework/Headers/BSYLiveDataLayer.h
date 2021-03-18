@@ -31,6 +31,7 @@ FOUNDATION_EXPORT const unsigned char BSYLiveDataLayerVersionString[];
 #import <BSYLiveDataLayer/BSYLiveCameraSeatModel.h>
 #import <BSYLiveDataLayer/BSYLivePullStreamModel.h>
 #import <BSYLiveDataLayer/BSYLiveQuestionModel.h>
+#import <BSYLiveDataLayer/BSYLiveQestionTokenModel.h>
 #import <BSYLiveDataLayer/BSYLiveRedPackageModel.h>
 #import <BSYLiveDataLayer/BSYLiveIMModel.h>
 #import <BSYLiveDataLayer/BSYLiveRoleModel.h>
@@ -57,6 +58,15 @@ FOUNDATION_EXPORT const unsigned char BSYLiveDataLayerVersionString[];
 #import <BSYLiveDataLayer/BSYLiveProtoGroupCommonControlModel.h>
 #import <BSYLiveDataLayer/BSYLiveCameraStreamStatusModel.h>
 #import <BSYLiveDataLayer/BSYLiveSwitchMasterCameraModel.h>
+#import <BSYLiveDataLayer/BSYLiveInteractiveSeatModel.h>
+#import <BSYLiveDataLayer/BSYLiveProtoLiveCommonMsg.h>
+#import <BSYLiveDataLayer/BSYLiveCommonMsgDetailModel.h>
+#import <BSYLiveDataLayer/BSYLiveRtcRoomConfigModel.h>
+#import <BSYLiveDataLayer/BSYLiveInviteBroadcastMsgModel.h>
+#import <BSYLiveDataLayer/BSYLiveRemoveHandQueueMsgModel.h>
+#import <BSYLiveDataLayer/BSYLiveSelfSeatUpdateModel.h>
+#import <BSYLiveDataLayer/BSYLiveSelfSeatAudioDisableModel.h>
+#import <BSYLiveDataLayer/BSYLiveSelfSeatVideoDisableModel.h>
 
 
 /*
@@ -71,4 +81,11 @@ FOUNDATION_EXPORT const unsigned char BSYLiveDataLayerVersionString[];
 #import <BSYLiveDataLayer/BSYLiveRedPackageListRequest.h>
 #import <BSYLiveDataLayer/BSYLiveRedPackageReceiveRequest.h>
 #import <BSYLiveDataLayer/BSYLiveQuestionListRequest.h>
+#import <BSYLiveDataLayer/BSYLiveQuestionTokenRequest.h>
 
+#import <BSYLiveDataLayer/BSYLiveRtcSeatInviteRespondRequest.h>
+#import <BSYLiveDataLayer/BSYLiveRtcQueueLinkRequest.h>
+#import <BSYLiveDataLayer/BSYLiveRtcQueueUnLinkRequest.h>
+#import <BSYLiveDataLayer/BSYLiveRtcSeatUpdateRequest.h>
+#import <BSYLiveDataLayer/BSYLiveRtcQueueStatusRequest.h>
+#import <BSYLiveDataLayer/BSYLiveRtcSeatListRequest.h>

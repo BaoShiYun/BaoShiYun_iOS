@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, BSYLiveGroupCommonControlType)
 @interface BSYLiveProtoGroupCommonControlModel : BSYLiveProtoBaseModel
 
 @property (nonatomic, strong)NSString *timGroupId;  //群id
-@property (nonatomic, assign)BSYLiveGroupCommonControlType controlType; //控制类型
+@property (nonatomic, assign)BSYLiveGroupCommonControlType controlType; //控制类型 
 @property (nonatomic, strong)id params; //与controlType 相匹配的数据结构
 @end
 

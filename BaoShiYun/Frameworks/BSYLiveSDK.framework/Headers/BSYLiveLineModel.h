@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYLiveLineModel : NSObject
 
-@property (nonatomic, assign, readonly)NSString *lineId; //线路id
+@property (nonatomic, strong, readonly)NSString *lineId; //线路id
 @property (nonatomic, strong, readonly)NSString *lineName; //线路名字
 
 @end

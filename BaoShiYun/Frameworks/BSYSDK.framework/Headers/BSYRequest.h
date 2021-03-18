@@ -10,10 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger, BSYRequestStatus) {
-    BSYRequestStatusOk = 1, // 成功
-};
-
 @class BSYRequest;
 
 typedef void(^BSYRequestBlock)(__kindof BSYRequest *request);

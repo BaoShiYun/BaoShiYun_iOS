@@ -1,5 +1,5 @@
 PODS:
-  - BaoShiYun (0.1.0)
+  - BaoShiYun (1.0.4)
 
 DEPENDENCIES:
   - BaoShiYun (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BaoShiYun: d06e7061847ada312c963eafea0ae92922ec690a
+  BaoShiYun: 4c91820bce0ee0a900f7261955d80cba32238a7c
 
 PODFILE CHECKSUM: a5cc253d76f9ebe3961194a3507fb2f10ffc11c5
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

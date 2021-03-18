@@ -10,12 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface BSYRtcLiveInfoModel : BSYMediaModel
 
 @property (nonatomic, strong)NSString *channelName;
 @property (nonatomic, strong)NSString *channelToken;
 @property (nonatomic, strong)NSString *boardRoomId;
 @property (nonatomic, strong)NSString *boardToken;
+@property (nonatomic, assign)NSString *interactType;
+@property (nonatomic, assign)BOOL audioDisable;
 
 @end
 

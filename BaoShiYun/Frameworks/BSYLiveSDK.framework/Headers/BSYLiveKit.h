@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @class BSYLiveLineModel;
 @class BSYLiveResolutionModel;
 @class BSYLiveEventNotifyModel;
+@class BSYLiveInteractiveConfigModel;
+@class BSYLiveBroadcastUserModel;
 @protocol  BSYLiveKitDelegate;
 
 @interface BSYLiveKit : NSObject
@@ -33,15 +35,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  *   @brief   初始化
- *   @param   containerView 承载视频画面的控件，设置完成后需要调整视频画面的大小只需要调整containerView大小即可
+ *   @param   liveParam 登录直播间参数 请参考:BSYLiveParam
  */
-- (instancetype)initWithPlayerContainerView:(UIView *)containerView;
+- (instancetype)initWithParameter:(BSYLiveParam *)liveParam;
+
+/**
+ *   @brief   设置直播间主窗口 主要承载Rtc直播间老师的屏幕共享，Live直播间的视频画面
+ *   @param   mainView 承载讲师屏幕共享或主画面的控件，设置完成后需要调整视频画面的大小只需要调整containerView大小即可
+ */
+- (void)setMainVideoContainerView:(UIView *)mainView;
 
 /**
  *   @brief   登录直播间
- *   @param   liveParam 登录直播间参数 请参考:BSYLiveParam
  */
-- (void)loginLiveWithParameter:(BSYLiveParam *)liveParam;
+- (void)loginLive;
 
 /**
  *   @brief   退出直播间
@@ -56,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getLiveName;
 
 /**
- *   @brief   判段直播间是否为RTC或者为Live
+ *   @brief   判段直播间是否为Rtc或者为Live   返回值Yes=Rtc  NO=Live
  *   说明：直播间登录成功后有效
  */
 - (BOOL)isRtcLive;
@@ -71,22 +78,22 @@ NS_ASSUME_NONNULL_BEGIN
 ////———————————————————————————————————————————————————————
 
 /**
- * @brief 获取当前清晰度
+ * @brief 获取当前清晰度 仅Live直播
  */
 - (BSYLiveResolutionModel *)getCurrentLiveResolution;
 
 /**
- * @brief 获取线路清晰度列表
+ * @brief 获取线路清晰度列表 仅Live直播
  */
 - (NSArray<BSYLiveResolutionModel *> *)getResolutionListWithLineId:(NSString * __nullable)lineId;
 
 /**
- * @brief 获取当前线路
+ * @brief 获取当前线路 仅Live直播
  */
 - (BSYLiveLineModel *)getCurrentLiveLine;
 
 /**
- * @brief 获取线路列表
+ * @brief 获取线路列表 仅Live直播
  */
 - (NSArray<BSYLiveLineModel *> *)getLiveLineList;
 
@@ -96,19 +103,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)refreshLiveSucc:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
 
 /**
- *   @brief   切换清晰度(保持线路不变)
+ *   @brief   切换清晰度(保持线路不变)  仅Live直播
  *   @param   resolution  清晰度标示
  */
 - (void)switchResolution:(NSString *)resolution succ:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
 
 /**
- *   @brief   切换线路(保持清晰度不变)
+ *   @brief   切换线路(保持清晰度不变) 仅Live直播
  *   @param   lineId  线路id
  */
 - (void)switchLineWithId:(NSString *)lineId succ:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
 
 /**
- *   @brief   切换线路及清晰度
+ *   @brief   切换线路及清晰度 仅Live直播
  *   @param   lineId  线路id
  *   @param   resolution 清晰度标示
  */
@@ -132,6 +139,111 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)quitWhiteboard;
 
+
+///———————————————————————————————————————————————————————
+//
+//                               直播上麦相关
+//
+///———————————————————————————————————————————————————————
+
+/**
+ *   @brief  设置老师的摄像头父View
+ *   @param containerView   承载的父视图View
+ */
+- (void)setTeacherVideoContainerView:(UIView *)containerView;
+
+/**
+ *   @brief  移除自己的摄像头父View
+ *
+ */
+- (void)removeTeacherVideoContainerView;
+/**
+ *   @brief  设置自己的摄像头父View
+ *   @param containerView   承载的父视图View
+ */
+- (void)setSelfBroadcastVideoContainerView:(UIView *)containerView;
+/**
+ *   @brief  移除自己的摄像头父View
+ *
+ */
+- (void)removeSelfBroadcastVideoContainerView;
+
+/**
+ *   @brief  当前是摄像头被禁用
+ *   @return Yes-禁用  NO-不禁用
+ */
+- (BOOL)getSelfBroadcastVideoDisable;
+
+/**
+ *   @brief  当前是否麦克风被禁用
+ *   @return Yes-禁用  NO-不禁用
+ */
+- (BOOL)getSelfBroadcastAudioDisable;
+
+
+/**
+ *   @brief  当前摄像头是否关闭
+ *   @return Yes-关闭  NO-开启
+ */
+- (BOOL)getSelfBroadcastVideoMute;
+
+/**
+ *   @brief  当前麦克风是否关闭
+ *   @return Yes-关闭  NO-开启
+ */
+- (BOOL)getSelfBroadcastAudioMute;
+
+
+/**
+ *   @brief  设置其他连麦用户的摄像头父View
+ *   @param uid   用户id
+ *   @param containerView   承载的父视图View
+ */
+- (void)setRemoteUserVideoContainerViewWithUid:(NSString *)uid containerView:(UIView *)containerView;
+
+
+/**
+ *   @brief  移除其他连麦用户的摄像头父View
+ *   @param uid   用户id
+ */
+- (void)removeRemoteUserVideoContainerViewWithUid:(NSString *)uid;
+
+
+/**
+ *   @brief   rtc互动直播举手请求，老师确认后自动上麦互动
+ *
+ */
+- (void)raiseHandRequestSucc:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+/**
+ *   @brief   取消当前举手等待。当老师长时间未响应学生举手请求，学生可以主动取消举手
+ *
+ */
+- (void)cancelRaiseHandSucc:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+/**
+ *   @brief  确认是否同意点名，同意后学生将上麦互动。如果老师未点名则调用无效
+ *   @param  isAgree   是否同意老师的点名 Yes=同意   NO=拒绝
+ *   @param  teacherId   发起点名的老师uid 回传回去，用于通知老师我的同意结果
+ */
+- (void)confirmInvitBroadcast:(BOOL)isAgree withTeacherId:(NSString *)teacherId succ:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+/**
+ *   @brief  停止连麦互动 如果当前用户未连麦，则设置无效，返回失败
+ */
+- (void)disConnectBroadcastSucc:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+/**
+ *   @brief 用户上麦情况下，设置自己麦克风、摄像头开启状态。如果当前用户未上麦，则设置无效
+ *   @param  isVideoMute   摄像头是否开启 Yes=开启   NO=关闭
+ */
+- (void)modifyBroadcastMuteVideo:(BOOL)isVideoMute;
+
+/**
+ *   @brief 用户上麦情况下，设置自己麦克风、摄像头开启状态。如果当前用户未上麦，则设置无效
+ *   @param  isAudioMute         麦克风是否开启 Yes=开启   NO=关闭
+ */
+- (void)modifyBroadcastMuteAudio:(BOOL)isAudioMute;
 
 ////———————————————————————————————————————————————————————
 //
@@ -268,7 +380,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onRecvLikeTotalCount:(NSUInteger)totalCount newAddCount:(NSUInteger)addCount;
 
 /**
- *   @brief   禁言
+ *   @brief   全体禁言
  */
 - (void)onRecvLiveRoomAllMuteStatus:(BOOL)isAllMute;
 
@@ -331,6 +443,127 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onRecvChatMessage:(BSYLiveChatMsgModel *)msg;
 
+
+///———————————————————————————————————————————————————————
+//
+//                               直播上麦相关回调
+//
+///———————————————————————————————————————————————————————
+
+
+/**
+ *     @brief  互动直播间互动类型
+ */
+- (void)onRecvLiveInteractiveType:(BSYLiveInteractiveType)interactiveType;
+
+
+/**
+ *    @brief 老师麦克风关闭
+ *    @param audioMute   Yes=关闭    NO=开启
+ */
+- (void)onRecvTeacherAudioMute:(BOOL)audioMute;
+
+/**
+ *    @brief 老师摄像头关闭
+ *    @param videoMute   Yes=关闭    NO=开启
+ */
+- (void)onRecvTeacherVideoMute:(BOOL)videoMute;
+
+
+/**
+ *    @brief 老师麦克风音量变化
+ *    @param volumeValue  麦克风音量值  0-100
+ */
+- (void)onRecvTeacherVolumeChange:(NSUInteger)volumeValue;
+
+/**
+ *    @brief  收到上麦邀请。收到邀请后需要调用【- (void)confirmInvitBroadcast:(BOOL)isAgree withTeacherId:(NSString *)teacherId succ:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;】确认是否上麦。如果确定上麦则调用【】设置承载自己视频窗口View
+ */
+- (void)onRecvInvitBroadcastFromTeacherUid:(NSString *)uid;
+
+/**
+ *    @brief 自己连麦状态变更通知
+ *    @param isConnect   Yes=已连接    NO=未连接
+ *    @param reasonType   详细查看 BSYLiveInteractiveStatusReasonType 定义
+ */
+- (void)onRecvSelfBroadcastConnectChangeStatus:(BOOL)isConnect  withReasonType:(BSYLiveInteractiveStatusReasonType)reasonType;
+
+/**
+ *    @brief 自己举手状态变更通知
+ *    @param isRaiseHand   Yes=已连接    NO=未连接
+ *    @param reasonType   详细查看 BSYLiveInteractiveStatusReasonType 定义
+ */
+- (void)onRecvSelfRaiseHandChangeStatus:(BOOL)isRaiseHand withReasonType:(BSYLiveInteractiveStatusReasonType)reasonType;
+
+
+/**
+ *    @brief 全员禁用麦克风，由老师端设置
+ *    @param allAudioDisable   Yes=全员禁麦    NO=取消全员禁麦
+ */
+- (void)onRecvAllBroadcastAudioDisable:(BOOL)allAudioDisable;
+
+
+
+/**
+ *    @brief 麦克风被禁用，由老师端设置
+ *    @param audioDisable   Yes=禁麦。 NO=取消禁麦
+ */
+- (void)onRecvSelfBroadcastAudioDisable:(BOOL)audioDisable;
+
+/**
+ *    @brief 摄像头被禁用，由老师端设置
+ *    @param videoDisable   Yes=禁用摄像头。 NO=取消禁用摄像头
+ */
+- (void)onRecvSelfBroadcastVideoDisable:(BOOL)videoDisable;
+
+/**
+ *    @brief 麦克风关闭
+ *    @param audioMute   Yes=关闭    NO=开启
+ */
+- (void)onRecvSelfBroadcastAudioMute:(BOOL)audioMute;
+
+
+/**
+ *    @brief 摄像头关闭
+ *    @param videoMute   Yes=关闭    NO=开启
+ */
+- (void)onRecvSelfBroadcastVideoMute:(BOOL)videoMute;
+
+/**
+ *    @brief 自己麦克风音量变化
+ *    @param volumeValue  麦克风音量值  0-100
+ */
+- (void)onRecvSelfBroadcastVolumeChange:(NSUInteger)volumeValue;
+
+/**
+ *    @brief 其他连麦用户麦克风关闭
+ *    @param audioMute   Yes=关闭    NO=开启
+ */
+- (void)onRecvRemoteBroadcastAudioMute:(BOOL)audioMute withUid:(NSString *)uid;
+
+
+/**
+ *    @brief 其他连麦用户摄像头关闭
+ *    @param videoMute   Yes=关闭    NO=开启
+ */
+- (void)onRecvRemoteBroadcastVideoMute:(BOOL)videoMute withUid:(NSString *)uid;
+
+
+
+/**
+ *    @brief 其他连麦用户麦克风音量变化
+ *    @param uid   用户Id
+ *    @param volumeValue  麦克风音量值  0-100
+ */
+- (void)onRecvRemoteBroadcastVolumeChangeWithUid:(NSString *)uid volumeValue:(NSUInteger)volumeValue;
+
+/**
+ *    @brief 其他用户连麦列表变更通知 （其他用户：除老师和自己外其他连麦用户）
+ *    @param remoteUserList   其他连麦用户信息列表
+ */
+- (void)onRecvRemoteBroadcastUserListChange:(NSArray<BSYLiveBroadcastUserModel *> * __nullable)remoteUserList;
+
+
 ///———————————————————————————————————————————————————————
 //
 //                                 业务工具相关回调
@@ -346,6 +579,12 @@ NS_ASSUME_NONNULL_BEGIN
  *     @brief  url链接
  */
 - (void)onRecvCommonUrl:(NSString *)url;
+
+/**
+ *     @brief   通知
+ */
+
+- (void)onRecvEventNotify:(BSYLiveEventNotifyModel *)notifyModel;
 
 
 ///———————————————————————————————————————————————————————
@@ -368,11 +607,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onRecvProductsOffShelf:(BSYLiveShelfModel *)shelfModel;
 
-/**
- *     @brief   通知
- */
-
-- (void)onRecvEventNotify:(BSYLiveEventNotifyModel *)notifyModel;
 
 
 @end

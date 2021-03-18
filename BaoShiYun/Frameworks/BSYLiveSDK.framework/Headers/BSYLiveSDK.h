@@ -25,7 +25,9 @@ FOUNDATION_EXPORT const unsigned char BSYLiveSDKVersionString[];
 #import <BSYLiveSDK/BSYLiveChatMsgImageElem.h>
 #import <BSYLiveSDK/BSYLiveShelfModel.h>
 #import <BSYLiveSDK/BSYLiveLineModel.h>
+#import <BSYLiveSDK/BSYLiveInteractiveConfigModel.h>
 #import <BSYLiveSDK/BSYLiveResolutionModel.h>
 #import <BSYLiveSDK/BSYLiveEventNotifyModel.h>
 #import <BSYLiveSDK/BSYLiveNotifyTextStyleModel.h>
 #import <BSYLiveSDK/BSYLiveUserInfo.h>
+#import <BSYLiveSDK/BSYLiveBroadcastUserModel.h>

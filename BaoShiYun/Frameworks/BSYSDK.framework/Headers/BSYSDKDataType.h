@@ -17,4 +17,14 @@ typedef NS_ENUM(NSInteger, BSYAppClientType) {
     BSYAppClientTypeWeb = 3, // Web
 };
 
+typedef NS_ENUM(NSInteger, BSYRequestStatus) {
+    BSYRequestStatusOk = 1, // 成功
+};
+
+typedef NS_ENUM(NSInteger, BSYRequestError) {
+    BSYRequestErrorServer = -1, // 系统错误
+    BSYRequestErrorHttp = -2, // Http错误
+    BSYRequestErrorParam = -3, // 参数错误
+};
+
 #endif /* BSYSDKDataType_h */

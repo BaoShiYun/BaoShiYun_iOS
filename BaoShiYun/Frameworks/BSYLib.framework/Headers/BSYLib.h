@@ -31,7 +31,6 @@ FOUNDATION_EXPORT const unsigned char BSYLibVersionString[];
 #import <BSYLib/BSYTimer.h>
 #import <BSYLib/BSYUserDefaultsModel.h>
 #import <BSYLib/BSYProxy.h>
-#import <BSYLib/MJExtension.h>
 
 
 #pragma mark - Category -

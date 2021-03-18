@@ -8,6 +8,10 @@
 		<data>
 		i9cck13R4/nZ0KSbhkQljqhjbIw=
 		</data>
+		<key>Headers/BSYLiveBroadcastUserModel.h</key>
+		<data>
+		CMSqSr+VzMZ82236rrt1x68+qyE=
+		</data>
 		<key>Headers/BSYLiveChatMsgImageElem.h</key>
 		<data>
 		DHNbagwxMZ2WYgGl4YolqYsIL2s=
@@ -22,19 +26,23 @@
 		</data>
 		<key>Headers/BSYLiveEventNotifyModel.h</key>
 		<data>
-		m7hXEfSTVN/S0az4twrSOZVC9ok=
+		KCz0PU9SNVIHE2Kf9+CBqaxM9/U=
+		</data>
+		<key>Headers/BSYLiveInteractiveConfigModel.h</key>
+		<data>
+		v0X9RORgLJLCr2E4AtYTaK+db3c=
 		</data>
 		<key>Headers/BSYLiveKit.h</key>
 		<data>
-		S8eZ54nBRautM0EaLo9zZ9X8lGg=
+		wFvo1lhuzRy/BBjjyUORYM0CNLQ=
 		</data>
 		<key>Headers/BSYLiveKitDefine.h</key>
 		<data>
-		A5L4Ule0AfEgrXhdDsTZ3Qr6KB4=
+		bZ6DuYet8bAWOj/SkKN2AcldCH0=
 		</data>
 		<key>Headers/BSYLiveLineModel.h</key>
 		<data>
-		ElRDwACrkDCWcP5ayzoZIVz0FVU=
+		GDygN0ZqXtpAEpw1V9ZLuwNRZDc=
 		</data>
 		<key>Headers/BSYLiveNotifyTextStyleModel.h</key>
 		<data>
@@ -42,7 +50,7 @@
 		</data>
 		<key>Headers/BSYLiveParam.h</key>
 		<data>
-		xaeB58041NfZ/nZJaB4MnzVadzY=
+		W6LwvEJpuNhiakoI9Fl4Kc5Zors=
 		</data>
 		<key>Headers/BSYLiveResolutionModel.h</key>
 		<data>
@@ -50,7 +58,7 @@
 		</data>
 		<key>Headers/BSYLiveSDK.h</key>
 		<data>
-		bJl6fim+tp9CUWNL27eQrbucwfI=
+		dz1OVYz+NXcZ8eWmXaVXxNicyfY=
 		</data>
 		<key>Headers/BSYLiveShelfModel.h</key>
 		<data>
@@ -62,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6PyAE4yr/DBJxaqkYfjEcT/+XO0=
+		3UhiTl2I6vwQmhaTxy809j2SEcI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,11 +78,11 @@
 		</data>
 		<key>Whiteboard.bundle/Info.plist</key>
 		<data>
-		Y5CwgxpXqew7nB0tv4Tu9wPwdiA=
+		MoAvVKA3WASB2TgFeEiho9Q0J6A=
 		</data>
 		<key>Whiteboard.bundle/index.html</key>
 		<data>
-		jL7+vR5M89WopXVFX9TRA+glI8c=
+		oYkLcxVW7HEsVTrX6EJuLAsXG9U=
 		</data>
 		<key>Whiteboard.bundle/main.1413e9a0.css</key>
 		<data>
@@ -88,13 +96,29 @@
 		<data>
 		8vt70QFOaPkgwg8LVDMCAstEoXo=
 		</data>
+		<key>Whiteboard.bundle/vendor.33f05124.js</key>
+		<data>
+		RpgO5P4AwyKikUbIgWbi5r8TEXU=
+		</data>
 		<key>Whiteboard.bundle/vendor.85a6e582.js</key>
 		<data>
 		DazT4G8gem3S+MQGIKTahLM3gNE=
 		</data>
+		<key>Whiteboard.bundle/vendor.e80b909f.js</key>
+		<data>
+		BacDfZZTbjTZ88BRoHyikQT0dLM=
+		</data>
 		<key>Whiteboard.bundle/web-sdk.08b4af77.js</key>
 		<data>
 		Qt5p+N174cP8vVznXTG2RpFrUrc=
+		</data>
+		<key>Whiteboard.bundle/web-sdk.19a2683d.js</key>
+		<data>
+		uTTzJJPlKrI9kWMjT192qt/dgqE=
+		</data>
+		<key>Whiteboard.bundle/web-sdk.33ca0c9f.js</key>
+		<data>
+		wNxSLISq0bQ+TCBiNhBI7vYjY9Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -108,6 +132,17 @@
 			<key>hash2</key>
 			<data>
 			EHx7KNG/E5lz5XTRDbNOMo7BuQMP07abETPqc1zlthM=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveBroadcastUserModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CMSqSr+VzMZ82236rrt1x68+qyE=
+			</data>
+			<key>hash2</key>
+			<data>
+			TF+sFlImiiDBI7WeH4wKmf6cG8Ek5PtMvJWDnK/+tRw=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveChatMsgImageElem.h</key>
@@ -147,44 +182,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m7hXEfSTVN/S0az4twrSOZVC9ok=
+			KCz0PU9SNVIHE2Kf9+CBqaxM9/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			yBySDj06EyR0oIkq5fXHGmwwOi4XfqBKMgua3n47A9M=
+			O9NRKMowmn1Gh/ChgYBfC9cDN4SJFc/PDm9I8RmCUXw=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveInteractiveConfigModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v0X9RORgLJLCr2E4AtYTaK+db3c=
+			</data>
+			<key>hash2</key>
+			<data>
+			hH9uvx+u4BXjd6wU/J3hKHf3F1m+S6gRuscoth6fLxA=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S8eZ54nBRautM0EaLo9zZ9X8lGg=
+			wFvo1lhuzRy/BBjjyUORYM0CNLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			ppfYlDofqUvLlk8EKgg7id8ybCfdftWNFKuJKCURQX0=
+			AUWRed2jZzK++PDQPtQh+bZM4eX16L36s6MyH9Gh634=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveKitDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A5L4Ule0AfEgrXhdDsTZ3Qr6KB4=
+			bZ6DuYet8bAWOj/SkKN2AcldCH0=
 			</data>
 			<key>hash2</key>
 			<data>
-			vG01OVs0z56nnSFPpNwG1xE3+5/R4ZGDc6tDgSvpjsA=
+			DyvOhpqGkg5q/GEBC+QbrG+1B7ry8QFq6K7hhofEuPs=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveLineModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ElRDwACrkDCWcP5ayzoZIVz0FVU=
+			GDygN0ZqXtpAEpw1V9ZLuwNRZDc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2P/Ecfdf7AWpYfj1LPykZ7giho9F+gSnBNb5fd306j4=
+			SgO0Kl2TIvTwi06r7x7Xrl0B776rI09wMSeIstAzFUw=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveNotifyTextStyleModel.h</key>
@@ -202,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xaeB58041NfZ/nZJaB4MnzVadzY=
+			W6LwvEJpuNhiakoI9Fl4Kc5Zors=
 			</data>
 			<key>hash2</key>
 			<data>
-			ne7txrGTzVMsZFts3etU2B7LsVE90RFxQALLsr2438k=
+			yi6Eal5aFTH9IoW+0GXQm+aeHN5uu2BxLiN0NsXgpFI=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveResolutionModel.h</key>
@@ -224,11 +270,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bJl6fim+tp9CUWNL27eQrbucwfI=
+			dz1OVYz+NXcZ8eWmXaVXxNicyfY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0u4KaWtJG7lBEIHMro+xxMbhWn2TImwa5GsktTrCYRs=
+			U5INIxWm/PyZDGo9hsWZYjQfPJ6SL9vcMH9chl16JjI=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveShelfModel.h</key>
@@ -268,22 +314,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y5CwgxpXqew7nB0tv4Tu9wPwdiA=
+			MoAvVKA3WASB2TgFeEiho9Q0J6A=
 			</data>
 			<key>hash2</key>
 			<data>
-			LubXOFjw5wiOlTIiTT22gbUyZwXVQWGIA/1mH20UXVw=
+			4aopL9iUf4NlEvpfnRxAlynGiFuJXQTpW4oUMJX4MhU=
 			</data>
 		</dict>
 		<key>Whiteboard.bundle/index.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jL7+vR5M89WopXVFX9TRA+glI8c=
+			oYkLcxVW7HEsVTrX6EJuLAsXG9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			x7uxEp1LEaB71bakYq4EPnKW6JkwbNuLVogUGROxs8E=
+			wQSIXpTk8yRfJ2Gerog8CEBKx/jGHihHlDtp6WNJe2E=
 			</data>
 		</dict>
 		<key>Whiteboard.bundle/main.1413e9a0.css</key>
@@ -319,6 +365,17 @@
 			vc7cwAhazA5NWkSJstc8Kq4/kYsX8xuvz02OixzHcr4=
 			</data>
 		</dict>
+		<key>Whiteboard.bundle/vendor.33f05124.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RpgO5P4AwyKikUbIgWbi5r8TEXU=
+			</data>
+			<key>hash2</key>
+			<data>
+			s7bklrELY0/fEZ9+w/vTcMFakSot+Zm1ZfGOj0OvCmE=
+			</data>
+		</dict>
 		<key>Whiteboard.bundle/vendor.85a6e582.js</key>
 		<dict>
 			<key>hash</key>
@@ -330,6 +387,17 @@
 			WLKmb8Bc4fbZUhgr1+cdoCOn3SQfDzHmWi4p8ZghsRo=
 			</data>
 		</dict>
+		<key>Whiteboard.bundle/vendor.e80b909f.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BacDfZZTbjTZ88BRoHyikQT0dLM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ueEcInyEcKB84zbFqz2z+KC29+ca7RYzBTPOXoR32/8=
+			</data>
+		</dict>
 		<key>Whiteboard.bundle/web-sdk.08b4af77.js</key>
 		<dict>
 			<key>hash</key>
@@ -339,6 +407,28 @@
 			<key>hash2</key>
 			<data>
 			T7/41inZftwwYKqPSZ4PojOHObISq229e/hevd+C/QA=
+			</data>
+		</dict>
+		<key>Whiteboard.bundle/web-sdk.19a2683d.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uTTzJJPlKrI9kWMjT192qt/dgqE=
+			</data>
+			<key>hash2</key>
+			<data>
+			zY7UynDPCoDs2ccISw8jYh13s52jbxXMq9Dvt3PJHUk=
+			</data>
+		</dict>
+		<key>Whiteboard.bundle/web-sdk.33ca0c9f.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wNxSLISq0bQ+TCBiNhBI7vYjY9Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			pqibcpi+JN5LAIC9X6GRH5M8SfBBLOAiGkh4twkTing=
 			</data>
 		</dict>
 	</dict>

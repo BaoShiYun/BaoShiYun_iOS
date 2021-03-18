@@ -41,6 +41,9 @@ NS_ASSUME_NONNULL_BEGIN
 //群通用控制协议
 #define BSYLiveProtoName_GroupCommonControl                  @"GROUP_COMMON_CONTROL"
 
+//直播间群信令通道
+#define BSYLiveProtoName_LiveGroupMsg                        @"LIVE_GROUP_MSG_SENDER"
+
 
 /* 群消息(历史消息存在) */
 //评测
@@ -53,6 +56,9 @@ NS_ASSUME_NONNULL_BEGIN
 /*个人自定义消息*/
 //红包
 #define BSYLiveProtoName_KeywordsWinner                      @"KEYWORDS_WINNER"
+
+//直播间单波信令通道
+#define BSYLiveProtoName_LivePersonMsg                       @"LIVE_PERSON_MSG_SENDER"
 
 
 @interface BSYLiveProtocalModel : BSYMediaModel

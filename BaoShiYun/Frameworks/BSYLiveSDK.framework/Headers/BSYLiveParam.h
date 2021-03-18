@@ -37,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy)NSString *enterCode; //必填
 
+
 @end
 
 NS_ASSUME_NONNULL_END

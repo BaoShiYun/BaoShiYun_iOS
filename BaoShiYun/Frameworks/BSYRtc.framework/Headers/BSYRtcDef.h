@@ -138,6 +138,17 @@ typedef NS_ENUM(NSUInteger, BSYRtcVideoRemoteState) {
     BSYRtcVideoRemoteStateFailed = 4, // 推流失败
 };
 
+/**
+ * 远端用户音频推流状态
+ */
+typedef NS_ENUM(NSUInteger, BSYRtcAudioRemoteState) {
+    BSYRtcAudioRemoteStateStopped = 0, // 推流停止
+    BSYRtcAudioRemoteStateStarting = 1, // 开始推流
+    BSYRtcAudioRemoteStateDecoding = 2, // 推流中
+    BSYRtcAudioRemoteStateFrozen = 3, // 推流中断
+    BSYRtcAudioRemoteStateFailed = 4, // 推流失败
+};
+
 @interface BSYRtcConfig : NSObject
 
 @property (nonatomic, copy, nullable) NSString *appId;

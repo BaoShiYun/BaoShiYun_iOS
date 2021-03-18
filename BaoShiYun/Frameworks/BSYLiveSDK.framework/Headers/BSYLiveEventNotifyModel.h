@@ -13,7 +13,6 @@ typedef NS_ENUM(NSUInteger, BSYLiveEventNotifyType) {
     BSYLiveEventNotifyType_RedPacket=1, //红包
     BSYLiveEventNotifyType_Purchase=2, //购买
     BSYLiveEventNotifyType_Customize=3,//自定义样式
-    
 };
 
 typedef NS_ENUM(NSUInteger, BSYLiveEventNotifyPosition) {

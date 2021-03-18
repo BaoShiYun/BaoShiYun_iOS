@@ -404,7 +404,7 @@
 		</data>
 		<key>Headers/BSYLib.h</key>
 		<data>
-		lOTIlPfUsHa+TsVA2W0pLTozdH4=
+		EquP0ZEq8y0tnShvxE7t00HnCA8=
 		</data>
 		<key>Headers/BSYLibMacro.h</key>
 		<data>
@@ -480,7 +480,7 @@
 		</data>
 		<key>Headers/MJExtension.h</key>
 		<data>
-		D63z0c5mSeh0G9fcIG2c+gM5H/o=
+		uKdaYHtsVVvDxFZNcDOXcA26iEw=
 		</data>
 		<key>Headers/MJExtensionConst.h</key>
 		<data>
@@ -572,7 +572,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		29QKibkA3X+vPTaiLIRmA0Mkagc=
+		zRpSZgPgDOho/6FyDUZfwoqYKcY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1186,11 +1186,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lOTIlPfUsHa+TsVA2W0pLTozdH4=
+			EquP0ZEq8y0tnShvxE7t00HnCA8=
 			</data>
 			<key>hash2</key>
 			<data>
-			DajwIPBZtepSZrRirmQ+Vk1ER4n90JB8W/kkSqRUJzQ=
+			S5EfhMrIDP/JqL9M6x59gwBP0TVNELyerG064kH6JMo=
 			</data>
 		</dict>
 		<key>Headers/BSYLibMacro.h</key>
@@ -1395,11 +1395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D63z0c5mSeh0G9fcIG2c+gM5H/o=
+			uKdaYHtsVVvDxFZNcDOXcA26iEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			DuPUa9cAalREB9tiRVbe/ZVFxoMbfkA/1yS31Yg9zNc=
+			NACUUm8P09iCTCApYVGYnnS8Rz/DDGCpaBCB5ohdexw=
 			</data>
 		</dict>
 		<key>Headers/MJExtensionConst.h</key>
