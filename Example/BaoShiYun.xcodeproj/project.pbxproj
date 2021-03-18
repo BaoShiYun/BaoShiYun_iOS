@@ -324,6 +324,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BaoShiYun_Example/Pods-BaoShiYun_Example-frameworks.sh",
+				"${PODS_ROOT}/AgoraRtcEngine_iOS/AgoraRtcKit.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLib.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveDataLayer.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveSDK.framework",
@@ -333,9 +334,11 @@
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYUC.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYunIMKit.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYVod.framework",
+				"${PODS_ROOT}/TXIMSDK_iOS/ImSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtcKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSYLib.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSYLiveDataLayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSYLiveSDK.framework",
@@ -345,6 +348,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSYUC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSYunIMKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSYVod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
