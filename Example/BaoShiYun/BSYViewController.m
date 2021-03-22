@@ -17,7 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *name = @"name zdd";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

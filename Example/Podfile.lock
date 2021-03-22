@@ -1,27 +1,20 @@
 PODS:
-  - AgoraRtcEngine_iOS (3.1.2)
-  - BaoShiYun (1.0.4):
-    - AgoraRtcEngine_iOS (~> 3.1.2)
-    - TXIMSDK_iOS (~> 5.1.56)
+  - BaoShiYun (1.0.3):
+    - TXIMSDK_iOS
   - TXIMSDK_iOS (5.1.56)
 
 DEPENDENCIES:
-  - BaoShiYun (from `../`)
+  - BaoShiYun
 
 SPEC REPOS:
-  trunk:
-    - AgoraRtcEngine_iOS
+  https://github.com/CocoaPods/Specs.git:
+    - BaoShiYun
     - TXIMSDK_iOS
 
-EXTERNAL SOURCES:
-  BaoShiYun:
-    :path: "../"
-
 SPEC CHECKSUMS:
-  AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
-  BaoShiYun: 770bca4543967100f314b3e91edd93d11bbeafff
+  BaoShiYun: bef6e6f1cdc4158951dbcf048ba551ac33958a66
   TXIMSDK_iOS: 3704afc203450066095b9eb8321cff3f7e7d530a
 
-PODFILE CHECKSUM: a5cc253d76f9ebe3961194a3507fb2f10ffc11c5
+PODFILE CHECKSUM: 9d7d462642fe96725e5fd4dfae6c92dbc5c4aed3
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.9.1

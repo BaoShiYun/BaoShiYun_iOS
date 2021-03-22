@@ -1,13 +1,15 @@
+platform :ios, '9.0'
 use_frameworks!
 
-platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
 
-target 'BaoShiYun_Example' do
-  pod 'BaoShiYun', :path => '../'
+workspace 'BaoShiYun.xcworkspace'
 
-  target 'BaoShiYun_Tests' do
-    inherit! :search_paths
+target 'BaoShiYun_Example' do 
+  project 'BaoShiYun.xcodeproj'
+  pod 'BaoShiYun'
 
-    
-  end
 end
+
+
+
