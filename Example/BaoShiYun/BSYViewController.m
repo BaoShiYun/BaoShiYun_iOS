@@ -10,6 +10,10 @@
 
 @interface BSYViewController ()
 
+@property (nonatomic, strong) UIButton *liveBtn;
+@property (nonatomic, strong) UIButton *interactiveBtn;
+@property (nonatomic, strong) UIButton *vodBtn;
+
 @end
 
 @implementation BSYViewController
@@ -17,13 +21,104 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view addSubview:self.liveBtn];
+    [self.liveBtn addTarget:self action:@selector(liveBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.interactiveBtn];
+    [self.interactiveBtn addTarget:self action:@selector(interactiveBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.vodBtn];
+    [self.liveBtn addTarget:self action:@selector(vodBtnAction) forControlEvents:UIControlEventTouchUpInside];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+    @weakify(self);
+    [self.liveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.centerX.equalTo(self.view);
+        make.bottom.equalTo(self.interactiveBtn.mas_top).with.offset(-40);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(40);
+    }];
+    
+    [self.interactiveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.centerX.equalTo(self.view);
+        make.centerY.equalTo(self.view);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(40);
+    }];
+    
+    [self.vodBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.interactiveBtn.mas_bottom).with.offset(40);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(40);
+    }];
+}
+
+- (UIButton *)liveBtn {
+    if(!_liveBtn) {
+        _liveBtn = [[UIButton alloc] init];
+        _liveBtn.layer.cornerRadius = 20;
+        _liveBtn.layer.masksToBounds = YES;
+        _liveBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
+        _liveBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_liveBtn setTitle:@"普通直播" forState:UIControlStateNormal];
+        [_liveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _liveBtn.backgroundColor = [UIColor colorWithRed:0x00 green:0x00 blue:0x00 alpha:1.0];
+    }
+    return _liveBtn;
+}
+
+- (UIButton *)interactiveBtn {
+    if(!_interactiveBtn) {
+        _interactiveBtn = [[UIButton alloc] init];
+        _interactiveBtn.layer.cornerRadius = 20;
+        _interactiveBtn.layer.masksToBounds = YES;
+        _interactiveBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
+        _interactiveBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_interactiveBtn setTitle:@"互动直播" forState:UIControlStateNormal];
+        [_interactiveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _interactiveBtn.backgroundColor = [UIColor colorWithRed:0x00 green:0x00 blue:0x00 alpha:1.0];
+    }
+    return _interactiveBtn;
+}
+
+
+- (UIButton *)vodBtn {
+    if(!_vodBtn) {
+        _vodBtn = [[UIButton alloc] init];
+        _vodBtn.layer.cornerRadius = 20;
+        _vodBtn.layer.masksToBounds = YES;
+        _vodBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
+        _vodBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_vodBtn setTitle:@"点播" forState:UIControlStateNormal];
+        [_vodBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _vodBtn.backgroundColor = [UIColor colorWithRed:0x00 green:0x00 blue:0x00 alpha:1.0];
+    }
+    return _vodBtn;
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)liveBtnAction {
+    
+}
+
+- (void)vodBtnAction {
+    
+}
+
+- (void)interactiveBtnAction {
+    
 }
 
 @end

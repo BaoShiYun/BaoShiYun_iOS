@@ -1,20 +1,45 @@
 PODS:
-  - BaoShiYun (1.0.3):
-    - TXIMSDK_iOS
+  - AgoraRtcEngine_iOS (3.1.2)
+  - BaoShiYun (1.0.4):
+    - AgoraRtcEngine_iOS (~> 3.1.2)
+    - TXIMSDK_iOS (~> 5.1.56)
+  - Masonry (1.1.0)
+  - MJExtension (3.2.4)
+  - ReactiveObjC (3.1.1)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - TXIMSDK_iOS (5.1.56)
 
 DEPENDENCIES:
-  - BaoShiYun
+  - BaoShiYun (from `../`)
+  - Masonry
+  - MJExtension
+  - ReactiveObjC
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - BaoShiYun
+    - AgoraRtcEngine_iOS
+    - Masonry
+    - MJExtension
+    - ReactiveObjC
+    - SDWebImage
     - TXIMSDK_iOS
 
+EXTERNAL SOURCES:
+  BaoShiYun:
+    :path: "../"
+
 SPEC CHECKSUMS:
-  BaoShiYun: bef6e6f1cdc4158951dbcf048ba551ac33958a66
+  AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
+  BaoShiYun: 770bca4543967100f314b3e91edd93d11bbeafff
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   TXIMSDK_iOS: 3704afc203450066095b9eb8321cff3f7e7d530a
 
-PODFILE CHECKSUM: 9d7d462642fe96725e5fd4dfae6c92dbc5c4aed3
+PODFILE CHECKSUM: ebbd21d10844c7c9a09b170369aaf5689f73048b
 
 COCOAPODS: 1.9.1

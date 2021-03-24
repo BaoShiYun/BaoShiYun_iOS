@@ -7,7 +7,11 @@ workspace 'BaoShiYun.xcworkspace'
 
 target 'BaoShiYun_Example' do 
   project 'BaoShiYun.xcodeproj'
-  pod 'BaoShiYun'
+  pod 'BaoShiYun', :path => '../'
+  pod 'Masonry'
+  pod 'ReactiveObjC'
+  pod 'MJExtension'
+  pod 'SDWebImage'
 
 end
 
