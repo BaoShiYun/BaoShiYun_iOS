@@ -12,6 +12,3 @@ FOUNDATION_EXPORT double BSYRtcVersionNumber;
 
 //! Project version string for BSYRtc.
 FOUNDATION_EXPORT const unsigned char BSYRtcVersionString[];
-
-#import <BSYRtc/BSYRtcDef.h>
-#import <BSYRtc/BSYRtcRoomManager.h>
