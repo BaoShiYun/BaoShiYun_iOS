@@ -22,7 +22,7 @@ pod 'BaoShiYun'
 
 ## Author
 
-duanguangming@gmail.com, bsy_rd@baoshiyun.com
+bsy_rd@baoshiyun.com
 
 ## License
 

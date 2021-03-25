@@ -1,6 +1,0 @@
-framework module BSYUC {
-  umbrella header "BSYUC.h"
-
-  export *
-  module * { export * }
-}

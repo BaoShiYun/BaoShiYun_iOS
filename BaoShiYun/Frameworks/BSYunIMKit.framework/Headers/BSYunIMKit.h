@@ -1,16 +1,19 @@
 //
-//  BSYunIMKit.h
-//  BSYunIMKit
+//  BSYIMKit.h
+//  BSYIMKit
 //
-//  Created by zddMac on 2020/11/10.
+//  Created by zddMac on 2020/10/30.
 //  Copyright © 2020 zddMac. All rights reserved.
 //
 
-#import <BSYunIMKit/BSYLiveIMKit.h>
-#import <BSYunIMKit/BSYLiveIMLoginParam.h>
-#import <BSYunIMKit/BSYLiveIMImageMsgModel.h>
-#import <BSYunIMKit/BSYLiveIMTextMsgModel.h>
-#import <BSYunIMKit/BSYIMKitDefine.h>
-#import <BSYunIMKit/BSYErrorCode.h>
+#import <Foundation/Foundation.h>
+
+//! Project version number for BSYIMKit.
+FOUNDATION_EXPORT double BSYIMKitVersionNumber;
+
+//! Project version string for BSYIMKit.
+FOUNDATION_EXPORT const unsigned char BSYIMKitVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <BSYIMKit/PublicHeader.h>
 
 
