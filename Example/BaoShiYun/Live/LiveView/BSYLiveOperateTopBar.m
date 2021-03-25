@@ -6,6 +6,7 @@
 //
 
 #import "BSYLiveOperateTopBar.h"
+#import "BSYLiveStudentCountView.h"
 
 @interface BSYLiveOperateTopBar()
 
@@ -13,6 +14,7 @@
 @property (nonatomic, strong)UIButton *returnBtn;
 @property (nonatomic, strong)UIImageView *bgView;
 @property (nonatomic, strong)UILabel *titleLabel;
+@property (nonatomic, strong)BSYLiveStudentCountView *studentCountView;
 
 @end
 
@@ -31,7 +33,9 @@
     [self addSubview:self.bgView];
     [self addSubview:self.contentView];
     [self.contentView addSubview:self.returnBtn];
+    [self.returnBtn addTarget:self action:@selector(returnBtnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:self.titleLabel];
+    [self.contentView addSubview:self.studentCountView];
 }
 
 
@@ -59,8 +63,8 @@
 - (UIButton *)returnBtn {
     if(!_returnBtn) {
         _returnBtn = [[UIButton alloc] init];
-        [_returnBtn setImage:AssetsImage(@"navi_return_light") forState:UIControlStateNormal];
-        [_returnBtn setImage:AssetsImage(@"navi_return_light") forState:UIControlStateHighlighted];
+        [_returnBtn setImage:AssetsImage(@"live_return_light_btn") forState:UIControlStateNormal];
+        [_returnBtn setImage:AssetsImage(@"live_return_light_btn") forState:UIControlStateHighlighted];
     }
     return _returnBtn;
 }
@@ -75,6 +79,14 @@
         _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     }
     return _titleLabel;
+}
+
+- (BSYLiveStudentCountView *)studentCountView {
+    if(!_studentCountView) {
+        _studentCountView = [[BSYLiveStudentCountView alloc] init];
+        _studentCountView.hidden = YES;
+    }
+    return _studentCountView;
 }
 
 - (void)updateConstraints {
@@ -96,17 +108,33 @@
         make.height.width.mas_equalTo(40);
         make.left.mas_equalTo(5);
     }];
+    [self.studentCountView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.centerY.equalTo(self.contentView);
+        make.right.equalTo(self.contentView).with.offset(-12);
+        make.height.mas_equalTo([BSYLiveStudentCountView viewSize].height);
+        make.width.mas_equalTo([BSYLiveStudentCountView viewSize].width);
+    }];
+    
     [self.titleLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.left.mas_equalTo(45);
         make.centerY.height.equalTo(self.contentView);
-        make.right.equalTo(self.contentView).with.offset(-5);
+        make.right.equalTo(self.studentCountView.mas_left).with.offset(-5);
     }];
     
 }
 
 - (void)setLiveTitle:(NSString *)title {
     self.titleLabel.text = title;
+}
+
+- (void)setStudentCountShow:(BOOL)isShow {
+    self.studentCountView.hidden = !isShow;
+    
+}
+- (void)setStudentCount:(NSInteger)count {
+    [self.studentCountView setStudentCount:count];
 }
 
 - (void)returnBtnAction {

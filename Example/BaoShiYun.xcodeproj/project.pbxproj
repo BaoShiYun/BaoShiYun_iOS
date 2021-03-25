@@ -184,6 +184,28 @@
 		77A3E489260B60CB00001CB7 /* NSObject+YBImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E444260B60CB00001CB7 /* NSObject+YBImageBrowser.m */; };
 		77A3E48A260B60CB00001CB7 /* YBImageBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E449260B60CB00001CB7 /* YBImageBrowser.bundle */; };
 		77A3E48B260B60CB00001CB7 /* YBImageBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E449260B60CB00001CB7 /* YBImageBrowser.bundle */; };
+		77A3E493260C41C700001CB7 /* BSYHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E491260C41C700001CB7 /* BSYHud.m */; };
+		77A3E494260C41C700001CB7 /* BSYHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E491260C41C700001CB7 /* BSYHud.m */; };
+		77A3E4A5260C64C900001CB7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A3E4A4260C64C900001CB7 /* AVFoundation.framework */; };
+		77A3E4AA260C776E00001CB7 /* BSYLiveStudentCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4A8260C776E00001CB7 /* BSYLiveStudentCountView.m */; };
+		77A3E4AB260C776E00001CB7 /* BSYLiveStudentCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4A8260C776E00001CB7 /* BSYLiveStudentCountView.m */; };
+		77A3E4B9260C783B00001CB7 /* BSYLiveMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B2260C783B00001CB7 /* BSYLiveMenuViewController.m */; };
+		77A3E4BA260C783B00001CB7 /* BSYLiveMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B2260C783B00001CB7 /* BSYLiveMenuViewController.m */; };
+		77A3E4BB260C783B00001CB7 /* BSYLiveRouteOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B3260C783B00001CB7 /* BSYLiveRouteOptionController.m */; };
+		77A3E4BC260C783B00001CB7 /* BSYLiveRouteOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B3260C783B00001CB7 /* BSYLiveRouteOptionController.m */; };
+		77A3E4BD260C783B00001CB7 /* BSYLiveMenuOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B7260C783B00001CB7 /* BSYLiveMenuOptionCell.m */; };
+		77A3E4BE260C783B00001CB7 /* BSYLiveMenuOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B7260C783B00001CB7 /* BSYLiveMenuOptionCell.m */; };
+		77A3E4BF260C783B00001CB7 /* BSYLiveResolutionOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B8260C783B00001CB7 /* BSYLiveResolutionOptionController.m */; };
+		77A3E4C0260C783B00001CB7 /* BSYLiveResolutionOptionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4B8260C783B00001CB7 /* BSYLiveResolutionOptionController.m */; };
+		77A3E4D5260C9A8900001CB7 /* LOTAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E4D4260C9A8900001CB7 /* LOTAnimationView.swift */; };
+		77A3E56B260CAD4A00001CB7 /* vod_play_button_play in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E567260CAD4A00001CB7 /* vod_play_button_play */; };
+		77A3E56C260CAD4A00001CB7 /* vod_play_button_play in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E567260CAD4A00001CB7 /* vod_play_button_play */; };
+		77A3E56D260CAD4A00001CB7 /* vod_play_button_pause in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E568260CAD4A00001CB7 /* vod_play_button_pause */; };
+		77A3E56E260CAD4A00001CB7 /* vod_play_button_pause in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E568260CAD4A00001CB7 /* vod_play_button_pause */; };
+		77A3E56F260CAD4A00001CB7 /* player_loading_indicator in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E569260CAD4A00001CB7 /* player_loading_indicator */; };
+		77A3E570260CAD4A00001CB7 /* player_loading_indicator in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E569260CAD4A00001CB7 /* player_loading_indicator */; };
+		77A3E571260CAD4A00001CB7 /* vod_player_audio_display in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */; };
+		77A3E572260CAD4A00001CB7 /* vod_player_audio_display in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E1FF26681C6B67C4A7B6D06E /* Pods_BaoShiYun_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */; };
 /* End PBXBuildFile section */
@@ -400,6 +422,24 @@
 		77A3E447260B60CB00001CB7 /* YBIBAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBIBAnimatedTransition.h; sourceTree = "<group>"; };
 		77A3E448260B60CB00001CB7 /* YBImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBImageBrowser.h; sourceTree = "<group>"; };
 		77A3E449260B60CB00001CB7 /* YBImageBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YBImageBrowser.bundle; sourceTree = "<group>"; };
+		77A3E491260C41C700001CB7 /* BSYHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYHud.m; sourceTree = "<group>"; };
+		77A3E492260C41C700001CB7 /* BSYHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYHud.h; sourceTree = "<group>"; };
+		77A3E4A4260C64C900001CB7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		77A3E4A8260C776E00001CB7 /* BSYLiveStudentCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYLiveStudentCountView.m; sourceTree = "<group>"; };
+		77A3E4A9260C776E00001CB7 /* BSYLiveStudentCountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYLiveStudentCountView.h; sourceTree = "<group>"; };
+		77A3E4B1260C783A00001CB7 /* BSYLiveResolutionOptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYLiveResolutionOptionController.h; sourceTree = "<group>"; };
+		77A3E4B2260C783B00001CB7 /* BSYLiveMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYLiveMenuViewController.m; sourceTree = "<group>"; };
+		77A3E4B3260C783B00001CB7 /* BSYLiveRouteOptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYLiveRouteOptionController.m; sourceTree = "<group>"; };
+		77A3E4B4260C783B00001CB7 /* BSYLiveMenuOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYLiveMenuOptionCell.h; sourceTree = "<group>"; };
+		77A3E4B5260C783B00001CB7 /* BSYLiveMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYLiveMenuViewController.h; sourceTree = "<group>"; };
+		77A3E4B6260C783B00001CB7 /* BSYLiveRouteOptionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYLiveRouteOptionController.h; sourceTree = "<group>"; };
+		77A3E4B7260C783B00001CB7 /* BSYLiveMenuOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYLiveMenuOptionCell.m; sourceTree = "<group>"; };
+		77A3E4B8260C783B00001CB7 /* BSYLiveResolutionOptionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYLiveResolutionOptionController.m; sourceTree = "<group>"; };
+		77A3E4D4260C9A8900001CB7 /* LOTAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOTAnimationView.swift; sourceTree = "<group>"; };
+		77A3E567260CAD4A00001CB7 /* vod_play_button_play */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vod_play_button_play; sourceTree = "<group>"; };
+		77A3E568260CAD4A00001CB7 /* vod_play_button_pause */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vod_play_button_pause; sourceTree = "<group>"; };
+		77A3E569260CAD4A00001CB7 /* player_loading_indicator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = player_loading_indicator; sourceTree = "<group>"; };
+		77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vod_player_audio_display; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaoShiYun_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51F6A39EF62019F2EDB7612 /* BaoShiYun.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BaoShiYun.podspec; path = ../BaoShiYun.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -414,6 +454,7 @@
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				77A3E4A5260C64C900001CB7 /* AVFoundation.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				E1FF26681C6B67C4A7B6D06E /* Pods_BaoShiYun_Example.framework in Frameworks */,
 			);
@@ -456,6 +497,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77A3E4A4260C64C900001CB7 /* AVFoundation.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -478,6 +520,7 @@
 				6003F5A5195388D20070C39A /* BSYViewController.h */,
 				6003F5A6195388D20070C39A /* BSYViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				77A3E4EB260CAD1200001CB7 /* lottie */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				77A3E2872609E26B00001CB7 /* BSYConfig.h */,
@@ -530,8 +573,8 @@
 		77A3E295260A1ACD00001CB7 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				77A3E37C260B448800001CB7 /* BSYAlertViewController.h */,
-				77A3E37B260B448800001CB7 /* BSYAlertViewController.m */,
+				77A3E4D8260C9A8C00001CB7 /* BSYAlertViewController */,
+				77A3E4D3260C9A8900001CB7 /* LOTAnimationView */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -549,6 +592,7 @@
 		77A3E2C1260B13AC00001CB7 /* BSYUtility */ = {
 			isa = PBXGroup;
 			children = (
+				77A3E490260C41C700001CB7 /* BSYHud */,
 				77A3E3EE260B509C00001CB7 /* BSYTimer */,
 				77A3E2ED260B3E3E00001CB7 /* InsetsView */,
 				77A3E2E4260B2F2800001CB7 /* UIColor */,
@@ -593,6 +637,9 @@
 		77A3E300260B3F3000001CB7 /* LiveView */ = {
 			isa = PBXGroup;
 			children = (
+				77A3E4B0260C782800001CB7 /* MenuView */,
+				77A3E4A9260C776E00001CB7 /* BSYLiveStudentCountView.h */,
+				77A3E4A8260C776E00001CB7 /* BSYLiveStudentCountView.m */,
 				77A3E3C1260B494800001CB7 /* BSYInteractiveLiveCameraContainer */,
 				77A3E363260B436E00001CB7 /* BSYInteractiveControlView */,
 				77A3E303260B42D600001CB7 /* BSYLiveChatView */,
@@ -924,6 +971,58 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		77A3E490260C41C700001CB7 /* BSYHud */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E491260C41C700001CB7 /* BSYHud.m */,
+				77A3E492260C41C700001CB7 /* BSYHud.h */,
+			);
+			path = BSYHud;
+			sourceTree = "<group>";
+		};
+		77A3E4B0260C782800001CB7 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E4B4260C783B00001CB7 /* BSYLiveMenuOptionCell.h */,
+				77A3E4B7260C783B00001CB7 /* BSYLiveMenuOptionCell.m */,
+				77A3E4B5260C783B00001CB7 /* BSYLiveMenuViewController.h */,
+				77A3E4B2260C783B00001CB7 /* BSYLiveMenuViewController.m */,
+				77A3E4B1260C783A00001CB7 /* BSYLiveResolutionOptionController.h */,
+				77A3E4B8260C783B00001CB7 /* BSYLiveResolutionOptionController.m */,
+				77A3E4B6260C783B00001CB7 /* BSYLiveRouteOptionController.h */,
+				77A3E4B3260C783B00001CB7 /* BSYLiveRouteOptionController.m */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		77A3E4D3260C9A8900001CB7 /* LOTAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E4D4260C9A8900001CB7 /* LOTAnimationView.swift */,
+			);
+			path = LOTAnimationView;
+			sourceTree = "<group>";
+		};
+		77A3E4D8260C9A8C00001CB7 /* BSYAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E37C260B448800001CB7 /* BSYAlertViewController.h */,
+				77A3E37B260B448800001CB7 /* BSYAlertViewController.m */,
+			);
+			path = BSYAlertViewController;
+			sourceTree = "<group>";
+		};
+		77A3E4EB260CAD1200001CB7 /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E569260CAD4A00001CB7 /* player_loading_indicator */,
+				77A3E568260CAD4A00001CB7 /* vod_play_button_pause */,
+				77A3E567260CAD4A00001CB7 /* vod_play_button_play */,
+				77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
 		FE1558C0E751481CABECDD1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1017,8 +1116,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				77A3E571260CAD4A00001CB7 /* vod_player_audio_display in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				77A3E56F260CAD4A00001CB7 /* player_loading_indicator in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				77A3E56D260CAD4A00001CB7 /* vod_play_button_pause in Resources */,
+				77A3E56B260CAD4A00001CB7 /* vod_play_button_play in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				77A3E335260B42D600001CB7 /* BSYLiveIMMessageFace.bundle in Resources */,
 				77A3E48A260B60CB00001CB7 /* YBImageBrowser.bundle in Resources */,
@@ -1031,7 +1134,11 @@
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 				77A3E336260B42D600001CB7 /* BSYLiveIMMessageFace.bundle in Resources */,
+				77A3E570260CAD4A00001CB7 /* player_loading_indicator in Resources */,
+				77A3E56E260CAD4A00001CB7 /* vod_play_button_pause in Resources */,
+				77A3E56C260CAD4A00001CB7 /* vod_play_button_play in Resources */,
 				77A3E48B260B60CB00001CB7 /* YBImageBrowser.bundle in Resources */,
+				77A3E572260CAD4A00001CB7 /* vod_player_audio_display in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,7 +1188,9 @@
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${PODS_ROOT}/TXIMSDK_iOS/ImSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1099,7 +1208,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1114,6 +1225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77A3E347260B42D700001CB7 /* BSYLiveIMRoleModel.m in Sources */,
+				77A3E4AA260C776E00001CB7 /* BSYLiveStudentCountView.m in Sources */,
 				77A3E464260B60CB00001CB7 /* YBIBImageData.m in Sources */,
 				77A3E480260B60CB00001CB7 /* YBIBDataMediator.m in Sources */,
 				77A3E482260B60CB00001CB7 /* YBIBCollectionView.m in Sources */,
@@ -1132,14 +1244,17 @@
 				77A3E2DA260B284400001CB7 /* FavorEmitterItem.m in Sources */,
 				77A3E33D260B42D600001CB7 /* BSYLiveIMFaceCache.m in Sources */,
 				77A3E3A0260B453C00001CB7 /* TYAlertController+TransitionAnimate.m in Sources */,
+				77A3E4D5260C9A8900001CB7 /* LOTAnimationView.swift in Sources */,
 				77A3E3A4260B453C00001CB7 /* TYAlertDropDownAnimation.m in Sources */,
 				77A3E476260B60CB00001CB7 /* YBIBTopView.m in Sources */,
 				77A3E359260B42D700001CB7 /* BSYLiveIMMsgCell.m in Sources */,
 				77A3E2B7260B102E00001CB7 /* BSYLiveOperateView.m in Sources */,
+				77A3E493260C41C700001CB7 /* BSYHud.m in Sources */,
 				77A3E34D260B42D700001CB7 /* BSYLiveIMTextMsgCell.m in Sources */,
 				77A3E355260B42D700001CB7 /* BSYLiveIMMsgCellData.m in Sources */,
 				77A3E2E7260B2F2800001CB7 /* UIColor+HexColor.m in Sources */,
 				77A3E472260B60CB00001CB7 /* YBIBUtilities.m in Sources */,
+				77A3E4BF260C783B00001CB7 /* BSYLiveResolutionOptionController.m in Sources */,
 				77A3E486260B60CB00001CB7 /* YBIBAnimatedTransition.m in Sources */,
 				6003F59E195388D20070C39A /* BSYAppDelegate.m in Sources */,
 				77A3E488260B60CB00001CB7 /* NSObject+YBImageBrowser.m in Sources */,
@@ -1172,15 +1287,18 @@
 				77A3E2892609E26B00001CB7 /* BSYConfig.m in Sources */,
 				77A3E343260B42D700001CB7 /* BSYLiveIMResponderTextView.m in Sources */,
 				77A3E45E260B60CB00001CB7 /* YBIBImageScrollView.m in Sources */,
+				77A3E4B9260C783B00001CB7 /* BSYLiveMenuViewController.m in Sources */,
 				77A3E478260B60CB00001CB7 /* YBIBToolViewHandler.m in Sources */,
 				77A3E34B260B42D700001CB7 /* BSYLiveIMImageMsgCell.m in Sources */,
 				77A3E47C260B60CB00001CB7 /* YBIBScreenRotationHandler.m in Sources */,
 				77A3E458260B60CB00001CB7 /* YBIBImageLayout.m in Sources */,
 				77A3E341260B42D700001CB7 /* BSYLiveIMMenuCell.m in Sources */,
+				77A3E4BB260C783B00001CB7 /* BSYLiveRouteOptionController.m in Sources */,
 				77A3E3A8260B453C00001CB7 /* TYBaseAnimation.m in Sources */,
 				77A3E349260B42D700001CB7 /* BSYLiveIMCommonCell.m in Sources */,
 				77A3E398260B453C00001CB7 /* TYAlertView.m in Sources */,
 				77A3E33F260B42D600001CB7 /* BSYLiveIMMenuView.m in Sources */,
+				77A3E4BD260C783B00001CB7 /* BSYLiveMenuOptionCell.m in Sources */,
 				77A3E44A260B60CB00001CB7 /* YYSpriteSheetImage.m in Sources */,
 				77A3E357260B42D700001CB7 /* BSYLiveIMEventNotifyMsgCellData.m in Sources */,
 				77A3E46A260B60CB00001CB7 /* YBIBAuxiliaryViewHandler.m in Sources */,
@@ -1222,6 +1340,7 @@
 				77A3E45D260B60CB00001CB7 /* YBIBInteractionProfile.m in Sources */,
 				77A3E471260B60CB00001CB7 /* YBIBCopywriter.m in Sources */,
 				77A3E37E260B448800001CB7 /* BSYAlertViewController.m in Sources */,
+				77A3E494260C41C700001CB7 /* BSYHud.m in Sources */,
 				77A3E2D9260B284400001CB7 /* FavorEmitter.m in Sources */,
 				77A3E3A5260B453C00001CB7 /* TYAlertDropDownAnimation.m in Sources */,
 				77A3E35A260B42D700001CB7 /* BSYLiveIMMsgCell.m in Sources */,
@@ -1247,6 +1366,8 @@
 				77A3E477260B60CB00001CB7 /* YBIBTopView.m in Sources */,
 				77A3E473260B60CB00001CB7 /* YBIBUtilities.m in Sources */,
 				77A3E338260B42D600001CB7 /* BSYLiveChatInputController.m in Sources */,
+				77A3E4C0260C783B00001CB7 /* BSYLiveResolutionOptionController.m in Sources */,
+				77A3E4BA260C783B00001CB7 /* BSYLiveMenuViewController.m in Sources */,
 				77A3E356260B42D700001CB7 /* BSYLiveIMMsgCellData.m in Sources */,
 				77A3E346260B42D700001CB7 /* BSYLiveIMInputBar.m in Sources */,
 				77A3E352260B42D700001CB7 /* BSYLiveIMEventNotifyMsgCell.m in Sources */,
@@ -1255,6 +1376,7 @@
 				77A3E2BA260B102E00001CB7 /* BSYLiveOperateTopBar.m in Sources */,
 				77A3E461260B60CB00001CB7 /* YBIBImageCache.m in Sources */,
 				77A3E2BC260B102E00001CB7 /* BSYLiveOperateBottomBar.m in Sources */,
+				77A3E4AB260C776E00001CB7 /* BSYLiveStudentCountView.m in Sources */,
 				77A3E46B260B60CB00001CB7 /* YBIBAuxiliaryViewHandler.m in Sources */,
 				77A3E348260B42D700001CB7 /* BSYLiveIMRoleModel.m in Sources */,
 				77A3E33C260B42D600001CB7 /* BSYLiveIMFaceCell.m in Sources */,
@@ -1275,10 +1397,12 @@
 				77A3E489260B60CB00001CB7 /* NSObject+YBImageBrowser.m in Sources */,
 				77A3E2B8260B102E00001CB7 /* BSYLiveOperateView.m in Sources */,
 				77A3E475260B60CB00001CB7 /* YBIBPhotoAlbumManager.m in Sources */,
+				77A3E4BE260C783B00001CB7 /* BSYLiveMenuOptionCell.m in Sources */,
 				77A3E370260B436E00001CB7 /* BSYInteractiveLiveMediaView.m in Sources */,
 				77A3E3A1260B453C00001CB7 /* TYAlertController+TransitionAnimate.m in Sources */,
 				77A3E350260B42D700001CB7 /* BSYLiveIMTextMsgCellData.m in Sources */,
 				77A3E479260B60CB00001CB7 /* YBIBToolViewHandler.m in Sources */,
+				77A3E4BC260C783B00001CB7 /* BSYLiveRouteOptionController.m in Sources */,
 				77A3E2A4260A1B3C00001CB7 /* BSYLiveViewController.m in Sources */,
 				77A3E3AB260B453C00001CB7 /* TYAlertController.m in Sources */,
 				77A3E34E260B42D700001CB7 /* BSYLiveIMTextMsgCell.m in Sources */,
@@ -1409,7 +1533,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.baoshiyun.iphoneDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1426,7 +1551,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1434,6 +1560,7 @@
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -1458,6 +1585,7 @@
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

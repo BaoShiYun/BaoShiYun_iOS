@@ -72,7 +72,7 @@
     CGFloat margin = 12;
     CGFloat likeBtnRisingY = 300;
     @weakify(self);
-    [self.container mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.container mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.left.equalTo(self).with.offset(margin);
         make.right.equalTo(self).with.offset(-margin);
@@ -80,21 +80,21 @@
         make.height.mas_equalTo(56);
     }];
     
-    [self.inputBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.inputBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(32);
         make.left.centerY.equalTo(self.container);
     }];
     
-    [self.moreBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.moreBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.left.equalTo(self.inputBtn.mas_right).with.offset(8);
         make.width.height.mas_equalTo(32);
         make.centerY.equalTo(self.container);
     }];
     
-    [self.interactiveStatus mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.interactiveStatus mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.centerY.equalTo(self.interactiveBtn.mas_top).with.offset(-2);
         make.centerX.equalTo(self.interactiveBtn);
@@ -102,7 +102,7 @@
         make.height.mas_equalTo(14);
             
     }];
-    [self.interactiveBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.interactiveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.left.equalTo(self.inputBtn.mas_right).with.offset(8);
         make.width.mas_equalTo(56);
@@ -110,7 +110,7 @@
         make.centerY.equalTo(self.container);
     }];
     
-    [self.likeBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.likeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.right.equalTo(self).with.offset(-margin);
         make.top.mas_equalTo(12);
@@ -275,9 +275,9 @@
 
 
 - (void)setIsRtc:(BOOL)isRtc {
-    self.isRtc = isRtc;
+    _isRtc = isRtc;
     self.moreBtn.hidden = isRtc;
-    if(self.isRtc) {
+    if(_isRtc) {
         [self setInteractiveEnable:self.enableInteractive];
     }
 }

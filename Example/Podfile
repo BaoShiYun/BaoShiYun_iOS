@@ -12,6 +12,8 @@ target 'BaoShiYun_Example' do
   pod 'ReactiveObjC'
   pod 'MJExtension'
   pod 'SDWebImage'
+  pod 'SVProgressHUD'
+  pod 'lottie-ios'
 
 end
 

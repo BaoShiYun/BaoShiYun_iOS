@@ -7,12 +7,32 @@
 //
 
 #import "BSYAppDelegate.h"
+#import "BSYViewController.h"
+
+@interface  BSYAppDelegate()
+
+@property (nonatomic, strong) UINavigationController *navigationController;
+@property (nonatomic, strong) BSYViewController *viewController;
+
+@end
 
 @implementation BSYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    if (@available(iOS 13.0, *)) {
+        self.window.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
+    self.viewController = [[BSYViewController alloc] init];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.navigationController.navigationBarHidden = YES;
+    
+    [self.window setRootViewController:self.navigationController];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
