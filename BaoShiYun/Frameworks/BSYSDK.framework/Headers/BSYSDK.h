@@ -26,12 +26,7 @@ FOUNDATION_EXPORT const unsigned char BSYSDKVersionString[];
 
 #pragma mark - BSYDataLayer -
 
-#import <BSYSDK/BSYRequest.h>
 #import <BSYSDK/BSYBaseModel.h>
-#import <BSYSDK/BSYResponseModel.h>
-
-#import <BSYSDK/BSYApiRequest.h>
 #import <BSYSDK/BSYApiModel.h>
-#import <BSYSDK/BSYMediaRequest.h>
 #import <BSYSDK/BSYMediaModel.h>
 
