@@ -54,6 +54,7 @@
 - (UIImageView *)bgView {
     if(!_bgView) {
         _bgView = [[UIImageView alloc] init];
+        _bgView.image = AssetsImage(@"live_vert_player_top_bar");
         _bgView.userInteractionEnabled = YES;
         _bgView.contentMode = UIViewContentModeScaleToFill;
     }

@@ -24,6 +24,10 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>抱石云会在教室中开启摄像头</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>需要获取您的麦克风权限, 开启后连麦时才会有声音</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

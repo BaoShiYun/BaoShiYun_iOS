@@ -85,7 +85,7 @@
     }];
     [self.bottomBar mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.bottom.equalTo(self.containerView);
+        make.bottom.equalTo(self.containerView).with.offset(0);
         make.left.width.equalTo(self.containerView);
         make.height.mas_equalTo(70);
     }];
@@ -144,6 +144,7 @@
 - (void)topBarViewAnimateShow:(BOOL)isShow {
     
     [self setNeedsUpdateConstraints];
+    [self updateConstraintsIfNeeded];
     @weakify(self);
     [UIView animateWithDuration:0.3 animations:^{
         @strongify(self);
@@ -163,7 +164,7 @@
                 make.height.mas_equalTo(72+IPHONE_MARGIN_TOP);
             }];
         }
-        [self layoutIfNeeded];
+        [self.topBar.superview layoutIfNeeded];
     } completion:^(BOOL finished) {
         
     }];
@@ -187,25 +188,19 @@
 #pragma mark bottomBar
 - (void)bottomBarViewAnimateShow:(BOOL)isShow {
     [self setNeedsUpdateConstraints];
+    [self updateConstraintsIfNeeded];
     @weakify(self);
     [UIView animateWithDuration:0.3 animations:^{
         @strongify(self);
-        if(isShow) {
-            [self.bottomBar mas_makeConstraints:^(MASConstraintMaker *make) {
-                @strongify(self);
-                make.bottom.equalTo(self.containerView);
-                make.left.width.equalTo(self.containerView);
-                make.height.mas_equalTo(70);
-            }];
-        } else {
-            [self.bottomBar mas_makeConstraints:^(MASConstraintMaker *make) {
-                @strongify(self);
-                make.bottom.equalTo(self.containerView).with.offset(-70);
-                make.left.width.equalTo(self.containerView);
-                make.height.mas_equalTo(70);
-            }];
+        CGFloat offset = 0;
+        if(!isShow) {
+            offset = 70;
         }
-        [self layoutIfNeeded];
+        [self.bottomBar mas_updateConstraints:^(MASConstraintMaker *make) {
+            @strongify(self);
+            make.bottom.equalTo(self.containerView).with.offset(offset);;
+        }];
+        [self.bottomBar.superview layoutIfNeeded];
     } completion:^(BOOL finished) {
     }];
 }
@@ -217,6 +212,7 @@
     self.isHideOperate = !self.isHideOperate;
     [self topBarViewAnimateShow:!self.isHideOperate];
     [self bottomBarViewAnimateShow:!self.isHideOperate];
+    
 }
 
 #pragma mark ---

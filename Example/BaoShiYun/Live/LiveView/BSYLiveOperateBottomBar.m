@@ -60,7 +60,6 @@
     if(!_bgView) {
         _bgView = [[UIImageView alloc] init];
         _bgView.userInteractionEnabled = YES;
-        _bgView.image = AssetsImage(@"live_horz_player_bottom_bar");
         _bgView.contentMode = UIViewContentModeScaleToFill;
     }
     return _bgView;

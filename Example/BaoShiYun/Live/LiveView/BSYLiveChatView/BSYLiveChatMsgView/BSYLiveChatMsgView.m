@@ -101,22 +101,29 @@
     [self.view addSubview:self.newMsgBtn];
     [self.newMsgBtn addTarget:self action:@selector(newMsgBtnAction) forControlEvents:UIControlEventTouchUpInside];
     self.newMsgBtn.hidden = YES;
-    [self changeViewPortraitScreen:YES];
+    [BSYLiveIMMsgCellLayout setMaxCellWidth:UISCREEN_WIDTH-12];
     [self startShowMsgTimer];
 }
 
-- (void)changeViewPortraitScreen:(BOOL)isPortrait {
-    [self resizeSubviews:isPortrait];
-    [self.tableView reloadData];
-    [self scrollToBottom:NO];
-}
-
-- (void)resizeSubviews:(BOOL)isPortrait {
-    CGFloat viewWidth = CGRectGetWidth(self.view.frame);
-    CGFloat viewHeight = CGRectGetHeight(self.view.frame);
-    self.tableView.frame = CGRectMake(0, 0, viewWidth, viewHeight);
-    self.newMsgBtn.frame = CGRectMake((viewWidth-72)/2.0, viewHeight-20-2, 72, 20);
-    [BSYLiveIMMsgCellLayout setMaxCellWidth:viewWidth];
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+    @weakify(self);
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.left.mas_equalTo(12);
+        make.top.equalTo(self.view);
+        make.bottom.equalTo(self.view).with.offset(0);
+        make.width.equalTo(self.view).with.offset(-12);
+    }];
+    
+    [self.newMsgBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.centerX.equalTo(self.view);
+        make.bottom.equalTo(self.tableView).with.offset(-2);
+        make.width.mas_equalTo(72);
+        make.height.mas_equalTo(20);
+    }];
 }
 
 
@@ -307,9 +314,9 @@
         if([data isKindOfClass:[BSYLiveIMTextMsgCellData class]]) {
           data.reuseId = NSStringFromClass([BSYLiveIMTextMsgCell class]);
         } else if ([data isKindOfClass:[BSYLiveIMImageMsgCellData class]]) {
-            data.reuseId = NSStringFromClass([BSYLiveIMTextMsgCell class]);
+            data.reuseId = NSStringFromClass([BSYLiveIMImageMsgCell class]);
         } else if ([data isKindOfClass:[BSYLiveIMEventNotifyMsgCellData class]]) {
-            data.reuseId = NSStringFromClass([BSYLiveIMTextMsgCell class]);
+            data.reuseId = NSStringFromClass([BSYLiveIMEventNotifyMsgCell class]);
         } else {
             return nil;
         }
