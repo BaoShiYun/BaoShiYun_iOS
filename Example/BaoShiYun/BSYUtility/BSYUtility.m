@@ -27,4 +27,9 @@
     return gSafeArea;
 }
 
++ (NSString *)mainBundleDirectory {
+    NSString* path = [[NSBundle mainBundle] bundlePath];
+    return path;
+}
+
 @end

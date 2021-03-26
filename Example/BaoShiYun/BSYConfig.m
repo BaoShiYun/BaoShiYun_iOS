@@ -10,8 +10,8 @@
 
 @implementation BSYConfig
 
-+ (NSString *)tencentId {
-    return @"";
++ (uint64_t)tencentId {
+    return 5620435000;
 }
 
 + (NSString *)vodToken {

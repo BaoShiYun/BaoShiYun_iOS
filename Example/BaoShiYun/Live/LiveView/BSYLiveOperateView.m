@@ -9,10 +9,14 @@
 #import "BSYLiveOperateBottomBar.h"
 #import "BSYLiveOperateTopBar.h"
 
+
+
 @interface BSYLiveOperateView()<BSYLiveOperateTopBarDelegate>
 
 @property (nonatomic, strong)UIView *containerView;
 @property (nonatomic, strong)UITapGestureRecognizer *tapRecognizer;
+@property (nonatomic, strong)LOTAnimationView  *loadingAnimateLOT;
+@property (nonatomic, strong) UILabel *loadingMsgLabel;
 @property (nonatomic, strong)BSYLiveOperateTopBar *topBar;
 @property (nonatomic, strong)BSYLiveOperateBottomBar *bottomBar;
 @property (nonatomic, assign)BOOL isHideOperate;
@@ -36,6 +40,12 @@
     self.clipsToBounds = YES;
     self.isHideOperate = NO;
     [self addSubview:self.containerView];
+    [self addSubview:self.loadingAnimateLOT];
+    [self.loadingAnimateLOT stop];
+    self.loadingAnimateLOT.hidden = YES;
+    [self.containerView addSubview:self.loadingMsgLabel];
+    self.loadingMsgLabel.hidden = YES;
+    
     self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
     self.tapRecognizer.numberOfTouchesRequired = 1;
     self.tapRecognizer.numberOfTapsRequired = 1;
@@ -48,21 +58,36 @@
 - (void)updateConstraints {
     [super updateConstraints];
     @weakify(self);
-    [self.containerView mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.edges.equalTo(self);
     }];
-    CGFloat topbarHeight = 72+IPHONE_MARGIN_TOP;
-    CGFloat bottomBarHeight = 70;
-    [self.topBar mas_remakeConstraints:^(MASConstraintMaker *make) {
+    
+    [self.loadingAnimateLOT mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.left.top.width.equalTo(self.containerView);
-        make.height.mas_equalTo(topbarHeight);
+        make.bottom.equalTo(self.containerView.mas_centerY).with.offset(-10);
+        make.width.height.mas_equalTo(40);
+        make.centerX.equalTo(self.containerView);
     }];
-    [self.bottomBar mas_remakeConstraints:^(MASConstraintMaker *make) {
+    
+    [self.loadingMsgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.left.bottom.width.equalTo(self.containerView);
-        make.height.mas_equalTo(bottomBarHeight);
+        make.top.equalTo(self.containerView.mas_centerY).with.offset(4);
+        make.height.mas_equalTo(14);
+        make.centerX.width.equalTo(self.containerView);
+    }];
+    
+    [self.topBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.top.equalTo(self.containerView);
+        make.left.width.equalTo(self.containerView);
+        make.height.mas_equalTo(72+IPHONE_MARGIN_TOP);
+    }];
+    [self.bottomBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.bottom.equalTo(self.containerView);
+        make.left.width.equalTo(self.containerView);
+        make.height.mas_equalTo(70);
     }];
     
 }
@@ -90,6 +115,29 @@
     return _bottomBar;
 }
 
+- (LOTAnimationView *)loadingAnimateLOT {
+    if(!_loadingAnimateLOT) {
+        _loadingAnimateLOT = [LOTAnimationView animationWithFilePath:[[BSYUtility mainBundleDirectory] stringByAppendingPathComponent:@"player_loading_indicator/data.json"]];
+        _loadingAnimateLOT.loopAnimation = YES;
+        _loadingAnimateLOT.userInteractionEnabled = YES;
+        _loadingAnimateLOT.contentMode = UIViewContentModeScaleToFill;
+    }
+    return _loadingAnimateLOT;
+}
+
+- (UILabel *)loadingMsgLabel {
+    if(!_loadingMsgLabel) {
+        _loadingMsgLabel = [[UILabel alloc] init];
+        _loadingMsgLabel.numberOfLines = 1;
+        _loadingMsgLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+        _loadingMsgLabel.text = @"正在努力加载，请稍后..";
+        _loadingMsgLabel.textAlignment = NSTextAlignmentCenter;
+        _loadingMsgLabel.textColor = HexAlphaColor(0xFFFFFF, 1.0);
+    }
+    return _loadingMsgLabel;
+}
+
+
 
 #pragma mark topBar
 
@@ -100,14 +148,19 @@
     [UIView animateWithDuration:0.3 animations:^{
         @strongify(self);
         if(isShow) {
-            [self.topBar mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.topBar mas_remakeConstraints:^(MASConstraintMaker *make) {
                 @strongify(self);
                 make.top.equalTo(self.containerView);
+                make.left.width.equalTo(self.containerView);
+                make.height.mas_equalTo(72+IPHONE_MARGIN_TOP);
             }];
         } else {
-            [self.topBar mas_updateConstraints:^(MASConstraintMaker *make) {
+            
+            [self.topBar mas_remakeConstraints:^(MASConstraintMaker *make) {
                 @strongify(self);
-                make.top.equalTo(self.containerView).with.offset(-CGRectGetHeight(self.topBar.frame));
+                make.top.equalTo(self.containerView).with.offset(-72-IPHONE_MARGIN_TOP);
+                make.left.width.equalTo(self.containerView);
+                make.height.mas_equalTo(72+IPHONE_MARGIN_TOP);
             }];
         }
         [self layoutIfNeeded];
@@ -121,25 +174,35 @@
     [self.topBar setLiveTitle:title];
 }
 
+- (void)setStudentCountShow:(BOOL)isShow {
+    [self.topBar setStudentCountShow:isShow];
+}
+- (void)setStudentCount:(NSInteger)count {
+    [self.topBar setStudentCount:count];
+}
+
 
 
 
 #pragma mark bottomBar
-
 - (void)bottomBarViewAnimateShow:(BOOL)isShow {
     [self setNeedsUpdateConstraints];
     @weakify(self);
     [UIView animateWithDuration:0.3 animations:^{
         @strongify(self);
         if(isShow) {
-            [self.bottomBar mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.bottomBar mas_makeConstraints:^(MASConstraintMaker *make) {
                 @strongify(self);
                 make.bottom.equalTo(self.containerView);
+                make.left.width.equalTo(self.containerView);
+                make.height.mas_equalTo(70);
             }];
         } else {
-            [self.bottomBar mas_updateConstraints:^(MASConstraintMaker *make) {
+            [self.bottomBar mas_makeConstraints:^(MASConstraintMaker *make) {
                 @strongify(self);
-                make.bottom.equalTo(self.containerView).with.offset(CGRectGetHeight(self.bottomBar.frame));
+                make.bottom.equalTo(self.containerView).with.offset(-70);
+                make.left.width.equalTo(self.containerView);
+                make.height.mas_equalTo(70);
             }];
         }
         [self layoutIfNeeded];
@@ -166,6 +229,19 @@
 }
 
 
+
+#pragma mark loadingView
+- (void)showLoadingView {
+    self.loadingAnimateLOT.hidden = NO;
+    self.loadingMsgLabel.hidden = NO;
+    [self.loadingAnimateLOT play];
+}
+
+- (void)hideLoadingView {
+    self.loadingAnimateLOT.hidden = YES;
+    self.loadingMsgLabel.hidden = YES;
+    [self.loadingAnimateLOT stop];
+}
 
 
 

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BSYUtility : NSObject
 
 + (UIEdgeInsets)iphoneSafeArea;
++ (NSString *)mainBundleDirectory;
 
 @end
 

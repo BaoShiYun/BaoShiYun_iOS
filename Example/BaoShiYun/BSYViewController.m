@@ -7,6 +7,8 @@
 //
 
 #import "BSYViewController.h"
+#import "BSYLiveViewController.h"
+#import "BSYConfig.h"
 
 @interface BSYViewController ()
 
@@ -18,8 +20,7 @@
 
 @implementation BSYViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.liveBtn];
     [self.liveBtn addTarget:self action:@selector(liveBtnAction) forControlEvents:UIControlEventTouchUpInside];
@@ -27,11 +28,6 @@
     [self.interactiveBtn addTarget:self action:@selector(interactiveBtnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.vodBtn];
     [self.liveBtn addTarget:self action:@selector(vodBtnAction) forControlEvents:UIControlEventTouchUpInside];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)updateViewConstraints {
-    [super updateViewConstraints];
     @weakify(self);
     [self.liveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
@@ -56,6 +52,12 @@
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(40);
     }];
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)updateViewConstraints {
+    [super updateViewConstraints];
+    
 }
 
 - (UIButton *)liveBtn {
@@ -111,6 +113,15 @@
 
 - (void)liveBtnAction {
     
+    BSYLiveParam *param = [[BSYLiveParam alloc] init];
+    param.userId = @"5488885";
+    param.tenantId = BSYConfig.tencentId;
+    param.enterCode = @"05d6acd00b414a939b634eb001f298fa";
+    param.liveId = @"live-847494715441152";
+    param.nickName = @"浪里个浪";
+    param.avatarUrl = @"";
+    BSYLiveViewController *live = [[BSYLiveViewController alloc] initWithLiveParam:param];
+    [self.navigationController pushViewController:live animated:YES];
 }
 
 - (void)vodBtnAction {
@@ -118,7 +129,15 @@
 }
 
 - (void)interactiveBtnAction {
-    
+    BSYLiveParam *param = [[BSYLiveParam alloc] init];
+    param.userId = @"5488885";
+    param.tenantId = BSYConfig.tencentId;
+    param.enterCode = @"dae73c91c58f4bdd9279453e86b8512e";
+    param.liveId = @"live-847494726975488";
+    param.nickName = @"浪里个浪";
+    param.avatarUrl = @"";
+    BSYLiveViewController *live = [[BSYLiveViewController alloc] initWithLiveParam:param];
+    [self.navigationController pushViewController:live animated:YES];
 }
 
 @end

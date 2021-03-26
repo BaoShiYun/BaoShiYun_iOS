@@ -28,4 +28,4 @@
 
 
 #define Framework_Bundle [NSBundle bundleForClass:self.class]
-#define AssetsImage(name) [UIImage imageNamed:name inBundle:Framework_Bundle compatibleWithTraitCollection:nil]
+#define AssetsImage(name) [UIImage imageNamed:name] //[UIImage imageNamed:name inBundle:Framework_Bundle compatibleWithTraitCollection:nil]

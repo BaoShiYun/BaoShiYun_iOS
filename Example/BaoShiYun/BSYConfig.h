@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYConfig : NSObject
 
-+ (NSString *)tencentId;
++ (uint64_t)tencentId;
 
 + (NSString *)vodToken;
 

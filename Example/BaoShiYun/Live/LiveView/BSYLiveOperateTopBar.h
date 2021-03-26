@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<BSYLiveOperateTopBarDelegate> delegate;
 
 - (void)setLiveTitle:(NSString *)title;
+- (void)setStudentCountShow:(BOOL)isShow;
+- (void)setStudentCount:(NSInteger)count;
 
 @end
 
