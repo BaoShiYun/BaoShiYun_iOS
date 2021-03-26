@@ -65,14 +65,14 @@
     
     [self.loadingAnimateLOT mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.bottom.equalTo(self.containerView.mas_centerY).with.offset(-10);
+        make.bottom.equalTo(self.containerView.mas_centerY).with.offset(-10+IPHONE_MARGIN_TOP);
         make.width.height.mas_equalTo(40);
         make.centerX.equalTo(self.containerView);
     }];
     
     [self.loadingMsgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.top.equalTo(self.containerView.mas_centerY).with.offset(4);
+        make.top.equalTo(self.containerView.mas_centerY).with.offset(4+IPHONE_MARGIN_TOP);
         make.height.mas_equalTo(14);
         make.centerX.width.equalTo(self.containerView);
     }];

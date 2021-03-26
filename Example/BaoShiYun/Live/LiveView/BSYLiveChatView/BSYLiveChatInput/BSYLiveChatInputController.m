@@ -38,8 +38,7 @@
    
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
@@ -48,26 +47,21 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if(self.status==BSYLiveIMInputStatus_InputFace)
-    {
+    if(self.status==BSYLiveIMInputStatus_InputFace) {
         [self showFaceView];
-    }
-    else if(self.status==BSYLiveIMInputStatus_InputKeyboard)
-    {
+    } else if(self.status==BSYLiveIMInputStatus_InputKeyboard) {
         [self showKeyboard];
     }
 
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
+- (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
      self.status = BSYLiveIMInputStatus_InputNone;
 }
 
-- (void)setupViews
-{
+- (void)setupViews {
     self.view.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tapView];
     self.tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
@@ -81,14 +75,9 @@
     self.inputBar.delegate = self;
     [self.container addSubview:self.inputBar];
     self.container.backgroundColor = BSYLiveIMInputController_BgColor;
-    if (@available(iOS 11.0, *)) {}
-    else
-    {
+    if (@available(iOS 11.0, *)) {} else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
-    
-    
-    
 }
 
 
@@ -96,42 +85,32 @@
 #pragma mark --
 #pragma mark 懒加载
 
-- (BSYLiveIMFaceView *)faceView
-{
-    if(!_faceView)
-    {
+- (BSYLiveIMFaceView *)faceView {
+    if(!_faceView) {
         _faceView = [[BSYLiveIMFaceView alloc] initWithFrame:CGRectMake(0, self.inputBar.frame.size.height, self.view.frame.size.width, BSYLiveIMInputController_FaceViewHeight) facePagePadding:self.faceViewPagePadding];
         _faceView.delegate = self;
-        //[_faceView setIMFaceViewPagePadding:self.faceViewPagePadding];
         [_faceView setData:[[BSYLiveIMFaceCache sharedInstance] getDefaultFaceGroups]];
-        
     }
     return _faceView;
 }
 
-- (UIView *)container
-{
-    if(!_container)
-    {
+- (UIView *)container {
+    if(!_container) {
         _container = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
     }
     return _container;
 }
 
 
-- (BSYLiveIMInputBar *)inputBar
-{
-    if(!_inputBar)
-    {
+- (BSYLiveIMInputBar *)inputBar {
+    if(!_inputBar) {
         _inputBar = [[BSYLiveIMInputBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, BSYLiveIMInputController_TextViewHeight)];
     }
     return _inputBar;
 }
 
-- (UIView *)tapView
-{
-    if(!_tapView)
-    {
+- (UIView *)tapView {
+    if(!_tapView) {
         _tapView = [[UIView alloc] init];
     }
     return _tapView;
@@ -140,10 +119,8 @@
 #pragma mark --
 #pragma mark InputBar
 
-- (void)moveInputContainerOriginY:(CGFloat)originY animate:(BOOL)animated complete:(void (^)(void))completionBlock
-{
-    if(animated)
-    {
+- (void)moveInputContainerOriginY:(CGFloat)originY animate:(BOOL)animated complete:(void (^)(void))completionBlock {
+    if(animated) {
         @weakify(self);
         self.tapView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), originY);
         [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -152,49 +129,39 @@
             containerFrame.origin.y = originY;
             self.container.frame = containerFrame;
            } completion:^(BOOL finished) {
-               if(completionBlock)
-               {
+               if(completionBlock) {
                     completionBlock();
                }
            }];
-    }
-    else
-    {
+    } else {
         CGRect containerFrame = self.container.frame;
         containerFrame.origin.y = originY;
         self.container.frame = containerFrame;
-        if(completionBlock)
-        {
+        if(completionBlock) {
              completionBlock();
         }
     }
-    
 }
 
 
 #pragma mark  键盘
-- (void)keyboardWillHide:(NSNotification *)notification
-{
-    if(self.status==BSYLiveIMInputStatus_InputKeyboard)
-    {
+- (void)keyboardWillHide:(NSNotification *)notification {
+    if(self.status==BSYLiveIMInputStatus_InputKeyboard) {
         [self resetInput];
     }
 }
 
-- (void)keyboardWillShow:(NSNotification *)notification
-{
+- (void)keyboardWillShow:(NSNotification *)notification {
     if(self.status == BSYLiveIMInputStatus_InputFace){
         [self hideFaceAnimation];
-    }
-    else{
+    } else {
         //[self hideFaceAnimation:NO];
         //[self hideMoreAnimation:NO];
     }
     self.status = BSYLiveIMInputStatus_InputKeyboard;
 }
 
-- (void)keyboardWillChangeFrame:(NSNotification *)notification
-{
+- (void)keyboardWillChangeFrame:(NSNotification *)notification {
     CGRect keyboardFrame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
 //    if(self.status==KKBIMInput_Status_Input_Keyboard)
 //    {
@@ -203,8 +170,7 @@
 }
 
 
-- (void)inputBarDidTouchKeyboard:(BSYLiveIMInputBar *)textView
-{
+- (void)inputBarDidTouchKeyboard:(BSYLiveIMInputBar *)textView {
     if (_status == BSYLiveIMInputStatus_InputFace) {
         [self hideFaceAnimation];
     }
@@ -214,8 +180,7 @@
     [self keyboardOrFaceViewIsShow:YES];
 }
 
-- (void)keyboardOrFaceViewIsShow:(BOOL)isShow
-{
+- (void)keyboardOrFaceViewIsShow:(BOOL)isShow {
     
 }
 
@@ -235,8 +200,7 @@
 #pragma mark ---
 #pragma mark 表情
 
-- (void)hideFaceAnimation
-{
+- (void)hideFaceAnimation {
     self.faceView.alpha = 1.0;
     @weakify(self);
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -249,8 +213,7 @@
     }];
 }
 
-- (void)showFaceAnimation
-{
+- (void)showFaceAnimation {
     [self.container addSubview:self.faceView];
     [self.container bringSubviewToFront:self.faceView];
     @weakify(self);
@@ -261,31 +224,17 @@
 }
 
 
-- (void)inputBarDidTouchFace:(BSYLiveIMInputBar *)textView
-{
-    if(self.status==BSYLiveIMInputStatus_InputFace)
-    {
+- (void)inputBarDidTouchFace:(BSYLiveIMInputBar *)textView {
+    if(self.status==BSYLiveIMInputStatus_InputFace) {
         [self showKeyboard];
-    }
-    else
-    {
+    } else {
         [self showFaceView];
     }
-//    self.status = BSYLiveIMInputStatus_InputFace;
-//    [self.inputBar.inputTextView resignFirstResponder];
-//    [self showFaceAnimation];
-//    [self.inputBar updateFaceButtonStatus:NO];
-//    [self keyboardOrFaceViewIsShow:YES];
-//    [self moveInputContainerOriginY:CGRectGetHeight(self.view.frame)-CGRectGetHeight(self.faceView.frame)-CGRectGetHeight(self.inputBar.frame) animate:YES complete:^() {
-//           }];
 }
 
 
 #pragma mark show FaceView
-- (void)showFaceView
-{
-    //self.view.hidden = NO;
-   // [self inputBarDidTouchFace:self.inputBar];
+- (void)showFaceView {
     self.status = BSYLiveIMInputStatus_InputFace;
     [self.inputBar.inputTextView resignFirstResponder];
     [self showFaceAnimation];
@@ -297,9 +246,7 @@
 
 
 #pragma mark show Keyboard
-- (void)showKeyboard
-{
-   // self.view.hidden = NO;
+- (void)showKeyboard {
     [self inputBarDidTouchKeyboard:self.inputBar];
 }
 
@@ -307,18 +254,14 @@
 
 #pragma mark TTextViewDelegate
 
-- (void)inputBar:(BSYLiveIMInputBar *)textView didChangeInputHeight:(CGFloat)offset
-{
-    if(_status == BSYLiveIMInputStatus_InputFace){
-       // [self showFaceAnimation];
+- (void)inputBar:(BSYLiveIMInputBar *)textView didChangeInputHeight:(CGFloat)offset {
+    if(_status == BSYLiveIMInputStatus_InputFace) {
     }
-    
     [self moveInputContainerOriginY:CGRectGetMinY(self.container.frame)-offset animate:YES complete:nil];
     
 }
 
-- (void)inputBar:(BSYLiveIMInputBar *)textView didSendText:(NSString *)text
-{
+- (void)inputBar:(BSYLiveIMInputBar *)textView didSendText:(NSString *)text {
     if(self.inputBlock) {
         self.inputBlock(text);
     }
@@ -328,25 +271,22 @@
 #pragma mark ---
 #pragma mark KKBIMFaceViewDelegate
 
-- (void)faceView:(BSYLiveIMFaceView *)faceView scrollToFaceGroupIndex:(NSInteger)index
-{
+- (void)faceView:(BSYLiveIMFaceView *)faceView scrollToFaceGroupIndex:(NSInteger)index {
     
 }
 
-- (void)faceView:(BSYLiveIMFaceView *)faceView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)faceView:(BSYLiveIMFaceView *)faceView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSMutableArray<BSYLiveIMFaceGroup *> *faceGroups = [[BSYLiveIMFaceCache sharedInstance] getDefaultFaceGroups];
     BSYLiveIMFaceGroup *group = faceGroups[indexPath.section];
     BSYLiveIMFaceCellData *face = group.faces[indexPath.row];
-    if(indexPath.section == 0){
+    if(indexPath.section == 0) {
         [self.inputBar addEmoji:face.name];
     }
 }
 
 
 
-- (void)faceViewDidBackDelete:(BSYLiveIMFaceView *)faceView
-{
+- (void)faceViewDidBackDelete:(BSYLiveIMFaceView *)faceView {
     [self.inputBar backDelete];
 }
 
@@ -355,16 +295,12 @@
 }
 
 
-- (void)resetInputWithAnimated:(BOOL)animated
-{
+- (void)resetInputWithAnimated:(BOOL)animated {
     if(_status == BSYLiveIMInputStatus_InputNone){
         return;
-    }
-    else if(_status == BSYLiveIMInputStatus_InputFace){
+    } else if(_status == BSYLiveIMInputStatus_InputFace){
         [self hideFaceAnimation];
-    }
-    else
-    {
+    } else {
          [_inputBar.inputTextView resignFirstResponder];
     }
     _status = BSYLiveIMInputStatus_InputNone;
@@ -376,7 +312,6 @@
             @strongify(self);
             [self forceRotation];
             [self dismissViewControllerAnimated:NO completion:nil];
-            
         }];
     } else {
         [self moveInputContainerOriginY:CGRectGetHeight(self.view.frame) animate:YES complete:^() {
@@ -388,7 +323,6 @@
 }
 
 - (void)forceRotation {
-    
     UIInterfaceOrientation orientation = self.isPortrait? UIInterfaceOrientationPortrait:UIInterfaceOrientationLandscapeRight;
     [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
     [UIViewController attemptRotationToDeviceOrientation];
@@ -400,16 +334,14 @@
 #pragma mark ----
 #pragma mark 横竖屏变化 UI变化
 
-- (void)changeViewPortraitScreen:(BOOL)isPortrait;
-{
+- (void)changeViewPortraitScreen:(BOOL)isPortrait {
     self.isPortrait = isPortrait;
     self.container.frame = CGRectMake(0, CGRectGetHeight([UIScreen mainScreen].bounds), CGRectGetWidth([UIScreen mainScreen].bounds),CGRectGetHeight([UIScreen mainScreen].bounds));
     self.inputBar.frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), BSYLiveIMInputController_TextViewHeight);
     [self.inputBar changeViewPortraitScreen:isPortrait];
     
     CGFloat padding = BSYLiveIMInputController_FaceViewPadding;
-    if(!isPortrait)
-    {
+    if(!isPortrait) {
         padding += IPHONE_MARGIN_TOP;
     }
     self.faceViewPagePadding = padding;
@@ -420,8 +352,7 @@
 #pragma mark --
 #pragma mark UITapGestureRecognizer
 
--(void)tapGestureAction:(UITapGestureRecognizer *)tap
-{
+-(void)tapGestureAction:(UITapGestureRecognizer *)tap {
     [self resetInput];
 }
 

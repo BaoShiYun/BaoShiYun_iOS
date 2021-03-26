@@ -157,6 +157,10 @@
     [self loginLiveRoom];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 
 - (void)updateViewConstraints {
     [super updateViewConstraints];

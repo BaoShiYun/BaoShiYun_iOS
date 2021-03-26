@@ -27,7 +27,7 @@
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    if(self){
+    if(self) {
         [self setupViews];
     }
     return self;
@@ -41,6 +41,7 @@
     self.inputTextView.delegate = self;
     [self.textViewContainer addSubview:self.inputTextView];
     [self.inputTextView layoutSubviews];
+    [self resizeSubviews:YES];
 }
 
 - (void)resizeSubviews:(BOOL)isPortrait {
@@ -54,8 +55,7 @@
 }
 
 
-- (void)layoutButton:(CGFloat)height
-{
+- (void)layoutButton:(CGFloat)height {
     CGRect frame = self.frame;
     CGFloat offset = height - frame.size.height;
     frame.size.height = height;
@@ -67,7 +67,7 @@
     
     self.faceButton.frame = CGRectMake(CGRectGetWidth(self.textViewContainer.frame)-35, (CGRectGetHeight(self.textViewContainer.frame)-35)/2.0, 35, 35);
 
-    if(self.delegate && [self.delegate respondsToSelector:@selector(inputBar:didChangeInputHeight:)]){
+    if(self.delegate && [self.delegate respondsToSelector:@selector(inputBar:didChangeInputHeight:)]) {
         [self.delegate inputBar:self didChangeInputHeight:offset];
     }
 }
@@ -75,21 +75,8 @@
 
 #pragma mark ----
 #pragma mark 懒加载
-
-
-//- (UIView *)lineView
-//{
-//    if(!_lineView)
-//    {
-//        _lineView = [[UIView alloc] init];
-//    }
-//    return _lineView;
-//}
-
-- (UIButton *)faceButton
-{
-    if(!_faceButton)
-    {
+- (UIButton *)faceButton {
+    if(!_faceButton) {
         _faceButton = [[UIButton alloc] init];
         [_faceButton setImage:AssetsImage(@"live_im_face_btn_normal") forState:UIControlStateNormal];
         [_faceButton setImage:AssetsImage(@"live_im_face_btn_highlight") forState:UIControlStateHighlighted];
@@ -97,37 +84,19 @@
     return _faceButton;
 }
 
-- (void)updateFaceButtonStatus:(BOOL)isFace
-{
-    if(isFace)
-    {
+- (void)updateFaceButtonStatus:(BOOL)isFace {
+    if(isFace) {
         [self.faceButton setImage:AssetsImage(@"live_im_face_btn_normal") forState:UIControlStateNormal];
         [self.faceButton setImage:AssetsImage(@"live_im_face_btn_highlight") forState:UIControlStateHighlighted];
-    }
-    else
-    {
+    } else {
         [self.faceButton setImage:AssetsImage(@"live_im_keyboard_btn_normal") forState:UIControlStateNormal];
         [self.faceButton setImage:AssetsImage(@"live_im_keyboard_btn_normal") forState:UIControlStateHighlighted];
     }
 }
 
 
-//- (UIButton *)keyboardButton
-//{
-//    if(!_keyboardButton)
-//    {
-//        _keyboardButton = [[UIButton alloc] init];
-//        [_keyboardButton setImage:[UIImage imageNamed:KKBIMKitResource(@"ToolViewKeyboard")]  forState:UIControlStateNormal];
-//        [_keyboardButton setImage:[UIImage imageNamed:KKBIMKitResource(@"ToolViewKeyboardHL")]  forState:UIControlStateHighlighted];
-//        _keyboardButton.hidden = YES;
-//    }
-//    return _keyboardButton;
-//}
-
-- (BSYLiveIMResponderTextView *)inputTextView
-{
-    if(!_inputTextView)
-    {
+- (BSYLiveIMResponderTextView *)inputTextView {
+    if(!_inputTextView) {
         _inputTextView = [[BSYLiveIMResponderTextView alloc] init];
         _inputTextView.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
         _inputTextView.textColor = BSYLiveIMInputBar_inputTextColor;
@@ -138,10 +107,8 @@
 }
 
 
-- (UIView *)textViewContainer
-{
-    if(!_textViewContainer)
-    {
+- (UIView *)textViewContainer {
+    if(!_textViewContainer) {
         _textViewContainer = [[UIView alloc] init];
         _textViewContainer.layer.cornerRadius = 4;
         _textViewContainer.layer.masksToBounds = YES;
@@ -155,46 +122,35 @@
 #pragma mark ---
 #pragma mark Action
 
-- (void)clickKeyboardBtn:(UIButton *)sender
-{
-    //self.keyboardButton.hidden = YES;
+- (void)clickKeyboardBtn:(UIButton *)sender {
     self.inputTextView.hidden = NO;
-    //self.faceButton.hidden = NO;
-    //[self layoutButton:self.inputTextView.frame.size.height + 2 * KKBIMTextView_Margin];
-    if(self.delegate && [self.delegate respondsToSelector:@selector(inputBarDidTouchKeyboard:)]){
+    if(self.delegate && [self.delegate respondsToSelector:@selector(inputBarDidTouchKeyboard:)]) {
         [self.delegate inputBarDidTouchKeyboard:self];
     }
 }
 
-- (void)clickFaceBtn:(UIButton *)sender
-{
-   // self.faceButton.hidden = YES;
-    //self.keyboardButton.hidden = NO;
+- (void)clickFaceBtn:(UIButton *)sender {
     self.inputTextView.hidden = NO;
     if(self.delegate && [self.delegate respondsToSelector:@selector(inputBarDidTouchFace:)]){
         [self.delegate inputBarDidTouchFace:self];
     }
-   // self.keyboardButton.frame = self.faceButton.frame;
 }
 
-- (void)addEmoji:(NSString *)emoji
-{
+- (void)addEmoji:(NSString *)emoji {
     [self.inputTextView setText:[self.inputTextView.text stringByAppendingString:emoji]];
-    if(self.inputTextView.contentSize.height > BSYLiveIMInputBar_TextViewHeightMax){
+    if(self.inputTextView.contentSize.height > BSYLiveIMInputBar_TextViewHeightMax) {
         float offset = self.inputTextView.contentSize.height - self.inputTextView.frame.size.height;
         [self.inputTextView scrollRectToVisible:CGRectMake(0, offset, self.inputTextView.frame.size.width, self.inputTextView.frame.size.height) animated:YES];
     }
     [self textViewDidChange:self.inputTextView];
 }
 
-- (void)backDelete
-{
+- (void)backDelete {
     [self textView:self.inputTextView shouldChangeTextInRange:NSMakeRange(self.inputTextView.text.length - 1, 1) replacementText:@""];
     [self textViewDidChange:self.inputTextView];
 }
 
-- (void)clearInput
-{
+- (void)clearInput {
     self.inputTextView.text = @"";
     [self textViewDidChange:self.inputTextView];
 }
@@ -202,14 +158,12 @@
 
 #pragma mark - TextView
 
-- (void)textViewDidBeginEditing:(UITextView *)textView
-{
+- (void)textViewDidBeginEditing:(UITextView *)textView {
     self.keyboardButton.hidden = YES;
     self.faceButton.hidden = NO;
 }
 
-- (void)textViewDidChange:(UITextView *)textView
-{
+- (void)textViewDidChange:(UITextView *)textView {
     if (textView.text.length > BSYLiveIMInputBar_TextViewMaxLength && textView.markedTextRange == nil) {
           textView.text = [textView.text substringWithRange: NSMakeRange(0, BSYLiveIMInputBar_TextViewMaxLength)];
       }
@@ -217,13 +171,13 @@
     CGFloat oldHeight = self.inputTextView.frame.size.height;
     CGFloat newHeight = size.height;
 
-    if(newHeight > BSYLiveIMInputBar_TextViewHeightMax){
+    if(newHeight > BSYLiveIMInputBar_TextViewHeightMax) {
         newHeight = BSYLiveIMInputBar_TextViewHeightMax;
     }
-    if(newHeight < BSYLiveIMInputBar_TextViewHeightMin){
+    if(newHeight < BSYLiveIMInputBar_TextViewHeightMin) {
         newHeight = BSYLiveIMInputBar_TextViewHeightMin;
     }
-    if(oldHeight == newHeight){
+    if(oldHeight == newHeight) {
         return;
     }
 
@@ -236,23 +190,18 @@
     }];
 }
 
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
-{
-    if([text isEqualToString:@"\n"]){
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if([text isEqualToString:@"\n"]) {
         if(self.delegate && [self.delegate respondsToSelector:@selector(inputBar:didSendText:)]) {
             NSString *sp = [textView.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
             if (sp.length == 0) {
-//                UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"不能发送空白消息" message:nil preferredStyle:UIAlertControllerStyleAlert];
-//                [ac addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
-//                [self.mm_viewController presentViewController:ac animated:YES completion:nil];
             } else {
                 [self.delegate inputBar:self didSendText:textView.text];
                 [self clearInput];
             }
         }
         return NO;
-    }
-    else if ([text isEqualToString:@""]) {
+    } else if ([text isEqualToString:@""]) {
         if (textView.text.length > range.location && [textView.text characterAtIndex:range.location] == ']') {
             NSUInteger location = range.location;
             NSUInteger length = range.length;
@@ -263,8 +212,7 @@
                 if (c == '[') {
                     textView.text = [textView.text stringByReplacingCharactersInRange:NSMakeRange(location, length) withString:@""];
                     return NO;
-                }
-                else if (c == ']') {
+                } else if (c == ']') {
                     return YES;
                 }
             }
@@ -274,22 +222,19 @@
 }
 
 
-- (NSString *)getInput
-{
+- (NSString *)getInput {
     return self.inputTextView.text;
 }
 
 
-- (void)dealloc
-{
+- (void)dealloc {
     
 }
 
 #pragma mark ----
 #pragma mark 横竖屏变化 UI变化
 
-- (void)changeViewPortraitScreen:(BOOL)isPortrait
-{
+- (void)changeViewPortraitScreen:(BOOL)isPortrait {
     [self resizeSubviews:isPortrait];
 }
 

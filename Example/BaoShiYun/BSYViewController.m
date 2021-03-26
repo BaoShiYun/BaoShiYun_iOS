@@ -9,11 +9,11 @@
 #import "BSYViewController.h"
 #import "BSYLiveViewController.h"
 #import "BSYConfig.h"
+#import "BSYLiveEntryPageController.h"
 
 @interface BSYViewController ()
 
 @property (nonatomic, strong) UIButton *liveBtn;
-@property (nonatomic, strong) UIButton *interactiveBtn;
 @property (nonatomic, strong) UIButton *vodBtn;
 
 @end
@@ -24,23 +24,13 @@
     [super viewDidLoad];
     [self.view addSubview:self.liveBtn];
     [self.liveBtn addTarget:self action:@selector(liveBtnAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:self.interactiveBtn];
-    [self.interactiveBtn addTarget:self action:@selector(interactiveBtnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.vodBtn];
     [self.liveBtn addTarget:self action:@selector(vodBtnAction) forControlEvents:UIControlEventTouchUpInside];
     @weakify(self);
     [self.liveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.centerX.equalTo(self.view);
-        make.bottom.equalTo(self.interactiveBtn.mas_top).with.offset(-40);
-        make.width.mas_equalTo(100);
-        make.height.mas_equalTo(40);
-    }];
-    
-    [self.interactiveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        @strongify(self);
-        make.centerX.equalTo(self.view);
-        make.centerY.equalTo(self.view);
+        make.bottom.equalTo(self.view.mas_centerY).with.offset(-40);
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(40);
     }];
@@ -48,7 +38,7 @@
     [self.vodBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.interactiveBtn.mas_bottom).with.offset(40);
+        make.top.equalTo(self.liveBtn.mas_bottom).with.offset(20);
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(40);
     }];
@@ -67,25 +57,11 @@
         _liveBtn.layer.masksToBounds = YES;
         _liveBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
         _liveBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [_liveBtn setTitle:@"普通直播" forState:UIControlStateNormal];
+        [_liveBtn setTitle:@"直播" forState:UIControlStateNormal];
         [_liveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _liveBtn.backgroundColor = [UIColor colorWithRed:0x00 green:0x00 blue:0x00 alpha:1.0];
     }
     return _liveBtn;
-}
-
-- (UIButton *)interactiveBtn {
-    if(!_interactiveBtn) {
-        _interactiveBtn = [[UIButton alloc] init];
-        _interactiveBtn.layer.cornerRadius = 20;
-        _interactiveBtn.layer.masksToBounds = YES;
-        _interactiveBtn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];
-        _interactiveBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [_interactiveBtn setTitle:@"互动直播" forState:UIControlStateNormal];
-        [_interactiveBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _interactiveBtn.backgroundColor = [UIColor colorWithRed:0x00 green:0x00 blue:0x00 alpha:1.0];
-    }
-    return _interactiveBtn;
 }
 
 
@@ -113,15 +89,17 @@
 
 - (void)liveBtnAction {
     
-    BSYLiveParam *param = [[BSYLiveParam alloc] init];
-    param.userId = @"5488885";
-    param.tenantId = BSYConfig.tencentId;
-    param.enterCode = @"05d6acd00b414a939b634eb001f298fa";
-    param.liveId = @"live-847494715441152";
-    param.nickName = @"浪里个浪";
-    param.avatarUrl = @"";
-    BSYLiveViewController *live = [[BSYLiveViewController alloc] initWithLiveParam:param];
-    [self.navigationController pushViewController:live animated:YES];
+    BSYLiveEntryPageController *liveController = [[BSYLiveEntryPageController alloc] init];
+    
+//    BSYLiveParam *param = [[BSYLiveParam alloc] init];
+//    param.userId = @"5488885";
+//    param.tenantId = BSYConfig.tencentId;
+//    param.enterCode = @"05d6acd00b414a939b634eb001f298fa";
+//    param.liveId = @"live-847494715441152";
+//    param.nickName = @"浪里个浪";
+//    param.avatarUrl = @"";
+//    BSYLiveViewController *live = [[BSYLiveViewController alloc] initWithLiveParam:param];
+    [self.navigationController pushViewController:liveController animated:YES];
 }
 
 - (void)vodBtnAction {

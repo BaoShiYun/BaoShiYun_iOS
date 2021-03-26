@@ -101,6 +101,7 @@
     [self.view addSubview:self.newMsgBtn];
     [self.newMsgBtn addTarget:self action:@selector(newMsgBtnAction) forControlEvents:UIControlEventTouchUpInside];
     self.newMsgBtn.hidden = YES;
+    [self changeViewPortraitScreen:YES];
     [self startShowMsgTimer];
 }
 
@@ -277,12 +278,6 @@
 #pragma mark tableView
 
 -(void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if (self.isScrollBottom == NO) {
-//        [self scrollToBottom:NO];
-//        if (indexPath.row == self.uiMsgs.count-1) {
-//            self.isScrollBottom = YES;
-//        }
-//    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

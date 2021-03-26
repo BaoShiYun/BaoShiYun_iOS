@@ -206,6 +206,8 @@
 		77A3E570260CAD4A00001CB7 /* player_loading_indicator in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E569260CAD4A00001CB7 /* player_loading_indicator */; };
 		77A3E571260CAD4A00001CB7 /* vod_player_audio_display in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */; };
 		77A3E572260CAD4A00001CB7 /* vod_player_audio_display in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */; };
+		77A3E59F260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */; };
+		77A3E5A0260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E1FF26681C6B67C4A7B6D06E /* Pods_BaoShiYun_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */; };
 /* End PBXBuildFile section */
@@ -440,6 +442,8 @@
 		77A3E568260CAD4A00001CB7 /* vod_play_button_pause */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vod_play_button_pause; sourceTree = "<group>"; };
 		77A3E569260CAD4A00001CB7 /* player_loading_indicator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = player_loading_indicator; sourceTree = "<group>"; };
 		77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vod_player_audio_display; sourceTree = "<group>"; };
+		77A3E59D260DBA6600001CB7 /* BSYLiveEntryPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYLiveEntryPageController.h; sourceTree = "<group>"; };
+		77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYLiveEntryPageController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaoShiYun_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51F6A39EF62019F2EDB7612 /* BaoShiYun.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BaoShiYun.podspec; path = ../BaoShiYun.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -517,6 +521,8 @@
 				6003F59C195388D20070C39A /* BSYAppDelegate.h */,
 				6003F59D195388D20070C39A /* BSYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				77A3E59D260DBA6600001CB7 /* BSYLiveEntryPageController.h */,
+				77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */,
 				6003F5A5195388D20070C39A /* BSYViewController.h */,
 				6003F5A6195388D20070C39A /* BSYViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -673,11 +679,11 @@
 		77A3E306260B42D600001CB7 /* BSYLiveChatInput */ = {
 			isa = PBXGroup;
 			children = (
+				77A3E30F260B42D600001CB7 /* BSYLiveChatInputController.h */,
 				77A3E307260B42D600001CB7 /* BSYLiveChatInputController.m */,
 				77A3E308260B42D600001CB7 /* BSYLiveIMFaceView */,
-				77A3E30F260B42D600001CB7 /* BSYLiveChatInputController.h */,
-				77A3E310260B42D600001CB7 /* BSYLiveIMMenuView */,
 				77A3E315260B42D600001CB7 /* BSYLiveIMInputBar */,
+				77A3E310260B42D600001CB7 /* BSYLiveIMMenuView */,
 			);
 			path = BSYLiveChatInput;
 			sourceTree = "<group>";
@@ -685,12 +691,12 @@
 		77A3E308260B42D600001CB7 /* BSYLiveIMFaceView */ = {
 			isa = PBXGroup;
 			children = (
-				77A3E309260B42D600001CB7 /* BSYLiveIMFaceView.m */,
-				77A3E30A260B42D600001CB7 /* BSYLiveIMFaceCell.m */,
 				77A3E30B260B42D600001CB7 /* BSYLiveIMFaceCache.h */,
-				77A3E30C260B42D600001CB7 /* BSYLiveIMFaceView.h */,
 				77A3E30D260B42D600001CB7 /* BSYLiveIMFaceCache.m */,
 				77A3E30E260B42D600001CB7 /* BSYLiveIMFaceCell.h */,
+				77A3E30A260B42D600001CB7 /* BSYLiveIMFaceCell.m */,
+				77A3E30C260B42D600001CB7 /* BSYLiveIMFaceView.h */,
+				77A3E309260B42D600001CB7 /* BSYLiveIMFaceView.m */,
 			);
 			path = BSYLiveIMFaceView;
 			sourceTree = "<group>";
@@ -709,10 +715,10 @@
 		77A3E315260B42D600001CB7 /* BSYLiveIMInputBar */ = {
 			isa = PBXGroup;
 			children = (
-				77A3E316260B42D600001CB7 /* BSYLiveIMResponderTextView.h */,
 				77A3E317260B42D600001CB7 /* BSYLiveIMInputBar.h */,
-				77A3E318260B42D600001CB7 /* BSYLiveIMResponderTextView.m */,
 				77A3E319260B42D600001CB7 /* BSYLiveIMInputBar.m */,
+				77A3E316260B42D600001CB7 /* BSYLiveIMResponderTextView.h */,
+				77A3E318260B42D600001CB7 /* BSYLiveIMResponderTextView.m */,
 			);
 			path = BSYLiveIMInputBar;
 			sourceTree = "<group>";
@@ -720,13 +726,13 @@
 		77A3E31B260B42D600001CB7 /* BSYLiveChatMsgView */ = {
 			isa = PBXGroup;
 			children = (
-				77A3E31C260B42D600001CB7 /* BSYLiveIMRoleModel.m */,
-				77A3E31D260B42D600001CB7 /* BSYLiveIMRoleManager.h */,
 				77A3E31E260B42D600001CB7 /* BSYLiveChatMsgView.h */,
-				77A3E31F260B42D600001CB7 /* BSYLiveIMRoleModel.h */,
-				77A3E320260B42D600001CB7 /* BSYLiveIMMsgCell */,
-				77A3E333260B42D600001CB7 /* BSYLiveIMRoleManager.m */,
 				77A3E334260B42D600001CB7 /* BSYLiveChatMsgView.m */,
+				77A3E320260B42D600001CB7 /* BSYLiveIMMsgCell */,
+				77A3E31D260B42D600001CB7 /* BSYLiveIMRoleManager.h */,
+				77A3E333260B42D600001CB7 /* BSYLiveIMRoleManager.m */,
+				77A3E31F260B42D600001CB7 /* BSYLiveIMRoleModel.h */,
+				77A3E31C260B42D600001CB7 /* BSYLiveIMRoleModel.m */,
 			);
 			path = BSYLiveChatMsgView;
 			sourceTree = "<group>";
@@ -734,24 +740,24 @@
 		77A3E320260B42D600001CB7 /* BSYLiveIMMsgCell */ = {
 			isa = PBXGroup;
 			children = (
-				77A3E321260B42D600001CB7 /* BSYLiveIMCommonCell.m */,
-				77A3E322260B42D600001CB7 /* BSYLiveIMImageMsgCellData.h */,
-				77A3E323260B42D600001CB7 /* BSYLiveIMImageMsgCell.m */,
-				77A3E324260B42D600001CB7 /* BSYLiveIMEventNotifyMsgCellData.h */,
-				77A3E325260B42D600001CB7 /* BSYLiveIMMsgCellData.h */,
-				77A3E326260B42D600001CB7 /* BSYLiveIMTextMsgCell.m */,
-				77A3E327260B42D600001CB7 /* BSYLiveIMMsgCell.h */,
-				77A3E328260B42D600001CB7 /* BSYLiveIMTextMsgCellData.m */,
-				77A3E329260B42D600001CB7 /* BSYLiveIMEventNotifyMsgCell.m */,
-				77A3E32A260B42D600001CB7 /* BSYLiveIMImageMsgCell.h */,
-				77A3E32B260B42D600001CB7 /* BSYLiveIMImageMsgCellData.m */,
 				77A3E32C260B42D600001CB7 /* BSYLiveIMCommonCell.h */,
-				77A3E32D260B42D600001CB7 /* BSYLiveIMMsgCellData.m */,
-				77A3E32E260B42D600001CB7 /* BSYLiveIMEventNotifyMsgCellData.m */,
-				77A3E32F260B42D600001CB7 /* BSYLiveIMTextMsgCell.h */,
+				77A3E321260B42D600001CB7 /* BSYLiveIMCommonCell.m */,
 				77A3E330260B42D600001CB7 /* BSYLiveIMEventNotifyMsgCell.h */,
-				77A3E331260B42D600001CB7 /* BSYLiveIMTextMsgCellData.h */,
+				77A3E329260B42D600001CB7 /* BSYLiveIMEventNotifyMsgCell.m */,
+				77A3E324260B42D600001CB7 /* BSYLiveIMEventNotifyMsgCellData.h */,
+				77A3E32E260B42D600001CB7 /* BSYLiveIMEventNotifyMsgCellData.m */,
+				77A3E32A260B42D600001CB7 /* BSYLiveIMImageMsgCell.h */,
+				77A3E323260B42D600001CB7 /* BSYLiveIMImageMsgCell.m */,
+				77A3E322260B42D600001CB7 /* BSYLiveIMImageMsgCellData.h */,
+				77A3E32B260B42D600001CB7 /* BSYLiveIMImageMsgCellData.m */,
+				77A3E327260B42D600001CB7 /* BSYLiveIMMsgCell.h */,
 				77A3E332260B42D600001CB7 /* BSYLiveIMMsgCell.m */,
+				77A3E325260B42D600001CB7 /* BSYLiveIMMsgCellData.h */,
+				77A3E32D260B42D600001CB7 /* BSYLiveIMMsgCellData.m */,
+				77A3E32F260B42D600001CB7 /* BSYLiveIMTextMsgCell.h */,
+				77A3E326260B42D600001CB7 /* BSYLiveIMTextMsgCell.m */,
+				77A3E331260B42D600001CB7 /* BSYLiveIMTextMsgCellData.h */,
+				77A3E328260B42D600001CB7 /* BSYLiveIMTextMsgCellData.m */,
 			);
 			path = BSYLiveIMMsgCell;
 			sourceTree = "<group>";
@@ -1270,6 +1276,7 @@
 				77A3E44C260B60CB00001CB7 /* YYImage.m in Sources */,
 				77A3E33B260B42D600001CB7 /* BSYLiveIMFaceCell.m in Sources */,
 				77A3E450260B60CB00001CB7 /* YYFrameImage.m in Sources */,
+				77A3E59F260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */,
 				6003F5A7195388D20070C39A /* BSYViewController.m in Sources */,
 				77A3E466260B60CB00001CB7 /* YBIBToastView.m in Sources */,
 				77A3E2AB260A1B5600001CB7 /* BSYLivePlayerContainerView.m in Sources */,
@@ -1368,6 +1375,7 @@
 				77A3E4BA260C783B00001CB7 /* BSYLiveMenuViewController.m in Sources */,
 				77A3E356260B42D700001CB7 /* BSYLiveIMMsgCellData.m in Sources */,
 				77A3E346260B42D700001CB7 /* BSYLiveIMInputBar.m in Sources */,
+				77A3E5A0260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */,
 				77A3E352260B42D700001CB7 /* BSYLiveIMEventNotifyMsgCell.m in Sources */,
 				77A3E45B260B60CB00001CB7 /* YBImage.m in Sources */,
 				77A3E33E260B42D600001CB7 /* BSYLiveIMFaceCache.m in Sources */,
