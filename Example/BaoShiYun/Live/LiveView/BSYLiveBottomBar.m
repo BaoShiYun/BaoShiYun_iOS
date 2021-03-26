@@ -191,7 +191,7 @@
         _likeBtn.shiftCycle = 8;
         NSMutableArray<UIImage *> *images = [NSMutableArray<UIImage *> array];
         for (int i = 0; i < 10; i++) {
-            NSString *imageName = [NSString stringWithFormat:@"live_favor_emitter_%d", i];
+            NSString *imageName = [NSString stringWithFormat:@"bsy_live_favor_emitter_%d", i];
             UIImage *image = AssetsImage(imageName);
             if (image) {
                 [images addObject:image];

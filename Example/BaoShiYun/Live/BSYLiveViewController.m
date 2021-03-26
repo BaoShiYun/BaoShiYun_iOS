@@ -28,6 +28,7 @@
 
 @property (nonatomic, strong)UIView *headView;
 @property (nonatomic, strong)BSYLiveOperateView *playerOperateView;
+@property (nonatomic, strong)UIView *lineView;
 
 //Live
 @property (nonatomic, strong)BSYLivePlayerContainerView *playerContainer;
@@ -81,8 +82,10 @@
     [self.headView addSubview:self.playerContainer];
     [self.headView addSubview:self.coursewareContainer];
     [self.view addSubview:self.playerOperateView];
-    
+    [self.view addSubview:self.lineView];
+    self.lineView.hidden = YES;
     [self.view addSubview:self.cameraContainer];
+    self.cameraContainer.hidden = YES;
     [self.view addSubview:self.chatMsgView.view];
     [self addChildViewController:self.chatMsgView];
     @weakify(self);
@@ -181,6 +184,12 @@
         make.top.left.right.equalTo(self.view);
         make.bottom.equalTo(self.headView);
     }];
+    [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.top.equalTo(self.headView.mas_bottom);
+        make.left.right.equalTo(self.view);
+        make.height.mas_equalTo(1.0);
+    }];
     
     CGFloat cameraHeight = UISCREEN_WIDTH/4.0*3.0/4.0;
     [self.cameraContainer mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -210,7 +219,7 @@
     } else {
         [self.chatMsgView.view mas_remakeConstraints:^(MASConstraintMaker *make) {
             @strongify(self);
-            make.top.equalTo(self.playerOperateView.mas_bottom);
+            make.top.equalTo(self.lineView.mas_bottom);
             make.left.right.equalTo(self.view);
             make.bottom.equalTo(self.bottomBar.mas_top);
         }];
@@ -250,6 +259,13 @@
     return _coursewareContainer;
 }
 
+- (UIView *)lineView {
+    if(!_lineView) {
+        _lineView = [[UIView alloc] init];
+        _lineView.backgroundColor = HexAlphaColor(0x2C2C2E, 1.0);
+    }
+    return _lineView;
+}
 
 - (BSYLiveKit *)liveKit {
     if(!_liveKit) {
@@ -460,6 +476,11 @@
     [self.playerOperateView setLiveTitle:[self.liveKit getLiveName]];
     self.isRtc = [self.liveKit isRtcLive];
     [self.bottomBar setIsRtc:self.isRtc];
+    self.cameraContainer.hidden = !self.isRtc;
+    self.lineView.hidden = self.isRtc;
+    if(self.isRtc) {
+        [self.cameraContainer reloadData];
+    }
     [self resizeChatViewWithRtc:self.isRtc];
     [self requestLastestChatMsgHistory];
 }

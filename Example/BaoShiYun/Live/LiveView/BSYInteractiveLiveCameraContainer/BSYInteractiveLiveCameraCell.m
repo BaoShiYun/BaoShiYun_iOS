@@ -23,14 +23,14 @@
 
 @implementation BSYInteractiveLiveCameraCell
 
-- (instancetype)init {
-    self = [super init];
-    if(self) {
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
         [self createSubView];
         [self bindViewModel];
+        [self setNeedsUpdateConstraints];
     }
     return self;
-    
 }
 
 - (void)createSubView {
