@@ -43,6 +43,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AgoraRtcEngine_iOS', '~> 3.1.2' # '~> 3.1.100.2'
-  s.dependency 'TXIMSDK_iOS', '~> 5.1.56'
+  # s.dependency 'TXIMSDK_iOS', '~> 5.1.56'
   
 end
