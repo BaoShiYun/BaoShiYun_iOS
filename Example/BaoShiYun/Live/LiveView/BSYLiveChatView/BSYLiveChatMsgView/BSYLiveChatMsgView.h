@@ -15,10 +15,6 @@ typedef void (^BSYLiveChatMsgViewPullLoadingBlock)(void);
 @property (nonatomic, copy)BSYLiveChatMsgViewPullLoadingBlock pullLoadingBlock;
 
 
-//重新布局UI根据横竖屏
-- (void)changeViewPortraitScreen:(BOOL)isPortrait;
-
-
 - (void)setSelfUid:(NSString *)uid nickName:(NSString *)nickName avatarUrl:(NSString *)avatarUrl;
 
 - (void)setChatMsgRenderDisable:(BOOL)disable;

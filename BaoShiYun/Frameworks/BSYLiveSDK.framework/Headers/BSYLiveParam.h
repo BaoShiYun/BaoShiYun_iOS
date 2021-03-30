@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *   @brief   用户头像
  */
-@property (nonatomic, copy)NSString *avatarUrl; //必填
+@property (nonatomic, copy)NSString *avatarUrl; //选填
 /**
  *   @brief   直播间id
  */
