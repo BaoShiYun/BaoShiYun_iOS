@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/BSYLiveEnterClassRequest.h</key>
 		<data>
-		NYp/O13+QT0uN7AZ6TNAXvxd6HI=
+		GisS2vOf7wxjPz3XOL8j7Dd98f8=
 		</data>
 		<key>Headers/BSYLiveEventNotifyTextStyleModel.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/BSYLiveInfoModel.h</key>
 		<data>
-		PthjosSqH9gcjEA1l5UDugV1Wcc=
+		uZOsu2/Nx1/16f53PcVDlb35g9s=
 		</data>
 		<key>Headers/BSYLiveInfoRequest.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/BSYLiveInteractiveSeatModel.h</key>
 		<data>
-		+4ayCCz/4QGsNiQM5BsJ7t5sBj0=
+		pjkvZl2JBxu/idaG3MKiIf74x70=
 		</data>
 		<key>Headers/BSYLiveIntroductionModel.h</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tVTwGtfrowCMeM8x160m3yfw2+A=
+		3VxZNFLDWSzeMOCwtHlx0rBtHww=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -329,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NYp/O13+QT0uN7AZ6TNAXvxd6HI=
+			GisS2vOf7wxjPz3XOL8j7Dd98f8=
 			</data>
 			<key>hash2</key>
 			<data>
-			eoYAns6GnWolY4kGjOYWERCWIxBeN3zBYh/I4xE8G6E=
+			i/WvDm6Ys4dp4D2UQXyAcmokp2qLgS/jP4dYUqjo04c=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveEventNotifyTextStyleModel.h</key>
@@ -395,11 +395,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PthjosSqH9gcjEA1l5UDugV1Wcc=
+			uZOsu2/Nx1/16f53PcVDlb35g9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			sgdwJSgEiUndB7amoBpI0ttXDsHVAHg5cJoUFgaJHoA=
+			G9Q2Fh6Yb3JM7xcWHXrBPfu4zSdXdqdsZC8n8Nc8ONM=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveInfoRequest.h</key>
@@ -417,11 +417,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+4ayCCz/4QGsNiQM5BsJ7t5sBj0=
+			pjkvZl2JBxu/idaG3MKiIf74x70=
 			</data>
 			<key>hash2</key>
 			<data>
-			nrnx9amcuTPDW9oO/jZAkgzGPcaTBN//rABKJAyfmIo=
+			QEWcJceJqt9GwSdqI/Ibpg7q7c1Foa1iGcmWlSxE2lE=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIntroductionModel.h</key>

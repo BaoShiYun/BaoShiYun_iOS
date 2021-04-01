@@ -12,11 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYLiveBroadcastUserModel : NSObject
 
-@property (nonatomic, strong)NSString *userId; //用户ID
-@property (nonatomic, strong)NSString *nickName; //昵称
-@property (nonatomic, strong)NSString *avatarUrl; //头像地址
-@property (nonatomic, assign)BOOL videoMute; //视频开启或关闭
-@property (nonatomic, assign)BOOL audioMute; //麦克风开启或关闭
+@property (nonatomic, strong)NSString *userId; ///用户ID
+@property (nonatomic, strong)NSString *nickName; ///昵称
+@property (nonatomic, strong)NSString *avatarUrl; ///头像地址
+@property (nonatomic, assign)BOOL videoMute; ///视频开启或关闭
+@property (nonatomic, assign)BOOL audioMute; ///麦克风开启或关闭
 
 @end
 

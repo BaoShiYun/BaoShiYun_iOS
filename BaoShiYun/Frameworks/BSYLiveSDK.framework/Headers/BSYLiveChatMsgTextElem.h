@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYLiveChatMsgTextElem : NSObject
 
-@property (nonatomic, strong, readonly)NSString *message; //文本消息
+@property (nonatomic, strong, readonly)NSString *message; ///文本消息
 
 @end
 

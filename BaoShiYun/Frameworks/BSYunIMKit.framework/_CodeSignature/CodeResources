@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/BSYLiveIMKit.h</key>
 		<data>
-		davnnk+9pBXjxFBEO2f16aKwnw0=
+		1/+d1KdiWeZ1v/Zgmnu8O+i5Vms=
 		</data>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
 		<data>
-		UYH0qzEL2Rc7u4M63xSGQSaA8Rs=
+		g1381csBkqxMGGAsV/djqoRZQjs=
 		</data>
 		<key>Headers/BSYLiveIMTextMsgModel.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ch+rCpvODXgU1hfNba48armSoZs=
+		/KDgX+ADcjgMtDBnIUipOtYuRXA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,22 +80,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			davnnk+9pBXjxFBEO2f16aKwnw0=
+			1/+d1KdiWeZ1v/Zgmnu8O+i5Vms=
 			</data>
 			<key>hash2</key>
 			<data>
-			DizB8ouB1p7X02F4X7D2/hDPrjaxIW8GglzPd4kF1ts=
+			GUeRvApCtZ16jITDXGTHuD64IPNR0XQe/Lt+F2WCosA=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UYH0qzEL2Rc7u4M63xSGQSaA8Rs=
+			g1381csBkqxMGGAsV/djqoRZQjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			/lwAP6bVet37plW/2T6VlVdI9okCPv50TdjZe/cIzCA=
+			XxEfral5w0cgrU1EVLZoR1ol1+1JZjdf9YdnWIY0ftA=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMTextMsgModel.h</key>

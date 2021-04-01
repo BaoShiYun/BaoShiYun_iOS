@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYLiveNotifyTextStyleModel : NSObject
 
-@property (nonatomic, strong, readonly)NSString *text; //文字
-@property (nonatomic, strong, readonly)NSString *color; //#00FFFFFF
+@property (nonatomic, strong, readonly)NSString *text; ///文字
+@property (nonatomic, strong, readonly)NSString *color; ///颜色值 例如:#00FFFFFF
 
 @end
 

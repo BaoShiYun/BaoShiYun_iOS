@@ -432,7 +432,7 @@
 		</data>
 		<key>Headers/BSYNetworking.h</key>
 		<data>
-		cjC2OMq6ED1PZjy9NL+99Pufc3k=
+		ZWYk8ZfSgc5uIZWoyAurJADwbYY=
 		</data>
 		<key>Headers/BSYObserverKit.h</key>
 		<data>
@@ -441,6 +441,10 @@
 		<key>Headers/BSYProxy.h</key>
 		<data>
 		iaZrzn88mwpuTgeltfxYCuxU+oc=
+		</data>
+		<key>Headers/BSYReachability.h</key>
+		<data>
+		xT/dQKu/qyKJ4xRmtv8uKpF1ca8=
 		</data>
 		<key>Headers/BSYSecurityPolicy.h</key>
 		<data>
@@ -572,7 +576,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zRpSZgPgDOho/6FyDUZfwoqYKcY=
+		wOuH1XG7ZBqkstRg4yhtFumN7AI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1263,11 +1267,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cjC2OMq6ED1PZjy9NL+99Pufc3k=
+			ZWYk8ZfSgc5uIZWoyAurJADwbYY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0uEzjkqEQkAK8pnAtUBORquUt2vGo4q7cWNLN0ud9es=
+			24cccjEDpPijq2q9S9jsTnXr1jCiEOwYbuopYpJ1rWA=
 			</data>
 		</dict>
 		<key>Headers/BSYObserverKit.h</key>
@@ -1290,6 +1294,17 @@
 			<key>hash2</key>
 			<data>
 			G4Ps59r9QUE44RM60jcNIlS9tQfN36lJLoYNcZZ9OLI=
+			</data>
+		</dict>
+		<key>Headers/BSYReachability.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xT/dQKu/qyKJ4xRmtv8uKpF1ca8=
+			</data>
+			<key>hash2</key>
+			<data>
+			0ydNqQFjM4bhPl37yk+CGKO8tg599YjHdbX2fk5t3Ds=
 			</data>
 		</dict>
 		<key>Headers/BSYSecurityPolicy.h</key>
