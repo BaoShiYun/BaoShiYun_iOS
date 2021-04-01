@@ -1089,7 +1089,8 @@
 				ORGANIZATIONNAME = "duanguangming@gmail.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = WX73DMG49N;
+						DevelopmentTeam = 67US2VVCJ6;
+						ProvisioningStyle = Manual;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -1532,13 +1533,15 @@
 			baseConfigurationReference = F51AD58B7F0CD88B6CD0FAF7 /* Pods-BaoShiYun_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WX73DMG49N;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 67US2VVCJ6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaoShiYun/BaoShiYun-Prefix.pch";
 				INFOPLIST_FILE = "BaoShiYun/BaoShiYun-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.baoshiyun.iphoneDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baoshiyun.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = devIOSDemo;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
@@ -1550,13 +1553,15 @@
 			baseConfigurationReference = FB7623E14E254A3CF774ED6E /* Pods-BaoShiYun_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WX73DMG49N;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 67US2VVCJ6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaoShiYun/BaoShiYun-Prefix.pch";
 				INFOPLIST_FILE = "BaoShiYun/BaoShiYun-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baoshiyun.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = devIOSDemo;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
