@@ -169,9 +169,9 @@
         _uidText.returnKeyType = UIReturnKeyDone;
         _uidText.backgroundColor = [UIColor whiteColor];
         _uidText.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
-        _uidText.rightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
         _uidText.leftViewMode = UITextFieldViewModeAlways;
         _uidText.rightViewMode = UITextFieldViewModeAlways;
+        _uidText.clearButtonMode = UITextFieldViewModeAlways;
         _uidText.layer.cornerRadius = 2;
         _uidText.layer.borderColor = [UIColor whiteColor].CGColor;
         _uidText.layer.borderWidth = 1.5;
@@ -202,9 +202,9 @@
         _nickNameText.returnKeyType = UIReturnKeyDone;
         _nickNameText.backgroundColor = HexColor(0xFFFFFF);
         _nickNameText.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
-        _nickNameText.rightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
         _nickNameText.leftViewMode = UITextFieldViewModeAlways;
         _nickNameText.rightViewMode = UITextFieldViewModeAlways;
+        _nickNameText.clearButtonMode = UITextFieldViewModeAlways;
         _nickNameText.layer.cornerRadius = 2;
         _nickNameText.layer.borderColor = HexColor(0xFFFFFF).CGColor;
         _nickNameText.layer.borderWidth = 1.5;
@@ -235,9 +235,9 @@
         _avatarText.returnKeyType = UIReturnKeyDone;
         _avatarText.backgroundColor = HexColor(0xFFFFFF);
         _avatarText.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
-        _avatarText.rightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
         _avatarText.leftViewMode = UITextFieldViewModeAlways;
         _avatarText.rightViewMode = UITextFieldViewModeAlways;
+        _avatarText.clearButtonMode = UITextFieldViewModeAlways;
         _avatarText.layer.cornerRadius = 2;
         _avatarText.layer.borderColor = HexColor(0xFFFFFF).CGColor;
         _avatarText.layer.borderWidth = 1.5;
@@ -267,9 +267,9 @@
         _liveIdText.returnKeyType = UIReturnKeyDone;
         _liveIdText.backgroundColor = HexColor(0xFFFFFF);
         _liveIdText.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
-        _liveIdText.rightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
         _liveIdText.leftViewMode = UITextFieldViewModeAlways;
         _liveIdText.rightViewMode = UITextFieldViewModeAlways;
+        _liveIdText.clearButtonMode = UITextFieldViewModeAlways;
         _liveIdText.layer.cornerRadius = 2;
         _liveIdText.layer.borderColor = HexColor(0xFFFFFF).CGColor;
         _liveIdText.layer.borderWidth = 1.5;
@@ -301,9 +301,9 @@
         _enterCodeText.returnKeyType = UIReturnKeyDone;
         _enterCodeText.backgroundColor = HexColor(0xFFFFFF);
         _enterCodeText.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
-        _enterCodeText.rightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 0)];
         _enterCodeText.leftViewMode = UITextFieldViewModeAlways;
         _enterCodeText.rightViewMode = UITextFieldViewModeAlways;
+        _enterCodeText.clearButtonMode = UITextFieldViewModeAlways;
         _enterCodeText.layer.cornerRadius = 2;
         _enterCodeText.layer.borderColor = HexColor(0xFFFFFF).CGColor;
         _enterCodeText.layer.borderWidth = 1.5;
