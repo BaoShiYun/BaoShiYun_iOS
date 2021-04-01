@@ -11,7 +11,7 @@
 @implementation BSYConfig
 
 + (uint64_t)tencentId {
-    return 5620435000;
+    return 6144761050;
 }
 
 + (NSString *)vodToken {
