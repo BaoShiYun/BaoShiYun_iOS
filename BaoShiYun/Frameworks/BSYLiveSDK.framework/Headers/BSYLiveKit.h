@@ -423,10 +423,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)onRecvLiveRoomAllMuteStatus:(BOOL)isAllMute;
 
 /**
+ *   @brief   个人禁言
+ *   @param   mute    是否自己被禁言
+ */
+- (void)onRecvLivePersonalMuteStatus:(BOOL)mute;
+
+/**
  *   @brief  直播间介绍
  *   @param  Url   直播间介绍链接
  */
-
 - (void)onRecvLiveIntroduceUrl:(NSString *)Url;
 
 ///———————————————————————————————————————————————————————

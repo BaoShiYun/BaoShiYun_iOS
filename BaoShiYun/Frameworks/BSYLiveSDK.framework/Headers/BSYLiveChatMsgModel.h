@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger, BSYLiveChatMsgType) {
 @property (nonatomic, strong, readonly)NSString *nickName; ///昵称
 @property (nonatomic, strong, readonly)NSString *avatarUrl; ///头像地址
 @property (nonatomic, assign, readonly)uint64_t timestamp; ///时间戳
+@property (nonatomic, assign, readonly)BOOL fromScript; //来源于剧本
 @property (nonatomic, assign, readonly)BSYLiveChatMsgType msgType; ///消息类型
 @property (nonatomic, strong, readonly)BSYLiveChatMsgTextElem *textElem; ///文本消息内容
 @property (nonatomic, strong, readonly)BSYLiveChatMsgImageElem *imageElem; ///图片消息内容

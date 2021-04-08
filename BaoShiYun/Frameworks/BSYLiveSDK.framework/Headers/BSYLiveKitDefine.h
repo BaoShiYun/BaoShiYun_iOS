@@ -11,6 +11,7 @@
 @class BSYLiveChatMsgModel;
 @class BSYLiveQuestionModel;
 @class BSYLiveRedPackageModel;
+@class BSYLiveRoomConfigModel;
 /// 成功通用回调
 typedef void (^BSYLiveKitSuccess)(void);
 /// 失败通用回调
@@ -25,9 +26,11 @@ typedef void (^BSYLiveKitQuestionListSuccess)(NSArray<BSYLiveQuestionModel *> *q
 //评测Token回调
 typedef void (^BSYLiveKitQuestionTokenSuccess)(NSString *token);
 
-
 //成功回调活动列表
 typedef void (^BSYLiveKitActivityListSuccess)(NSArray<BSYLiveRedPackageModel *> *redPackageList);
+
+/// 成功回调直播间配置信息
+typedef void (^BSYLiveKitRoomConfigSuccess)(BSYLiveRoomConfigModel *config);
 
 
 typedef NS_ENUM(NSUInteger, BSYLiveInteractiveType) {

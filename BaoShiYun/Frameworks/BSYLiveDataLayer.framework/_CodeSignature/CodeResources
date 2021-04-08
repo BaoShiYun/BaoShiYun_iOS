@@ -18,11 +18,15 @@
 		</data>
 		<key>Headers/BSYLiveCommonMsgDetailModel.h</key>
 		<data>
-		Stl4k2pFkFi04iJ08H+8Wa3tvy8=
+		n0sWjkTWtRUV7iGi5PrtJ+keOZ0=
+		</data>
+		<key>Headers/BSYLiveConfigMuteModel.h</key>
+		<data>
+		jimPD/ysqC600ZHyZTyySVxrJwo=
 		</data>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<data>
-		QJlnnHIAYPe0eMGBQJw3ktiP4Jo=
+		QLZ11r5Jzuj2qlKBDgP7aeAGzhw=
 		</data>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/BSYLiveFeedbackRequest.h</key>
 		<data>
-		tmLKTPmThrAmrsu03J1dop6HM/k=
+		RJae3yPlZoynZdukChbKOKAf7x8=
 		</data>
 		<key>Headers/BSYLiveIMModel.h</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/BSYLiveInfoRequest.h</key>
 		<data>
-		CWt9SxVGLGmevAW1pOmqq67JX0A=
+		Rr3TEmI8/kPBHUAAnarLm/RVX34=
 		</data>
 		<key>Headers/BSYLiveInteractiveSeatModel.h</key>
 		<data>
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/BSYLiveIntroductionRequest.h</key>
 		<data>
-		kyL3uCGq37nzJLxQ1M8Fjy0RznU=
+		EiuXlO5/h7WvIBxLuwL7D6ww8n8=
 		</data>
 		<key>Headers/BSYLiveInviteBroadcastMsgModel.h</key>
 		<data>
@@ -192,6 +196,14 @@
 		<data>
 		T9xm7OA3GBKk4N4IM7dBQMqKJ+g=
 		</data>
+		<key>Headers/BSYLiveRoomConfigModel.h</key>
+		<data>
+		M9ErDwmOtU+A3peQKe0IWpiCjxI=
+		</data>
+		<key>Headers/BSYLiveRoomConfigRequest.h</key>
+		<data>
+		Rdr05A76rVIlnXrDXP1eug9zO9c=
+		</data>
 		<key>Headers/BSYLiveRouteModel.h</key>
 		<data>
 		8OCLs21nkkH4RgdJWDKGunSGTv0=
@@ -296,22 +308,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Stl4k2pFkFi04iJ08H+8Wa3tvy8=
+			n0sWjkTWtRUV7iGi5PrtJ+keOZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			k9V8/IAvtGWleUfDfPTfRDj1aogbf4awm2RSH2Px6cc=
+			r0yKIUvjtIivpPpWyLL8q/1Hqb87LqIOgaPALStnITs=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveConfigMuteModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jimPD/ysqC600ZHyZTyySVxrJwo=
+			</data>
+			<key>hash2</key>
+			<data>
+			IL9EUi2b+cgOrvL/DGYPw6o9y3AG8eiH+ASZj74nBto=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QJlnnHIAYPe0eMGBQJw3ktiP4Jo=
+			QLZ11r5Jzuj2qlKBDgP7aeAGzhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bPd95uhX9vAKetRK3qXagEgG7LYG90nPwPoCwWNf+xc=
+			GAtucJRI5c4mt/L427Lu9cTefjt7V384CFqyjoaQ508=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
@@ -351,11 +374,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tmLKTPmThrAmrsu03J1dop6HM/k=
+			RJae3yPlZoynZdukChbKOKAf7x8=
 			</data>
 			<key>hash2</key>
 			<data>
-			v0scEtDR695jGNt9ke0M6wVeTQRW9c4Wgs04zncD6uo=
+			Xk/Z9L5j6ZTgntQeh6Ra2N+hQtm4c/BclYOUcTw4z5k=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMModel.h</key>
@@ -406,11 +429,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CWt9SxVGLGmevAW1pOmqq67JX0A=
+			Rr3TEmI8/kPBHUAAnarLm/RVX34=
 			</data>
 			<key>hash2</key>
 			<data>
-			hCHItsaBpoJ2pNFWWKomYfJocYWCLeTRGjsYHnWiSA8=
+			8ImqFz678VWmObk3RL7bbjPXqVlfLXbTLjLiUfi3vQE=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveInteractiveSeatModel.h</key>
@@ -439,11 +462,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kyL3uCGq37nzJLxQ1M8Fjy0RznU=
+			EiuXlO5/h7WvIBxLuwL7D6ww8n8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PwFVR4FHiK2/wVGqiNifeahJxtLHt0J3qUdS6eUz2rQ=
+			6DQudVybNIUXAbyEPjjFDwGPncCEk7sAmN6NWaF2jVw=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveInviteBroadcastMsgModel.h</key>
@@ -774,6 +797,28 @@
 			<key>hash2</key>
 			<data>
 			cUbRWB1bwSuzphp5o/jZG/vDzvod9jLcnr4u9hfhiCA=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveRoomConfigModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			M9ErDwmOtU+A3peQKe0IWpiCjxI=
+			</data>
+			<key>hash2</key>
+			<data>
+			oKHwwD74oeZ42FCxxobj5ECDoiv1THCMiyjQP62U69g=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveRoomConfigRequest.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Rdr05A76rVIlnXrDXP1eug9zO9c=
+			</data>
+			<key>hash2</key>
+			<data>
+			NDnVzcSEIQZwrTHpUzL+ZVwlaZNOlD0+0jAM+BmgV8A=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveRouteModel.h</key>
