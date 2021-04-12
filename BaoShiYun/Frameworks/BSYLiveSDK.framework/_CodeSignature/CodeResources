@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/BSYLiveChatMsgModel.h</key>
 		<data>
-		tOeglIgZR9iJh+4xY9qG4qek4IY=
+		hDcgktoDoi2gxdNH2ENZXZ7aIso=
 		</data>
 		<key>Headers/BSYLiveChatMsgTextElem.h</key>
 		<data>
@@ -92,29 +92,13 @@
 		<data>
 		8vt70QFOaPkgwg8LVDMCAstEoXo=
 		</data>
-		<key>Whiteboard.bundle/vendor.33f05124.js</key>
-		<data>
-		RpgO5P4AwyKikUbIgWbi5r8TEXU=
-		</data>
-		<key>Whiteboard.bundle/vendor.85a6e582.js</key>
-		<data>
-		DazT4G8gem3S+MQGIKTahLM3gNE=
-		</data>
 		<key>Whiteboard.bundle/vendor.e80b909f.js</key>
 		<data>
 		BacDfZZTbjTZ88BRoHyikQT0dLM=
 		</data>
-		<key>Whiteboard.bundle/web-sdk.08b4af77.js</key>
-		<data>
-		Qt5p+N174cP8vVznXTG2RpFrUrc=
-		</data>
 		<key>Whiteboard.bundle/web-sdk.19a2683d.js</key>
 		<data>
 		uTTzJJPlKrI9kWMjT192qt/dgqE=
-		</data>
-		<key>Whiteboard.bundle/web-sdk.33ca0c9f.js</key>
-		<data>
-		wNxSLISq0bQ+TCBiNhBI7vYjY9Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -145,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tOeglIgZR9iJh+4xY9qG4qek4IY=
+			hDcgktoDoi2gxdNH2ENZXZ7aIso=
 			</data>
 			<key>hash2</key>
 			<data>
-			UAT7VsRO41r4Cg81+4mge6B50bGzlBMbCKH9dW4f8MQ=
+			3mnQJOfHM/dsCl6dgXSmjGguLFoLDp39yRWA9eDrLfg=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveChatMsgTextElem.h</key>
@@ -350,28 +334,6 @@
 			vc7cwAhazA5NWkSJstc8Kq4/kYsX8xuvz02OixzHcr4=
 			</data>
 		</dict>
-		<key>Whiteboard.bundle/vendor.33f05124.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RpgO5P4AwyKikUbIgWbi5r8TEXU=
-			</data>
-			<key>hash2</key>
-			<data>
-			s7bklrELY0/fEZ9+w/vTcMFakSot+Zm1ZfGOj0OvCmE=
-			</data>
-		</dict>
-		<key>Whiteboard.bundle/vendor.85a6e582.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DazT4G8gem3S+MQGIKTahLM3gNE=
-			</data>
-			<key>hash2</key>
-			<data>
-			WLKmb8Bc4fbZUhgr1+cdoCOn3SQfDzHmWi4p8ZghsRo=
-			</data>
-		</dict>
 		<key>Whiteboard.bundle/vendor.e80b909f.js</key>
 		<dict>
 			<key>hash</key>
@@ -383,17 +345,6 @@
 			ueEcInyEcKB84zbFqz2z+KC29+ca7RYzBTPOXoR32/8=
 			</data>
 		</dict>
-		<key>Whiteboard.bundle/web-sdk.08b4af77.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qt5p+N174cP8vVznXTG2RpFrUrc=
-			</data>
-			<key>hash2</key>
-			<data>
-			T7/41inZftwwYKqPSZ4PojOHObISq229e/hevd+C/QA=
-			</data>
-		</dict>
 		<key>Whiteboard.bundle/web-sdk.19a2683d.js</key>
 		<dict>
 			<key>hash</key>
@@ -403,17 +354,6 @@
 			<key>hash2</key>
 			<data>
 			zY7UynDPCoDs2ccISw8jYh13s52jbxXMq9Dvt3PJHUk=
-			</data>
-		</dict>
-		<key>Whiteboard.bundle/web-sdk.33ca0c9f.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wNxSLISq0bQ+TCBiNhBI7vYjY9Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			pqibcpi+JN5LAIC9X6GRH5M8SfBBLOAiGkh4twkTing=
 			</data>
 		</dict>
 	</dict>

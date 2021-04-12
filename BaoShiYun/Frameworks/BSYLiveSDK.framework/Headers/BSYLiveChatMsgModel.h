@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, BSYLiveChatMsgType) {
 @class BSYLiveChatMsgImageElem;
 @interface BSYLiveChatMsgModel : NSObject
 @property (nonatomic, assign, readonly)uint64_t groupId; ///群id
-@property (nonatomic, strong, readonly)NSString *userId; ///用户ID
+@property (nonatomic, strong, readonly)NSString *buid; ///用户ID，用户id转换后的抱石云uid （注：用于角色匹配使用）
 @property (nonatomic, strong, readonly)NSString *nickName; ///昵称
 @property (nonatomic, strong, readonly)NSString *avatarUrl; ///头像地址
 @property (nonatomic, assign, readonly)uint64_t timestamp; ///时间戳
