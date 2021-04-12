@@ -18,7 +18,6 @@ FOUNDATION_EXPORT const unsigned char BSYLiveSDKVersionString[];
 
 #import <BSYLiveSDK/BSYLiveKitDefine.h>
 #import <BSYLiveSDK/BSYLiveKit.h>
-#import <BSYLiveSDK/BSYCoursewareLiveKit.h>
 #import <BSYLiveSDK/BSYLiveParam.h>
 #import <BSYLiveSDK/BSYLiveChatMsgModel.h>
 #import <BSYLiveSDK/BSYLiveChatMsgTextElem.h>
