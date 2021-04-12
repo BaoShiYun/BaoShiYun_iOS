@@ -19,6 +19,7 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "BSYMacro.h"
 #import "BSYHud.h"
+#import <BSYVod/BSYVod.h>
 #import <BSYLiveSDK/BSYLiveSDK.h>
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/SDWebImage.h>

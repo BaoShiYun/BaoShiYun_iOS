@@ -12,3 +12,4 @@ FOUNDATION_EXPORT double BSYSDKVersionNumber;
 
 //! Project version string for BSYSDK.
 FOUNDATION_EXPORT const unsigned char BSYSDKVersionString[];
+

@@ -208,6 +208,8 @@
 		77A3E572260CAD4A00001CB7 /* vod_player_audio_display in Resources */ = {isa = PBXBuildFile; fileRef = 77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */; };
 		77A3E59F260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */; };
 		77A3E5A0260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */; };
+		77A3E7DB261EAFC500001CB7 /* BSYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */; };
+		77A3E7DC261EAFC500001CB7 /* BSYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E1FF26681C6B67C4A7B6D06E /* Pods_BaoShiYun_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */; };
 /* End PBXBuildFile section */
@@ -444,6 +446,8 @@
 		77A3E56A260CAD4A00001CB7 /* vod_player_audio_display */ = {isa = PBXFileReference; lastKnownFileType = folder; path = vod_player_audio_display; sourceTree = "<group>"; };
 		77A3E59D260DBA6600001CB7 /* BSYLiveEntryPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYLiveEntryPageController.h; sourceTree = "<group>"; };
 		77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYLiveEntryPageController.m; sourceTree = "<group>"; };
+		77A3E7D9261EAFC300001CB7 /* BSYVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYVideoViewController.h; sourceTree = "<group>"; };
+		77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYVideoViewController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaoShiYun_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51F6A39EF62019F2EDB7612 /* BaoShiYun.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BaoShiYun.podspec; path = ../BaoShiYun.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -514,6 +518,7 @@
 		6003F593195388D20070C39A /* Example for BaoShiYun */ = {
 			isa = PBXGroup;
 			children = (
+				77A3E7D8261DD39600001CB7 /* Video */,
 				77A3E383260B453C00001CB7 /* OpenSource */,
 				77A3E2C1260B13AC00001CB7 /* BSYUtility */,
 				77A3E29C260A1B1900001CB7 /* Live */,
@@ -1029,6 +1034,15 @@
 			path = lottie;
 			sourceTree = "<group>";
 		};
+		77A3E7D8261DD39600001CB7 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E7D9261EAFC300001CB7 /* BSYVideoViewController.h */,
+				77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		FE1558C0E751481CABECDD1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1302,6 +1316,7 @@
 				77A3E4BB260C783B00001CB7 /* BSYLiveRouteOptionController.m in Sources */,
 				77A3E3A8260B453C00001CB7 /* TYBaseAnimation.m in Sources */,
 				77A3E349260B42D700001CB7 /* BSYLiveIMCommonCell.m in Sources */,
+				77A3E7DB261EAFC500001CB7 /* BSYVideoViewController.m in Sources */,
 				77A3E398260B453C00001CB7 /* TYAlertView.m in Sources */,
 				77A3E33F260B42D600001CB7 /* BSYLiveIMMenuView.m in Sources */,
 				77A3E4BD260C783B00001CB7 /* BSYLiveMenuOptionCell.m in Sources */,
@@ -1350,6 +1365,7 @@
 				77A3E2D9260B284400001CB7 /* FavorEmitter.m in Sources */,
 				77A3E3A5260B453C00001CB7 /* TYAlertDropDownAnimation.m in Sources */,
 				77A3E35A260B42D700001CB7 /* BSYLiveIMMsgCell.m in Sources */,
+				77A3E7DC261EAFC500001CB7 /* BSYVideoViewController.m in Sources */,
 				77A3E47B260B60CB00001CB7 /* YBIBSheetView.m in Sources */,
 				77A3E358260B42D700001CB7 /* BSYLiveIMEventNotifyMsgCellData.m in Sources */,
 				77A3E44D260B60CB00001CB7 /* YYImage.m in Sources */,
@@ -1538,7 +1554,53 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaoShiYun/BaoShiYun-Prefix.pch";
 				INFOPLIST_FILE = "BaoShiYun/BaoShiYun-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AgoraRtcKit\"",
+					"-framework",
+					"\"BSYLib\"",
+					"-framework",
+					"\"BSYLiveDataLayer\"",
+					"-framework",
+					"\"BSYLiveSDK\"",
+					"-framework",
+					"\"BSYReport\"",
+					"-framework",
+					"\"BSYRtc\"",
+					"-framework",
+					"\"BSYSDK\"",
+					"-framework",
+					"\"BSYVod\"",
+					"-framework",
+					"\"BSYunIMKit\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImSDK\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baoshiyun.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = devIOSDemo;
@@ -1558,7 +1620,53 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaoShiYun/BaoShiYun-Prefix.pch";
 				INFOPLIST_FILE = "BaoShiYun/BaoShiYun-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AgoraRtcKit\"",
+					"-framework",
+					"\"BSYLib\"",
+					"-framework",
+					"\"BSYLiveDataLayer\"",
+					"-framework",
+					"\"BSYLiveSDK\"",
+					"-framework",
+					"\"BSYReport\"",
+					"-framework",
+					"\"BSYRtc\"",
+					"-framework",
+					"\"BSYSDK\"",
+					"-framework",
+					"\"BSYVod\"",
+					"-framework",
+					"\"BSYunIMKit\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImSDK\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.baoshiyun.iosDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = devIOSDemo;
