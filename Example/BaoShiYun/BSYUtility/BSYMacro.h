@@ -9,6 +9,9 @@
 #import "BSYUtility.h"
 #import "UIColor+HexColor.h"
 
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
 #define INT_RANDOM(from,to) ( from + ( arc4random() % ( to - from + 1 ) ) )
 
 #define UISCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
@@ -28,4 +31,4 @@
 
 
 #define Framework_Bundle [NSBundle bundleForClass:self.class]
-#define AssetsImage(name) [UIImage imageNamed:name] //[UIImage imageNamed:name inBundle:Framework_Bundle compatibleWithTraitCollection:nil]
+#define AssetsImage(name) [UIImage imageNamed:name]

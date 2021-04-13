@@ -10,6 +10,7 @@
 #import "BSYLiveViewController.h"
 #import "BSYConfig.h"
 #import "BSYLiveEntryPageController.h"
+#import "BSYVideoViewController.h"
 
 @interface BSYViewController ()
 
@@ -25,7 +26,7 @@
     [self.view addSubview:self.liveBtn];
     [self.liveBtn addTarget:self action:@selector(liveBtnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.vodBtn];
-    [self.liveBtn addTarget:self action:@selector(vodBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.vodBtn addTarget:self action:@selector(vodBtnAction) forControlEvents:UIControlEventTouchUpInside];
     @weakify(self);
     [self.liveBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
@@ -103,7 +104,8 @@
 }
 
 - (void)vodBtnAction {
-    
+    BSYVideoViewController *videoController = [[BSYVideoViewController alloc] init];
+    [self.navigationController pushViewController:videoController animated:YES];
 }
 
 - (void)interactiveBtnAction {

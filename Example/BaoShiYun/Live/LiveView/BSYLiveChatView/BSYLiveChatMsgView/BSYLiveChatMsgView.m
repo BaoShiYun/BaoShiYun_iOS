@@ -428,12 +428,12 @@
             }
         }
         if(data) {
-            data.identifier = msgModel.userId;
+            data.identifier = msgModel.buid;
             data.name = msgModel.nickName;
-            if(msgModel.userId && [msgModel.userId isEqualToString:self.uid]) {
+            if(msgModel.buid && [msgModel.buid isEqualToString:self.uid]) {
                 data.roleType = BSYLiveIMRoleType_Self;
             } else {
-                data.roleType = [self.roleManager getRoleType:msgModel.userId];
+                data.roleType = [self.roleManager getRoleType:msgModel.buid];
             }
         }
     }

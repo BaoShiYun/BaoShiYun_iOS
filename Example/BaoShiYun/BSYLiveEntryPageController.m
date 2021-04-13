@@ -60,6 +60,7 @@
     [self.view setNeedsUpdateConstraints];
 }
 
+
 - (void)updateViewConstraints {
     [super updateViewConstraints];
     @weakify(self);
@@ -136,6 +137,10 @@
         make.width.mas_equalTo(110);
             
     }];
+}
+
+- (BOOL)shouldAutorotate {
+    return NO;
 }
 
 - (UIButton *)returnBtn {

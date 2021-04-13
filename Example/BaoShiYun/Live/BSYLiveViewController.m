@@ -161,6 +161,10 @@
     return UIStatusBarStyleLightContent;
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 
 - (void)updateViewConstraints {
     [super updateViewConstraints];

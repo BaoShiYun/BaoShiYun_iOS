@@ -210,6 +210,14 @@
 		77A3E5A0260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */; };
 		77A3E7DB261EAFC500001CB7 /* BSYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */; };
 		77A3E7DC261EAFC500001CB7 /* BSYVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */; };
+		77A3E82F26244A0900001CB7 /* BSYVodOperateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E82E26244A0800001CB7 /* BSYVodOperateView.m */; };
+		77A3E83026244A0A00001CB7 /* BSYVodOperateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E82E26244A0800001CB7 /* BSYVodOperateView.m */; };
+		77A3E844262466EF00001CB7 /* BSYVideoTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E841262466ED00001CB7 /* BSYVideoTopBar.m */; };
+		77A3E845262466EF00001CB7 /* BSYVideoTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E841262466ED00001CB7 /* BSYVideoTopBar.m */; };
+		77A3E846262466EF00001CB7 /* BSYVideoBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E842262466EE00001CB7 /* BSYVideoBottomBar.m */; };
+		77A3E847262466EF00001CB7 /* BSYVideoBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E842262466EE00001CB7 /* BSYVideoBottomBar.m */; };
+		77A3E84F26246AB400001CB7 /* GKSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E84E26246AB400001CB7 /* GKSliderView.m */; };
+		77A3E85026246AB400001CB7 /* GKSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E84E26246AB400001CB7 /* GKSliderView.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E1FF26681C6B67C4A7B6D06E /* Pods_BaoShiYun_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */; };
 /* End PBXBuildFile section */
@@ -448,6 +456,14 @@
 		77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYLiveEntryPageController.m; sourceTree = "<group>"; };
 		77A3E7D9261EAFC300001CB7 /* BSYVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYVideoViewController.h; sourceTree = "<group>"; };
 		77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYVideoViewController.m; sourceTree = "<group>"; };
+		77A3E82D26244A0800001CB7 /* BSYVodOperateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYVodOperateView.h; sourceTree = "<group>"; };
+		77A3E82E26244A0800001CB7 /* BSYVodOperateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYVodOperateView.m; sourceTree = "<group>"; };
+		77A3E840262466ED00001CB7 /* BSYVideoTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYVideoTopBar.h; sourceTree = "<group>"; };
+		77A3E841262466ED00001CB7 /* BSYVideoTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYVideoTopBar.m; sourceTree = "<group>"; };
+		77A3E842262466EE00001CB7 /* BSYVideoBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYVideoBottomBar.m; sourceTree = "<group>"; };
+		77A3E843262466EE00001CB7 /* BSYVideoBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYVideoBottomBar.h; sourceTree = "<group>"; };
+		77A3E84D26246AB400001CB7 /* GKSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKSliderView.h; sourceTree = "<group>"; };
+		77A3E84E26246AB400001CB7 /* GKSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKSliderView.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaoShiYun_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51F6A39EF62019F2EDB7612 /* BaoShiYun.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BaoShiYun.podspec; path = ../BaoShiYun.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -782,6 +798,7 @@
 		77A3E383260B453C00001CB7 /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
+				77A3E84C26246AB400001CB7 /* GKSliderView */,
 				77A3E3F4260B60CB00001CB7 /* YBImageBrowser */,
 				77A3E384260B453C00001CB7 /* TYAlertController */,
 			);
@@ -1037,10 +1054,25 @@
 		77A3E7D8261DD39600001CB7 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				77A3E82D26244A0800001CB7 /* BSYVodOperateView.h */,
+				77A3E82E26244A0800001CB7 /* BSYVodOperateView.m */,
+				77A3E843262466EE00001CB7 /* BSYVideoBottomBar.h */,
+				77A3E842262466EE00001CB7 /* BSYVideoBottomBar.m */,
+				77A3E840262466ED00001CB7 /* BSYVideoTopBar.h */,
+				77A3E841262466ED00001CB7 /* BSYVideoTopBar.m */,
 				77A3E7D9261EAFC300001CB7 /* BSYVideoViewController.h */,
 				77A3E7DA261EAFC300001CB7 /* BSYVideoViewController.m */,
 			);
 			path = Video;
+			sourceTree = "<group>";
+		};
+		77A3E84C26246AB400001CB7 /* GKSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				77A3E84D26246AB400001CB7 /* GKSliderView.h */,
+				77A3E84E26246AB400001CB7 /* GKSliderView.m */,
+			);
+			path = GKSliderView;
 			sourceTree = "<group>";
 		};
 		FE1558C0E751481CABECDD1F /* Pods */ = {
@@ -1247,6 +1279,7 @@
 				77A3E4AA260C776E00001CB7 /* BSYLiveStudentCountView.m in Sources */,
 				77A3E464260B60CB00001CB7 /* YBIBImageData.m in Sources */,
 				77A3E480260B60CB00001CB7 /* YBIBDataMediator.m in Sources */,
+				77A3E82F26244A0900001CB7 /* BSYVodOperateView.m in Sources */,
 				77A3E482260B60CB00001CB7 /* YBIBCollectionView.m in Sources */,
 				77A3E37D260B448800001CB7 /* BSYAlertViewController.m in Sources */,
 				77A3E3C6260B494800001CB7 /* BSYInteractiveLiveCameraCell.m in Sources */,
@@ -1269,7 +1302,9 @@
 				77A3E359260B42D700001CB7 /* BSYLiveIMMsgCell.m in Sources */,
 				77A3E2B7260B102E00001CB7 /* BSYLiveOperateView.m in Sources */,
 				77A3E493260C41C700001CB7 /* BSYHud.m in Sources */,
+				77A3E844262466EF00001CB7 /* BSYVideoTopBar.m in Sources */,
 				77A3E34D260B42D700001CB7 /* BSYLiveIMTextMsgCell.m in Sources */,
+				77A3E846262466EF00001CB7 /* BSYVideoBottomBar.m in Sources */,
 				77A3E355260B42D700001CB7 /* BSYLiveIMMsgCellData.m in Sources */,
 				77A3E2E7260B2F2800001CB7 /* UIColor+HexColor.m in Sources */,
 				77A3E472260B60CB00001CB7 /* YBIBUtilities.m in Sources */,
@@ -1320,6 +1355,7 @@
 				77A3E398260B453C00001CB7 /* TYAlertView.m in Sources */,
 				77A3E33F260B42D600001CB7 /* BSYLiveIMMenuView.m in Sources */,
 				77A3E4BD260C783B00001CB7 /* BSYLiveMenuOptionCell.m in Sources */,
+				77A3E84F26246AB400001CB7 /* GKSliderView.m in Sources */,
 				77A3E44A260B60CB00001CB7 /* YYSpriteSheetImage.m in Sources */,
 				77A3E357260B42D700001CB7 /* BSYLiveIMEventNotifyMsgCellData.m in Sources */,
 				77A3E46A260B60CB00001CB7 /* YBIBAuxiliaryViewHandler.m in Sources */,
@@ -1390,7 +1426,9 @@
 				77A3E338260B42D600001CB7 /* BSYLiveChatInputController.m in Sources */,
 				77A3E4C0260C783B00001CB7 /* BSYLiveResolutionOptionController.m in Sources */,
 				77A3E4BA260C783B00001CB7 /* BSYLiveMenuViewController.m in Sources */,
+				77A3E845262466EF00001CB7 /* BSYVideoTopBar.m in Sources */,
 				77A3E356260B42D700001CB7 /* BSYLiveIMMsgCellData.m in Sources */,
+				77A3E83026244A0A00001CB7 /* BSYVodOperateView.m in Sources */,
 				77A3E346260B42D700001CB7 /* BSYLiveIMInputBar.m in Sources */,
 				77A3E5A0260DBA6700001CB7 /* BSYLiveEntryPageController.m in Sources */,
 				77A3E352260B42D700001CB7 /* BSYLiveIMEventNotifyMsgCell.m in Sources */,
@@ -1424,11 +1462,13 @@
 				77A3E370260B436E00001CB7 /* BSYInteractiveLiveMediaView.m in Sources */,
 				77A3E3A1260B453C00001CB7 /* TYAlertController+TransitionAnimate.m in Sources */,
 				77A3E350260B42D700001CB7 /* BSYLiveIMTextMsgCellData.m in Sources */,
+				77A3E847262466EF00001CB7 /* BSYVideoBottomBar.m in Sources */,
 				77A3E479260B60CB00001CB7 /* YBIBToolViewHandler.m in Sources */,
 				77A3E4BC260C783B00001CB7 /* BSYLiveRouteOptionController.m in Sources */,
 				77A3E2A4260A1B3C00001CB7 /* BSYLiveViewController.m in Sources */,
 				77A3E3AB260B453C00001CB7 /* TYAlertController.m in Sources */,
 				77A3E34E260B42D700001CB7 /* BSYLiveIMTextMsgCell.m in Sources */,
+				77A3E85026246AB400001CB7 /* GKSliderView.m in Sources */,
 				77A3E47D260B60CB00001CB7 /* YBIBScreenRotationHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
