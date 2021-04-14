@@ -218,6 +218,8 @@
 		77A3E847262466EF00001CB7 /* BSYVideoBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E842262466EE00001CB7 /* BSYVideoBottomBar.m */; };
 		77A3E84F26246AB400001CB7 /* GKSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E84E26246AB400001CB7 /* GKSliderView.m */; };
 		77A3E85026246AB400001CB7 /* GKSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E84E26246AB400001CB7 /* GKSliderView.m */; };
+		77FF39B02626ECAE0037E664 /* BSYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF39AF2626ECAE0037E664 /* BSYBaseNavigationController.m */; };
+		77FF39B12626ECAE0037E664 /* BSYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FF39AF2626ECAE0037E664 /* BSYBaseNavigationController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		E1FF26681C6B67C4A7B6D06E /* Pods_BaoShiYun_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */; };
 /* End PBXBuildFile section */
@@ -464,6 +466,8 @@
 		77A3E843262466EE00001CB7 /* BSYVideoBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYVideoBottomBar.h; sourceTree = "<group>"; };
 		77A3E84D26246AB400001CB7 /* GKSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKSliderView.h; sourceTree = "<group>"; };
 		77A3E84E26246AB400001CB7 /* GKSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKSliderView.m; sourceTree = "<group>"; };
+		77FF39AE2626ECAE0037E664 /* BSYBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYBaseNavigationController.h; sourceTree = "<group>"; };
+		77FF39AF2626ECAE0037E664 /* BSYBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYBaseNavigationController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		878B65BB10D882C1D4240079 /* Pods_BaoShiYun_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaoShiYun_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51F6A39EF62019F2EDB7612 /* BaoShiYun.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BaoShiYun.podspec; path = ../BaoShiYun.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -600,6 +604,7 @@
 		77A3E295260A1ACD00001CB7 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				77FF39AD2626EC220037E664 /* BSYBaseNavigationController */,
 				77A3E4D8260C9A8C00001CB7 /* BSYAlertViewController */,
 				77A3E4D3260C9A8900001CB7 /* LOTAnimationView */,
 			);
@@ -1075,6 +1080,15 @@
 			path = GKSliderView;
 			sourceTree = "<group>";
 		};
+		77FF39AD2626EC220037E664 /* BSYBaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				77FF39AE2626ECAE0037E664 /* BSYBaseNavigationController.h */,
+				77FF39AF2626ECAE0037E664 /* BSYBaseNavigationController.m */,
+			);
+			path = BSYBaseNavigationController;
+			sourceTree = "<group>";
+		};
 		FE1558C0E751481CABECDD1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1278,6 +1292,7 @@
 				77A3E347260B42D700001CB7 /* BSYLiveIMRoleModel.m in Sources */,
 				77A3E4AA260C776E00001CB7 /* BSYLiveStudentCountView.m in Sources */,
 				77A3E464260B60CB00001CB7 /* YBIBImageData.m in Sources */,
+				77FF39B02626ECAE0037E664 /* BSYBaseNavigationController.m in Sources */,
 				77A3E480260B60CB00001CB7 /* YBIBDataMediator.m in Sources */,
 				77A3E82F26244A0900001CB7 /* BSYVodOperateView.m in Sources */,
 				77A3E482260B60CB00001CB7 /* YBIBCollectionView.m in Sources */,
@@ -1420,6 +1435,7 @@
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 				77A3E39D260B453C00001CB7 /* TYAlertScaleFadeAnimation.m in Sources */,
 				77A3E481260B60CB00001CB7 /* YBIBDataMediator.m in Sources */,
+				77FF39B12626ECAE0037E664 /* BSYBaseNavigationController.m in Sources */,
 				77A3E465260B60CB00001CB7 /* YBIBImageData.m in Sources */,
 				77A3E477260B60CB00001CB7 /* YBIBTopView.m in Sources */,
 				77A3E473260B60CB00001CB7 /* YBIBUtilities.m in Sources */,

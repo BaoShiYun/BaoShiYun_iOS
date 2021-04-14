@@ -14,7 +14,6 @@
 
 
 @interface BSYVideoTopBar ()
-@property (nonatomic, assign) BOOL           isShow;
 @property (nonatomic, strong) UIView                   *container;
 @property (nonatomic, strong) UIImageView              *cellularIcon;
 @property (nonatomic, strong) UIButton                 *backButton;
@@ -39,7 +38,6 @@
 #pragma mark -- UI布局初始化
 - (void)createSubView {
     self.backgroundColor = [UIColor clearColor];
-    self.isShow = YES;
     [self addSubview:self.maskImageView];
     [self addSubview:self.container];
     [self.backButton addTarget:self action:@selector(topViewGoBackAction) forControlEvents:UIControlEventTouchUpInside];
@@ -65,13 +63,14 @@
     
     [self.container mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.left.top.right.equalTo(self);
-        make.bottom.equalTo(self.backButton);
+        make.left.right.equalTo(self);
+        make.top.equalTo(self).with.offset(IPHONE_MARGIN_TOP+15);
+        make.height.mas_equalTo(KKPLAYER_BACK_BTN_HEIGHT);
     }];
     
     [self.backButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(7+IPHONE_MARGIN_TOP);
-        make.top.mas_equalTo(@15.);
+        make.left.mas_equalTo(7+IPHONE_SAFE_AREA.left);
+        make.top.mas_equalTo(0);
         make.width.mas_equalTo(KKPLAYER_BACK_BTN_WIDTH);
         make.height.mas_equalTo(KKPLAYER_BACK_BTN_HEIGHT);
     }];
@@ -93,12 +92,16 @@
     }];
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.right.mas_equalTo(-17-IPHONE_MARGIN_TOP);
+        make.right.mas_equalTo(-17-IPHONE_SAFE_AREA.right);
         make.height.equalTo(self.msgLabel);
         make.centerY.equalTo(self.msgLabel);
         
     }];
 }
+- (BOOL)needsUpdateConstraints {
+    return YES;
+}
+
 
 #pragma mark --
 #pragma mark 懒加载对象
@@ -204,29 +207,6 @@
     }
 }
 
-#pragma mark --
-#pragma mark 隐藏显示切换
-- (void)showVideoTopBar:(BOOL)show {
-    if(show!=self.isShow) {
-        self.isShow = show;
-        @weakify(self);
-        if (show) {
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
-                @strongify(self);
-                self.alpha = 1;
-            } completion:^(BOOL finished) {
-                
-            }];
-        } else {
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
-                @strongify(self);
-                self.alpha = 0;
-            } completion:^(BOOL finished) {
-                
-            }];
-        }
-    }
-}
 
 
 #pragma mark ---

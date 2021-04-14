@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateVideoBufferProgress:(float)bufferProgress;
 - (void)updateVideoPlayProgress:(float)progress;
 - (void)updatePlayButtonState:(BOOL)isPlaying;
+- (void)changedOrientation;
 
 
 @end

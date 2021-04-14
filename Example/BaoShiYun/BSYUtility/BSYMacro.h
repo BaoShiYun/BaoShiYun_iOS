@@ -19,6 +19,8 @@
 
 #define IS_IPhoneX ([BSYUtility iphoneSafeArea].bottom > 0.0)
 
+#define IPHONE_SAFE_AREA ([BSYUtility iphoneSafeArea])
+
 
 #define IPHONE_MARGIN_TOP      (IS_IPhoneX?[BSYUtility iphoneSafeArea].top:[[UIApplication sharedApplication] statusBarFrame].size.height)
 #define IPHONE_MARGIN_BOTTOM   ([BSYUtility iphoneSafeArea].bottom)

@@ -8,10 +8,11 @@
 
 #import "BSYAppDelegate.h"
 #import "BSYViewController.h"
+#import "BSYBaseNavigationController.h"
 
 @interface  BSYAppDelegate()
 
-@property (nonatomic, strong) UINavigationController *navigationController;
+@property (nonatomic, strong) BSYBaseNavigationController *navigationController;
 @property (nonatomic, strong) BSYViewController *viewController;
 
 @end
@@ -26,7 +27,7 @@
         self.window.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
     }
     self.viewController = [[BSYViewController alloc] init];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.navigationController = [[BSYBaseNavigationController alloc] initWithRootViewController:self.viewController];
     self.navigationController.navigationBarHidden = YES;
     
     [self.window setRootViewController:self.navigationController];
@@ -36,6 +37,9 @@
     return YES;
 }
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window {
+    return UIInterfaceOrientationMaskAllButUpsideDown;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

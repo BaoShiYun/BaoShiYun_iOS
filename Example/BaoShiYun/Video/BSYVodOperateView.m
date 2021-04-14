@@ -28,6 +28,7 @@
 @property (nonatomic, strong) UIView                  *gestureView;
 
 @property (nonatomic, assign) BOOL isShowOperate;
+@property (nonatomic, assign) BOOL isLock;
 
 @end
 
@@ -43,6 +44,8 @@
 }
 
 - (void)createSubview {
+    self.isShowOperate = YES;
+    self.isLock = NO;
     [self addSubview:self.container];
     [self.container addSubview:self.gestureView];
     [self.gestureView addGestureRecognizer:self.tapGesture];
@@ -64,9 +67,8 @@
     
     [self.gestureView mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.top.equalTo(self.topBar.mas_bottom);
-        make.left.right.equalTo(self.container);
-        make.bottom.equalTo(self.bottomBar.mas_top);
+        make.left.right.top.equalTo(self.container);
+        make.bottom.equalTo(self.bottomBar.mas_bottom).with.offset(-59-IPHONE_MARGIN_BOTTOM);
     }];
     
     [self.topBar mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -82,7 +84,7 @@
     
     [self.lockBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self)
-        make.right.equalTo(self.container.mas_right).with.offset(-18-IPHONE_MARGIN_TOP);
+        make.right.equalTo(self.container.mas_right).with.offset(-18-IPHONE_SAFE_AREA.right);
         make.centerY.equalTo(self.container);
         make.width.mas_equalTo(36);
         make.height.mas_equalTo(36);
@@ -172,12 +174,58 @@
 #pragma mark ---
 #pragma mark Action
 
+- (void)changedOrientation {
+    [self setNeedsUpdateConstraints];
+    [self.bottomBar setNeedsUpdateConstraints];
+    [self.topBar setNeedsUpdateConstraints];
+}
+
+
+- (void)clearMsgView {
+    if(!_loadingMsgLabel) {
+        [_loadingMsgLabel removeFromSuperview];
+    }
+    if(!_loadingAnimateLOT) {
+        [_loadingAnimateLOT removeFromSuperview];
+    }
+}
 - (void)showLoadingView:(BOOL)isShow {
-    
+    [self clearMsgView];
+    if(isShow) {
+        [self.container insertSubview:self.loadingMsgLabel belowSubview:self.gestureView];
+        [self.container insertSubview:self.loadingAnimateLOT belowSubview:self.gestureView];
+        [self.loadingAnimateLOT play];
+        @weakify(self);
+        [self.loadingAnimateLOT mas_makeConstraints:^(MASConstraintMaker *make) {
+            @strongify(self);
+            make.bottom.equalTo(self.container.mas_centerY).with.offset(-10+IPHONE_SAFE_AREA.top);
+            make.width.height.mas_equalTo(40);
+            make.centerX.equalTo(self.container);
+        }];
+        
+        [self.loadingMsgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            @strongify(self);
+            make.top.equalTo(self.container.mas_centerY).with.offset(4+IPHONE_SAFE_AREA.top);
+            make.height.mas_equalTo(14);
+            make.centerX.width.equalTo(self.container);
+        }];
+    }
+   
 }
 
 - (void)showErrorMsg:(NSString *)errMsg {
-    
+    [self clearMsgView];
+    if(errMsg) {
+        [self.container insertSubview:self.loadingMsgLabel belowSubview:self.gestureView];
+        _loadingMsgLabel.font = [UIFont fontWithName:@"PingFangSC-Regular" size:15];
+        self.loadingMsgLabel.text = errMsg;
+        @weakify(self);
+        [self.loadingMsgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            @strongify(self);
+            make.center.equalTo(self.container);
+        }];
+    }
+   
 }
 - (void)setVideoTopBarTitle:(NSString *)title {
     [self.topBar setVideoTopBarTitle:title];
@@ -201,11 +249,70 @@
     [self.bottomBar updatePlayButtonState:isPlaying];
 }
 - (void)lockBtnAction {
-    
+    self.isLock = !self.isLock;
+    [self updateLockButtonState];
+    [self showVideoTopBar:!self.isLock];
+    [self showVideoBottomBar:!self.isLock];
 }
 
 - (void)tapGestureAction {
+    self.isShowOperate = !self.isShowOperate;
+    self.lockBtn.hidden = !self.isShowOperate;
+    if(self.isLock) {
+        [self showVideoTopBar:NO];
+        [self showVideoBottomBar:NO];
+    } else {
+        [self showVideoTopBar:self.isShowOperate];
+        [self showVideoBottomBar:self.isShowOperate];
+    }
     
+    
+}
+
+- (void)showVideoTopBar:(BOOL)show {
+    @weakify(self);
+    if (show) {
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
+            @strongify(self);
+            self.topBar.alpha = 1;
+        } completion:^(BOOL finished) {
+            
+        }];
+    } else {
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
+            @strongify(self);
+            self.topBar.alpha = 0;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+}
+
+- (void)showVideoBottomBar:(BOOL)show {
+    @weakify(self);
+    if (show) {
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
+            @strongify(self);
+            self.bottomBar.alpha = 1;
+        } completion:^(BOOL finished) {
+            
+        }];
+    } else {
+        [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
+            @strongify(self);
+            self.bottomBar.alpha = 0;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+}
+
+- (void)updateLockButtonState {
+    if(self.isLock) {
+        [self.lockBtn setImage:AssetsImage(@"lock_close") forState:UIControlStateNormal];
+    } else {
+        [self.lockBtn setImage:AssetsImage(@"lock") forState:UIControlStateNormal];
+    }
 }
 
 
@@ -242,6 +349,8 @@
         [self.delegate operateViewVideoSliderProgressUpdate:progress];
     }
 }
+
+
 
 
 

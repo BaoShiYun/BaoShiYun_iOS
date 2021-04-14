@@ -10,13 +10,14 @@
 #import "BSYVodOperateView.h"
 
 
-@interface BSYVideoViewController ()
+@interface BSYVideoViewController ()<BSYVodOperateViewDelegate>
 
 @property (nonatomic, strong)BSYVodOperateView *operateView;
 @property (nonatomic, strong)BSYPlayerView *playerView;
 @property (nonatomic, strong)NSString *mediaId;
 @property (nonatomic, strong)BSYDownloadModel *downloadModel;
 @property (nonatomic, assign)BOOL isLocal;
+@property (nonatomic, assign)BOOL autorotate;
 
 @end
 
@@ -26,11 +27,15 @@
     [super viewDidLoad];
     [self.view addSubview:self.playerView];
     [self.view addSubview:self.operateView];
+    self.operateView.delegate = self;
     if(!IS_IPAD) {
         [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
     }
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceDidChangedOrientation:) name:UIApplicationDidChangeStatusBarFrameNotification object:nil];
 }
+
+
 
 
 
@@ -53,6 +58,7 @@
 - (BSYPlayerView *)playerView {
     if(!_playerView) {
         _playerView = [[BSYPlayerView alloc] init];
+        _playerView.backgroundColor = [UIColor blackColor];
     }
     return _playerView;
 }
@@ -93,6 +99,36 @@
         [invocation setArgument:&val atIndex:2];
         [invocation invoke];
     }
+}
+
+
+- (void)deviceDidChangedOrientation:(UIInterfaceOrientation)orientation {
+    [self.operateView changedOrientation];
+}
+
+
+
+#pragma mark ---
+#pragma mark BSYVodOperateViewDelegate
+
+
+- (void)operateViewReturnBtnAction {
+    if(!IS_IPAD) {
+        [self interfaceOrientation:UIInterfaceOrientationPortrait];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)operateViewPlayAction {
+    
+}
+- (void)operateViewRateAction {
+    
+}
+- (void)operateViewResolutionAction {
+    
+}
+- (void)operateViewVideoSliderProgressUpdate:(float)progress {
+    
 }
 
 @end

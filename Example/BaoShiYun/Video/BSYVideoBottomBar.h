@@ -21,7 +21,6 @@
 @interface BSYVideoBottomBar : UIView
 @property (nonatomic, weak) id<BSYVideoBottomBarDelegate> delegate;
 
-- (void)showBottomBar:(BOOL)show;
 - (void)setResolutionTitle:(NSString *)title;
 - (void)setVideoDurationTime:(NSTimeInterval)duration;
 - (void)updateVideoBufferProgress:(float)bufferProgress;

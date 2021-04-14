@@ -13,7 +13,6 @@
 
 @property (nonatomic, assign) BOOL                  isPlaying;
 @property (nonatomic, assign) BOOL                  silderDraging;
-@property (nonatomic, assign) BOOL                  isShow;
 @property (nonatomic, strong) UIView                *container;
 @property (nonatomic, strong) LOTAnimationView       *playBtnLOT;
 @property (nonatomic, strong) UIButton              *playBtn;
@@ -45,7 +44,6 @@
 }
 
 - (void)createSubView {
-    self.isShow = YES;
     self.isPlaying = YES;
     self.silderDraging = NO;
     [self addSubview:self.maskImageView];
@@ -74,21 +72,23 @@
     
     [self.container mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.left.right.bottom.equalTo(self);
+        make.left.equalTo(self).with.offset(10+IPHONE_SAFE_AREA.left);
+        make.right.equalTo(self).with.offset(-10-IPHONE_SAFE_AREA.right);
+        make.bottom.equalTo(self);
         make.height.mas_equalTo(59+IPHONE_MARGIN_BOTTOM);
     }];
     
-    [self.progressSlider mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.progressSlider mas_remakeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.left.equalTo(self.container).with.offset(15+IPHONE_MARGIN_TOP);
+        make.left.equalTo(self.container).with.offset(5);
         make.top.equalTo(self.container).with.offset(10);
         make.height.mas_equalTo(22);
-        make.right.equalTo(self.container).with.offset(-15-IPHONE_MARGIN_TOP);
+        make.right.equalTo(self.container).with.offset(-5);
     }];
     
     [self.playBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.left.mas_equalTo(10+IPHONE_MARGIN_TOP);
+        make.left.equalTo(self.container);
         make.top.equalTo(self.progressSlider.mas_bottom);
         make.width.mas_equalTo(30);
         make.height.mas_equalTo(30);
@@ -109,7 +109,7 @@
     
     [self.resolutionBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.right.equalTo(self.container).with.offset(-15-IPHONE_MARGIN_TOP);
+        make.right.equalTo(self.container).with.offset(-5);
         make.top.equalTo(self.playBtn);
         make.height.mas_equalTo(40);
         make.width.mas_equalTo(31.0);
@@ -144,6 +144,7 @@
 - (UIView *)container {
     if(!_container) {
         _container = [[UIView alloc] init];
+    
     }
     return _container;
 }
@@ -340,22 +341,6 @@
     self.progressSlider.value = 0.0;
     self.progressSlider.bufferValue = 0.0;
     self.progressSlider.userInteractionEnabled = YES;
-}
-
-- (void)showBottomBar:(BOOL)show {
-    if(show!=self.isShow) {
-        self.isShow = show;
-        if (show) {
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
-                self.alpha = 1;
-            } completion:NULL];
-        }else {
-            [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionLayoutSubviews animations:^{
-                self.alpha = 0;
-            } completion:NULL];
-            
-        }
-    }
 }
 
 

@@ -28,7 +28,6 @@ typedef NS_ENUM(NSInteger, BSYVideoTopBarNetworkIcon) {
 
 - (void)setVideoTopBarTitle:(NSString *)title;
 - (void)switchNetworkState:(BSYVideoTopBarNetworkIcon)state;
-- (void)showVideoTopBar:(BOOL)show;
 
 @end
 
