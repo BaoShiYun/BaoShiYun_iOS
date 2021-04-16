@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<BSYVodOperateViewDelegate> delegate;
 
 - (void)showLoadingView:(BOOL)isShow;
+- (void)showOperateView:(BOOL)isShow;
 - (void)showErrorMsg:(NSString *)errMsg;
 - (void)setVideoTopBarTitle:(NSString *)title;
 - (void)switchNetworkState:(BSYVideoTopBarNetworkIcon)state;

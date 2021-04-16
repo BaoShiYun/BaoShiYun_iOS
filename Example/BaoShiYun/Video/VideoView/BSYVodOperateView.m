@@ -182,10 +182,10 @@
 
 
 - (void)clearMsgView {
-    if(!_loadingMsgLabel) {
+    if(_loadingMsgLabel) {
         [_loadingMsgLabel removeFromSuperview];
     }
-    if(!_loadingAnimateLOT) {
+    if(_loadingAnimateLOT) {
         [_loadingAnimateLOT removeFromSuperview];
     }
 }
@@ -256,7 +256,11 @@
 }
 
 - (void)tapGestureAction {
-    self.isShowOperate = !self.isShowOperate;
+    [self showOperateView:!self.isShowOperate];
+}
+
+- (void)showOperateView:(BOOL)isShow {
+    self.isShowOperate = isShow;
     self.lockBtn.hidden = !self.isShowOperate;
     if(self.isLock) {
         [self showVideoTopBar:NO];
@@ -265,8 +269,6 @@
         [self showVideoTopBar:self.isShowOperate];
         [self showVideoBottomBar:self.isShowOperate];
     }
-    
-    
 }
 
 - (void)showVideoTopBar:(BOOL)show {

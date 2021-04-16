@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYVideoViewController : UIViewController
 
+- (instancetype)initWithMediaId:(NSString *)mediaId;
+
 @end
 
 NS_ASSUME_NONNULL_END

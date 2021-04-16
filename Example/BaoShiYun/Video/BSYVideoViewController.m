@@ -8,35 +8,95 @@
 
 #import "BSYVideoViewController.h"
 #import "BSYVodOperateView.h"
+#import "BSYVideoRateController.h"
+#import "BSYVideoResolutionController.h"
+#import "BSYVideoResolutionDspModel.h"
 
 
-@interface BSYVideoViewController ()<BSYVodOperateViewDelegate>
+@interface BSYVideoViewController ()<BSYVodOperateViewDelegate,BSYVideoPlayerDelegate>
 
 @property (nonatomic, strong)BSYVodOperateView *operateView;
 @property (nonatomic, strong)BSYPlayerView *playerView;
+@property (nonatomic, strong)BSYVodVideoModel *videoModel;
+@property (nonatomic, strong)BSYVodVideoQualityModel *qualityModel;
+@property (nonatomic, strong)BSYAlertViewController *alertViewController;
 @property (nonatomic, strong)NSString *mediaId;
 @property (nonatomic, strong)BSYDownloadModel *downloadModel;
 @property (nonatomic, assign)BOOL isLocal;
-@property (nonatomic, assign)BOOL autorotate;
+@property (nonatomic, assign)BOOL isPause;
+
 
 @end
 
 @implementation BSYVideoViewController
 
+- (instancetype)initWithMediaId:(NSString *)mediaId {
+    self = [super init];
+    if(self) {
+        self.isLocal = NO;
+        self.mediaId = mediaId;
+    }
+    return self;
+}
+
+- (instancetype)initWithLocalVideo:(BSYDownloadModel *)downLoadModel {
+    self = [super init];
+    if(self) {
+        self.isLocal = YES;
+        self.downloadModel = downLoadModel;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.playerView];
+    self.playerView.delegate = self;
     [self.view addSubview:self.operateView];
     self.operateView.delegate = self;
     if(!IS_IPAD) {
         [self interfaceOrientation:UIInterfaceOrientationLandscapeRight];
     }
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceDidChangedOrientation:) name:UIApplicationDidChangeStatusBarFrameNotification object:nil];
+    if(self.isLocal) {
+        [self playLocalVideo];
+    } else {
+        [self playOnlineVideo];
+    }
+}
+
+- (void)playOnlineVideo {
+    @weakify(self);
+    BSYPlayInfo *playInfo = [[BSYPlayInfo alloc] initWithMediaId:self.mediaId];
+    [self.operateView showLoadingView:YES];
+    playInfo.finishBlock = ^(BSYVodVideoModel * _Nonnull vodVideo) {
+        @strongify(self);
+        self.videoModel = vodVideo;
+        [self.playerView playVodViedo:vodVideo withCustomId:nil];
+        self.qualityModel = self.playerView.qualityModel;
+        [self.operateView setVideoTopBarTitle:vodVideo.title];
+        [self.operateView setResolutionTitle:self.qualityModel.resolution];
+    };
+    
+    playInfo.errorBlock = ^(NSError * _Nonnull error) {
+        @strongify(self);
+        [self.operateView showErrorMsg:error.domain];
+    };
+    [playInfo start];
 }
 
 
-
+- (void)playLocalVideo {
+    if(self.downloadModel) {
+        [self.operateView setVideoTopBarTitle:self.downloadModel.fileName];
+        [self.operateView showLoadingView:YES];
+        [self.operateView setResolutionTitle:self.downloadModel.resolution];
+        [self.playerView playLocalVideo:self.downloadModel];
+    } else {
+        [self.operateView showErrorMsg:@"传入参数错误"];
+    }
+   
+}
 
 
 - (void)updateViewConstraints {
@@ -107,10 +167,67 @@
 }
 
 
+#pragma mark ----
+#pragma mark BSYVideoPlayerDelegate
+
+-(void)videoPlayerIsReadyToPlayVideo:(BSYPlayerView *)playerView {
+    [self.operateView showLoadingView:NO];
+    [self.operateView setVideoDurationTime:playerView.duration];
+    if(self.isPause) {
+        [self.playerView pause];
+    }
+}
+
+
+-(void)videoPlayerDidReachEnd:(BSYPlayerView *)playerView {
+    [self.operateView showErrorMsg:@"播放结束"];
+}
+
+-(void)videoPlayer:(BSYPlayerView *)playerView timeDidChange:(float)time {
+    NSTimeInterval durTime = playerView.duration;
+    NSTimeInterval curTime = playerView.currentPlaybackTime;
+    if(durTime>0.0) {
+        if(curTime>durTime) {
+            curTime=durTime;
+        }
+        [self.operateView updateVideoPlayProgress:curTime/durTime];
+    }
+}
+
+-(void)videoPlayer:(BSYPlayerView *)playerView loadedTimeRangeDidChange:(float)duration {
+    NSTimeInterval durTime = playerView.duration;
+    NSTimeInterval loadedTime = duration;
+    if(durTime>0.0) {
+        if(loadedTime>durTime) {
+            loadedTime=durTime;
+        }
+        [self.operateView updateVideoBufferProgress:loadedTime/durTime];
+    }
+}
+
+-(void)videoPlayerPlaybackBufferEmpty:(BSYPlayerView *)playerView {
+    [self.operateView showLoadingView:YES];
+}
+
+-(void)videoPlayerPlaybackLikelyToKeepUp:(BSYPlayerView *)playerView {
+    [self.operateView showLoadingView:NO];
+}
+
+-(void)videoPlayer:(BSYPlayerView *)playerView receivedTimeOut:(BSYPlayerViewTimeOut)timeOut {
+    [self.operateView showErrorMsg:@"加载超时"];
+}
+
+-(void)videoPlayer:(BSYPlayerView *)playerView didFailWithError:(NSError *)error {
+    [self.operateView showErrorMsg:error.domain];
+}
+
+-(void)videoPlayer:(BSYPlayerView *)playerView ChangePlayerLayer:(AVPlayerLayer *)playerLayer {
+    
+}
+
 
 #pragma mark ---
 #pragma mark BSYVodOperateViewDelegate
-
 
 - (void)operateViewReturnBtnAction {
     if(!IS_IPAD) {
@@ -118,17 +235,84 @@
     }
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 - (void)operateViewPlayAction {
-    
+    self.isPause = !self.isPause;
+    if(self.isPause) {
+        [self.playerView pause];
+    } else {
+        [self.playerView play];
+    }
+    [self.operateView updatePlayButtonState:!self.isPause];
 }
+
 - (void)operateViewRateAction {
+    [self.operateView showOperateView:NO];
+    float rate = self.playerView.player.rate;
+    BSYVideoRateController *rateCtrl = [[BSYVideoRateController alloc] initWithDefaultRate:rate];
+    [rateCtrl showInController:self];
+    @weakify(self);
+    rateCtrl.rateSelectBlock = ^(float rate) {
+        @strongify(self);
+        [self.playerView setPlayerRate:rate];
+        [self.operateView showOperateView:YES];
+    };
+    rateCtrl.cancelBlock = ^{
+        @strongify(self);
+        [self.operateView showOperateView:YES];
+    };
     
 }
+
 - (void)operateViewResolutionAction {
+    [self.operateView showOperateView:NO];
+    BSYVideoResolutionDspModel *curResolution = nil;
+    NSMutableArray<BSYVideoResolutionDspModel *> *resolutionList = [NSMutableArray<BSYVideoResolutionDspModel *> array];
+    if(self.isLocal) {
+        curResolution = [[BSYVideoResolutionDspModel alloc] initWithResolution:self.downloadModel.resolution];
+        [resolutionList addObject:curResolution];
+    } else {
+        if(self.qualityModel) {
+            curResolution = [[BSYVideoResolutionDspModel alloc] initWithResolution:self.qualityModel.resolution];
+        }
+        if(self.videoModel && self.videoModel.mediaMetaInfo) {
+            for (BSYVodVideoQualityModel *qualityModel in self.videoModel.mediaMetaInfo.videoGroup) {
+                BSYVideoResolutionDspModel *dspModel = [[BSYVideoResolutionDspModel alloc] initWithResolution:qualityModel.resolution];
+                [resolutionList addObject:dspModel];
+            }
+        }
+    }
     
+    BSYVideoResolutionController *resolutionCtrl = [[BSYVideoResolutionController alloc] initResolutionList:resolutionList defaultResolution:curResolution];
+    [resolutionCtrl showInController:self];
+    @weakify(self);
+    resolutionCtrl.resolutionSelectBlock = ^(BSYVideoResolutionDspModel *resolutionDsp) {
+        @strongify(self);
+        [self.operateView showLoadingView:YES];
+        [self.playerView switchQuality:[self getQualityModelWithResolution:resolutionDsp.resolution] withCustomId:nil];
+        [self.operateView showOperateView:YES];
+    };
+    resolutionCtrl.cancelBlock = ^{
+        @strongify(self);
+        [self.operateView showOperateView:YES];
+    };
 }
+
+- (BSYVodVideoQualityModel *)getQualityModelWithResolution:(NSString *)resolution {
+    if(self.videoModel && self.videoModel.mediaMetaInfo) {
+        for (BSYVodVideoQualityModel *qualityModel in self.videoModel.mediaMetaInfo.videoGroup) {
+            if([qualityModel.resolution isEqualToString:resolution]) {
+                return qualityModel;
+            }
+        }
+    }
+    return nil;
+}
+
 - (void)operateViewVideoSliderProgressUpdate:(float)progress {
-    
+    if(self.playerView.playing) {
+        [self.playerView scrub:self.playerView.duration*progress];
+    }
 }
 
 @end
