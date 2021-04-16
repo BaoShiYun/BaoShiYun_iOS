@@ -23,6 +23,7 @@
 #import <BSYLiveSDK/BSYLiveSDK.h>
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/SDWebImage.h>
+#import <Reachability/Reachability.h>
 #import "BaoShiYun_Example-Swift.h"
 
 #endif

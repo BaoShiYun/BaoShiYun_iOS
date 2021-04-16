@@ -22,6 +22,7 @@
 @property (nonatomic, strong)BSYAlertViewController *alertViewController;
 @property (nonatomic, strong)NSString *mediaId;
 @property (nonatomic, strong)BSYDownloadModel *downloadModel;
+@property (nonatomic, strong)Reachability *reachability;
 @property (nonatomic, assign)BOOL isLocal;
 @property (nonatomic, assign)BOOL isPause;
 
@@ -73,6 +74,7 @@
         @strongify(self);
         self.videoModel = vodVideo;
         [self.playerView playVodViedo:vodVideo withCustomId:nil];
+        [self initNetworkTools];
         self.qualityModel = self.playerView.qualityModel;
         [self.operateView setVideoTopBarTitle:vodVideo.title];
         [self.operateView setResolutionTitle:self.qualityModel.resolution];
@@ -89,6 +91,7 @@
 - (void)playLocalVideo {
     if(self.downloadModel) {
         [self.operateView setVideoTopBarTitle:self.downloadModel.fileName];
+        [self.operateView switchNetworkState:BSYVideoTopBarNetworkIcon_Local];
         [self.operateView showLoadingView:YES];
         [self.operateView setResolutionTitle:self.downloadModel.resolution];
         [self.playerView playLocalVideo:self.downloadModel];
@@ -164,6 +167,44 @@
 
 - (void)deviceDidChangedOrientation:(UIInterfaceOrientation)orientation {
     [self.operateView changedOrientation];
+}
+
+
+#pragma mark --
+#pragma mark 网络
+- (void)initNetworkTools {
+    self.reachability = [Reachability reachabilityForInternetConnection];
+    [self.reachability startNotifier];
+}
+
+-(void)reachabilityChanged:(NSNotification*)notification {
+    NetworkStatus status = [self.reachability currentReachabilityStatus];
+    [self updateNetworkStatusChanged:status];
+}
+
+- (void)updateNetworkStatusChanged:(NetworkStatus)networkStatus {
+    switch (networkStatus) {
+        case NotReachable:
+            break;
+        case ReachableViaWiFi:
+            if(!self.isLocal) {
+                [self.operateView switchNetworkState:BSYVideoTopBarNetworkIcon_Wifi];
+            }
+            break;
+        case ReachableViaWWAN: {
+            if(self.playerView.playing && !self.isLocal) {
+                [self.operateView switchNetworkState:BSYVideoTopBarNetworkIcon_4G];
+                [BSYHud showHUDError:@"正在使用蜂窝数据"];
+            }
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)resetNetworkTools {
+    [self.reachability stopNotifier];
 }
 
 
@@ -313,6 +354,11 @@
     if(self.playerView.playing) {
         [self.playerView scrub:self.playerView.duration*progress];
     }
+}
+
+
+- (void)dealloc {
+    [self resetNetworkTools];
 }
 
 @end

@@ -3,6 +3,7 @@ PODS:
   - lottie-ios (3.2.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.4)
+  - Reachability (3.2)
   - ReactiveObjC (3.1.1)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - lottie-ios
   - Masonry
   - MJExtension
+  - Reachability
   - ReactiveObjC
   - SDWebImage
   - SVProgressHUD
@@ -23,6 +25,7 @@ SPEC REPOS:
     - lottie-ios
     - Masonry
     - MJExtension
+    - Reachability
     - ReactiveObjC
     - SDWebImage
     - SVProgressHUD
@@ -36,10 +39,11 @@ SPEC CHECKSUMS:
   lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: f39c544d02b372b0287e1a90e0b4f6bf12c20916
+PODFILE CHECKSUM: d8d2ab1aebe6c22bb78392ee99e7b19bf970e789
 
 COCOAPODS: 1.10.1
