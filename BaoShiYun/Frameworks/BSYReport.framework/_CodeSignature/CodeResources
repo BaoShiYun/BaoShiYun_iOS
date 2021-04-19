@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BSYReport.h</key>
 		<data>
-		qguuAovtXNqZOZaPLZXpSnitC4I=
+		fpO91sozuZfox1wBGFBt+xwsRTc=
 		</data>
 		<key>Headers/BSYReportLearnModel.h</key>
 		<data>
@@ -23,6 +23,10 @@
 		<key>Headers/BSYReportLiveHeartBeatModel.h</key>
 		<data>
 		drGFFnD2Jh7uNc5A5VHTKJ+J4Fs=
+		</data>
+		<key>Headers/BSYReportLiveInterruptModel.h</key>
+		<data>
+		hvxVGD6eaw7dj/p5igt4XacYXSA=
 		</data>
 		<key>Headers/BSYReportLiveModel.h</key>
 		<data>
@@ -79,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qguuAovtXNqZOZaPLZXpSnitC4I=
+			fpO91sozuZfox1wBGFBt+xwsRTc=
 			</data>
 			<key>hash2</key>
 			<data>
-			pK6rupz3Xz9rBesDPH+gelpBCmndSKSh+7ddjSoS/e0=
+			/4YvM7WYTCvUWK2TCuPnmwKxNKtgjsWrxjRhlXIi8TM=
 			</data>
 		</dict>
 		<key>Headers/BSYReportLearnModel.h</key>
@@ -128,6 +132,17 @@
 			<key>hash2</key>
 			<data>
 			3zKZg+PNZUA1iOCUcCLMeB2ZtFrP7zBhHI0wkVV28ME=
+			</data>
+		</dict>
+		<key>Headers/BSYReportLiveInterruptModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hvxVGD6eaw7dj/p5igt4XacYXSA=
+			</data>
+			<key>hash2</key>
+			<data>
+			meMYp//xILxyl9GWfEwK8DJfMwiXOQHCMIb64e3jufU=
 			</data>
 		</dict>
 		<key>Headers/BSYReportLiveModel.h</key>

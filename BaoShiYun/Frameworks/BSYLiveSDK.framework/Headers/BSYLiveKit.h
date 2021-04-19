@@ -332,6 +332,21 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)getActivityListSucc:(BSYLiveKitActivityListSuccess)succ fail:(BSYLiveKitFail __nullable)fail;
 
 
+///———————————————————————————————————————————————————————
+///
+///                                  直播反馈接口
+///
+///———————————————————————————————————————————————————————
+
+/**
+ *   @brief   获取红包列表
+ *   @param   content 反馈文本内容
+ *   @param   succ 成功回调
+ *   @param   fail 失败回调
+ */
+- (void)sendLiveFeedbackWithContent:(NSString *)content Succ:(BSYLiveKitSuccess)succ fail:(BSYLiveKitFail __nullable)fail;
+
+
 @end
 
 

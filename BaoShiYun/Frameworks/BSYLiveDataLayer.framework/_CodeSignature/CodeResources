@@ -18,7 +18,11 @@
 		</data>
 		<key>Headers/BSYLiveCommonMsgDetailModel.h</key>
 		<data>
-		n0sWjkTWtRUV7iGi5PrtJ+keOZ0=
+		InJgRvwkCNlKQ1NDeHedrhA0Pa0=
+		</data>
+		<key>Headers/BSYLiveConfigDetailModel.h</key>
+		<data>
+		F3xnNRDwjKiec6AMhMlCj6nChac=
 		</data>
 		<key>Headers/BSYLiveConfigMuteModel.h</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<data>
-		QLZ11r5Jzuj2qlKBDgP7aeAGzhw=
+		kb3FuHrceK6ci3d7PcNfOHG8eCg=
 		</data>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
 		<data>
@@ -79,6 +83,10 @@
 		<key>Headers/BSYLiveInviteBroadcastMsgModel.h</key>
 		<data>
 		4+1RTc5trKV/x63MM+IHuTeIpEc=
+		</data>
+		<key>Headers/BSYLiveOnlineNumSwitchConfigModel.h</key>
+		<data>
+		2UGse++TOb2BenhE2gXHIRChreY=
 		</data>
 		<key>Headers/BSYLiveProtoBaseModel.h</key>
 		<data>
@@ -138,11 +146,7 @@
 		</data>
 		<key>Headers/BSYLiveProtoOnlineNumModel.h</key>
 		<data>
-		nYrL/iLzjdGaEQ6abVsjPVQr1lQ=
-		</data>
-		<key>Headers/BSYLiveProtoOnlineNumSwitchModel.h</key>
-		<data>
-		KUE1jvCKoQDFYHCgOtcP4qPsLlc=
+		fvkVxw4qZUgmq/jGMLcc9Ea/gtI=
 		</data>
 		<key>Headers/BSYLiveProtoTopicAskModel.h</key>
 		<data>
@@ -198,7 +202,7 @@
 		</data>
 		<key>Headers/BSYLiveRoomConfigModel.h</key>
 		<data>
-		M9ErDwmOtU+A3peQKe0IWpiCjxI=
+		pyeW6ye7L1VnyVFXEii7ikA6/M0=
 		</data>
 		<key>Headers/BSYLiveRoomConfigRequest.h</key>
 		<data>
@@ -308,11 +312,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			n0sWjkTWtRUV7iGi5PrtJ+keOZ0=
+			InJgRvwkCNlKQ1NDeHedrhA0Pa0=
 			</data>
 			<key>hash2</key>
 			<data>
-			r0yKIUvjtIivpPpWyLL8q/1Hqb87LqIOgaPALStnITs=
+			Yn9DmWBRz9QQaeWqDsQAbHa0km+SJyCyJOxOtoDHM6w=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveConfigDetailModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F3xnNRDwjKiec6AMhMlCj6nChac=
+			</data>
+			<key>hash2</key>
+			<data>
+			b9N8ldd36R9tAbksJ5dWO9lXojkF/qw5Ev649eyaB6k=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveConfigMuteModel.h</key>
@@ -330,11 +345,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QLZ11r5Jzuj2qlKBDgP7aeAGzhw=
+			kb3FuHrceK6ci3d7PcNfOHG8eCg=
 			</data>
 			<key>hash2</key>
 			<data>
-			GAtucJRI5c4mt/L427Lu9cTefjt7V384CFqyjoaQ508=
+			3X5/EcXprRIk5P8INTMJXDQLOqsk9sr+wWT8+JOO9kI=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
@@ -478,6 +493,17 @@
 			<key>hash2</key>
 			<data>
 			28RbLnnW9GcoAZ6G1MMP3rDWSQB5jrAjLxW7mCML1pI=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveOnlineNumSwitchConfigModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2UGse++TOb2BenhE2gXHIRChreY=
+			</data>
+			<key>hash2</key>
+			<data>
+			8TckLLNZ4VHEjplT3wJzkzg5p7rhEhV0RVsIpZGRI5c=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveProtoBaseModel.h</key>
@@ -638,22 +664,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nYrL/iLzjdGaEQ6abVsjPVQr1lQ=
+			fvkVxw4qZUgmq/jGMLcc9Ea/gtI=
 			</data>
 			<key>hash2</key>
 			<data>
-			8xcAkncxjgcYihsWXdGut/LRPjbBq+TzqZ/ENhf+gpA=
-			</data>
-		</dict>
-		<key>Headers/BSYLiveProtoOnlineNumSwitchModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KUE1jvCKoQDFYHCgOtcP4qPsLlc=
-			</data>
-			<key>hash2</key>
-			<data>
-			MK0EHa9w1OMQoN/C28MqZvGzNZMlZnSgCTErXvNGuoQ=
+			7oAk8k9lAjJOmMJu4NLdBZJFgJXXJf7ASr4gYZ9uObA=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveProtoTopicAskModel.h</key>
@@ -803,11 +818,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M9ErDwmOtU+A3peQKe0IWpiCjxI=
+			pyeW6ye7L1VnyVFXEii7ikA6/M0=
 			</data>
 			<key>hash2</key>
 			<data>
-			oKHwwD74oeZ42FCxxobj5ECDoiv1THCMiyjQP62U69g=
+			weDCenh4upfgxslHby5PaEhzYkoArESCxD8LCmkrOGc=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveRoomConfigRequest.h</key>
