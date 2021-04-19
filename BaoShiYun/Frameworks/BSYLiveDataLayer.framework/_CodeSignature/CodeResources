@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<data>
-		kb3FuHrceK6ci3d7PcNfOHG8eCg=
+		JrEsdBGGOolL4szubFwQDtBhs+k=
 		</data>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
 		<data>
@@ -160,17 +160,9 @@
 		<data>
 		Psf630ucJ/9ZCHP+iG4dpWW8740=
 		</data>
-		<key>Headers/BSYLiveQestionTokenModel.h</key>
-		<data>
-		5ZgGUcLAiaNkH0FW/sI8x9ygbqA=
-		</data>
 		<key>Headers/BSYLiveQuestionListRequest.h</key>
 		<data>
 		DwECLcnF36QSJSxBvc+qvLLVuJY=
-		</data>
-		<key>Headers/BSYLiveQuestionModel.h</key>
-		<data>
-		MmnTF0zz59f0h7tryxy3Um5Sr64=
 		</data>
 		<key>Headers/BSYLiveQuestionTokenRequest.h</key>
 		<data>
@@ -179,10 +171,6 @@
 		<key>Headers/BSYLiveRedPackageListRequest.h</key>
 		<data>
 		EKVh9E+yU0GagoMGApJCmLIdsrY=
-		</data>
-		<key>Headers/BSYLiveRedPackageModel.h</key>
-		<data>
-		UpFbXAEDfuRuAOG8X/IzdQxqvOk=
 		</data>
 		<key>Headers/BSYLiveRedPackageReceiveRequest.h</key>
 		<data>
@@ -345,11 +333,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kb3FuHrceK6ci3d7PcNfOHG8eCg=
+			JrEsdBGGOolL4szubFwQDtBhs+k=
 			</data>
 			<key>hash2</key>
 			<data>
-			3X5/EcXprRIk5P8INTMJXDQLOqsk9sr+wWT8+JOO9kI=
+			iiaDZjW2fklleHhj5ov0MQKsW32dGyj2Wv4M6dRX2lg=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
@@ -704,17 +692,6 @@
 			p7GP0pSNlwIvMhdzPl9xFkyZKQicrdS8MNFvj6OXNuM=
 			</data>
 		</dict>
-		<key>Headers/BSYLiveQestionTokenModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			5ZgGUcLAiaNkH0FW/sI8x9ygbqA=
-			</data>
-			<key>hash2</key>
-			<data>
-			CsND1UYiY7fQPppyNqNqt6XQGb1foIL38eybNPAVEF0=
-			</data>
-		</dict>
 		<key>Headers/BSYLiveQuestionListRequest.h</key>
 		<dict>
 			<key>hash</key>
@@ -724,17 +701,6 @@
 			<key>hash2</key>
 			<data>
 			7nVAktson8WrD9rFLWrolQ2Ofy2fVFAiBxMnObCG6i0=
-			</data>
-		</dict>
-		<key>Headers/BSYLiveQuestionModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MmnTF0zz59f0h7tryxy3Um5Sr64=
-			</data>
-			<key>hash2</key>
-			<data>
-			QezyaNfvPL1vmHp2cZxyBrRHb6h3ip4vGsLgRv4Avw4=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveQuestionTokenRequest.h</key>
@@ -757,17 +723,6 @@
 			<key>hash2</key>
 			<data>
 			9xSBYDfQKDLKkIk50zYg5LXrZEfXZ7NuvhvTd8SSgCE=
-			</data>
-		</dict>
-		<key>Headers/BSYLiveRedPackageModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UpFbXAEDfuRuAOG8X/IzdQxqvOk=
-			</data>
-			<key>hash2</key>
-			<data>
-			+oJbKMVEQHxFjGG4OrjhDcA50aK19/qEn+XmFbY4O1Q=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveRedPackageReceiveRequest.h</key>
