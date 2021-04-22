@@ -48,7 +48,6 @@
 
 - (void)updateViewConstraints {
     [super updateViewConstraints];
-    
 }
 
 - (UIButton *)liveBtn {

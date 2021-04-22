@@ -1,25 +1,25 @@
 //
-//  BSYTimer.m
+//  DispatchTimer.m
 //  BSYLib
 //
 //  Created by Duane on 2020/11/3.
 //
 
-#import "BSYTimer.h"
+#import "DispatchTimer.h"
 
-@interface BSYTimer ()
+@interface DispatchTimer ()
 
 @property (strong, nonatomic) dispatch_source_t timer;
 
 @end
 
-@implementation BSYTimer
+@implementation DispatchTimer
 
-+ (BSYTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
++ (DispatchTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                      repeats:(BOOL)repeats
                                        queue:(dispatch_queue_t)queue
                                        block:(void (^)(void))block {
-    BSYTimer *timer = [[BSYTimer alloc] initWithInterval:interval
+    DispatchTimer *timer = [[DispatchTimer alloc] initWithInterval:interval
                                                  repeats:repeats
                                                    queue:queue
                                                    block:block];

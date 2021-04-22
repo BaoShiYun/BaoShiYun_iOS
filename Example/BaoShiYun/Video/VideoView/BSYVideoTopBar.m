@@ -7,7 +7,7 @@
 //
 
 #import "BSYVideoTopBar.h"
-#import "BSYTimer.h"
+#import "DispatchTimer.h"
 
 #define KKPLAYER_BACK_BTN_HEIGHT      30
 #define KKPLAYER_BACK_BTN_WIDTH       30
@@ -20,7 +20,7 @@
 @property (nonatomic, strong) UILabel                  *msgLabel;
 @property (nonatomic, strong) UIImageView              *maskImageView;
 @property (nonatomic, strong) UILabel                  *timeLabel;
-@property (nonatomic, strong) BSYTimer                 *timer;
+@property (nonatomic, strong) DispatchTimer                 *timer;
 @end
 
 
@@ -213,7 +213,7 @@
 - (void)startTimer {
     if(self.timer==nil) {
         @weakify(self);
-        self.timer = [BSYTimer scheduledTimerWithTimeInterval:1.0 repeats:YES queue:dispatch_get_main_queue() block:^{
+        self.timer = [DispatchTimer scheduledTimerWithTimeInterval:1.0 repeats:YES queue:dispatch_get_main_queue() block:^{
             @strongify(self);
             [self timerAction];
         }];

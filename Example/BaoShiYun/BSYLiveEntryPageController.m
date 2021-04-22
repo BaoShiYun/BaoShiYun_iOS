@@ -57,7 +57,6 @@
     [self.view addSubview:self.enterCodeText];
     [self.view addSubview:self.enterBtn];
     [self.enterBtn addTarget:self action:@selector(enterBtnAcition) forControlEvents:UIControlEventTouchUpInside];
-    [self.view setNeedsUpdateConstraints];
 }
 
 

@@ -13,9 +13,6 @@
 + (UIEdgeInsets)iphoneSafeArea {
     static UIEdgeInsets gSafeArea = {0.5, 0, 0, 0};
 
-    if (gSafeArea.top != 0.5) {
-        return gSafeArea;
-    }
     gSafeArea = UIEdgeInsetsMake(0, 0, 0, 0);
     if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
         return gSafeArea;

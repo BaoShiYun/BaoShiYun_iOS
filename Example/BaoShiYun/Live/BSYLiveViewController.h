@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BSYLiveViewController : UIViewController
+@interface BSYLiveViewController : BSYBaseViewController
 
 - (instancetype)initWithLiveParam:(BSYLiveParam *)liveParam;
 

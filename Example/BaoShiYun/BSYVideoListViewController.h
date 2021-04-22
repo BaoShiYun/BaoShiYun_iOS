@@ -1,8 +1,8 @@
 //
-//  BSYLiveEntryPageController.h
+//  BSYVideoListViewController.h
 //  BaoShiYun
 //
-//  Created by zddMac on 2021/3/26.
+//  Created by zddMac on 2021/4/22.
 //  Copyright © 2021 duanguangming@gmail.com. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BSYLiveEntryPageController : BSYBaseViewController
+@interface BSYVideoListViewController : BSYBaseViewController
 
 @end
 

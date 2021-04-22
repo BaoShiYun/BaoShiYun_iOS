@@ -24,6 +24,8 @@
 #import <MJExtension/MJExtension.h>
 #import <SDWebImage/SDWebImage.h>
 #import <Reachability/Reachability.h>
+#import <Masonry/Masonry.h>
 #import "BaoShiYun_Example-Swift.h"
+#import "BSYBaseViewController.h"
 
 #endif

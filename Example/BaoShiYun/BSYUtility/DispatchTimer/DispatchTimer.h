@@ -1,5 +1,5 @@
 //
-//  BSYTimer.h
+//  DispatchTimer.h
 //  BSYLib
 //
 //  Created by Duane on 2020/11/3.
@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BSYTimer : NSObject
+@interface DispatchTimer : NSObject
 
-+ (BSYTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
++ (DispatchTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                      repeats:(BOOL)repeats
                                        queue:(dispatch_queue_t)queue
                                        block:(void (^)(void))block;

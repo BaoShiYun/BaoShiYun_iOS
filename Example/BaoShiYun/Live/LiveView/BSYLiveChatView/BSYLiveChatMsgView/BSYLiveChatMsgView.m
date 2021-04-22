@@ -16,7 +16,7 @@
 #import "BSYLiveIMImageMsgCell.h"
 #import "BSYLiveIMEventNotifyMsgCellData.h"
 #import "BSYLiveIMEventNotifyMsgCell.h"
-#import "BSYTimer.h"
+#import "DispatchTimer.h"
 #import "YBImageBrowser.h"
 
 
@@ -54,7 +54,7 @@
 @property (nonatomic, strong) UIButton *newMsgBtn;
 @property (nonatomic, assign) NSInteger newMsgCount;
 @property (nonatomic, assign) NSUInteger cellShowIndex;
-@property (nonatomic, strong) BSYTimer *showMsgTimer;
+@property (nonatomic, strong) DispatchTimer *showMsgTimer;
 
 @property (nonatomic, strong) NSString *uid;
 @property (nonatomic, strong) NSString *nickName;
@@ -263,7 +263,7 @@
 - (void)startShowMsgTimer {
     if(!self.showMsgTimer) {
         @weakify(self);
-        self.showMsgTimer = [BSYTimer scheduledTimerWithTimeInterval:BSYLiveIMMessageCellLoadTimer repeats:YES queue:dispatch_get_main_queue() block:^{
+        self.showMsgTimer = [DispatchTimer scheduledTimerWithTimeInterval:BSYLiveIMMessageCellLoadTimer repeats:YES queue:dispatch_get_main_queue() block:^{
             @strongify(self);
             if(!self.disableRender) {
                 [self inserTableViewCell];
