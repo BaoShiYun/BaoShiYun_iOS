@@ -9,6 +9,7 @@
 #import "BSYAppDelegate.h"
 #import "BSYViewController.h"
 #import "BSYBaseNavigationController.h"
+#import "BSYConfig.h"
 
 @interface  BSYAppDelegate()
 
@@ -34,6 +35,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [self.window makeKeyAndVisible];
+    [BSYVodSdk configTenantId:[BSYConfig tencentId] customUid:@"12345678" token:[BSYConfig vodToken]];
     return YES;
 }
 

@@ -31,12 +31,20 @@
 		770C7688262938EC0036A783 /* BSYVideoRateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 770C7684262938EC0036A783 /* BSYVideoRateTableViewCell.m */; };
 		770C769026293CC60036A783 /* BSYVideoResolutionDspModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 770C768F26293CC60036A783 /* BSYVideoResolutionDspModel.m */; };
 		770C769126293CC60036A783 /* BSYVideoResolutionDspModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 770C768F26293CC60036A783 /* BSYVideoResolutionDspModel.m */; };
+		77719F3926354D3A00C997A2 /* BSYVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77719F3826354D3A00C997A2 /* BSYVideoListCell.m */; };
+		77719F3A26354D3A00C997A2 /* BSYVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77719F3826354D3A00C997A2 /* BSYVideoListCell.m */; };
+		77719F4026354E1E00C997A2 /* BSYVideoDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77719F3F26354E1E00C997A2 /* BSYVideoDownloadView.m */; };
+		77719F4126354E1E00C997A2 /* BSYVideoDownloadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77719F3F26354E1E00C997A2 /* BSYVideoDownloadView.m */; };
 		77926B52263171C700CABF15 /* BSYVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B51263171C700CABF15 /* BSYVideoListViewController.m */; };
 		77926B53263171C700CABF15 /* BSYVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B51263171C700CABF15 /* BSYVideoListViewController.m */; };
 		77926B582631722400CABF15 /* BSYVideoDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B572631722400CABF15 /* BSYVideoDownloadViewController.m */; };
 		77926B592631722400CABF15 /* BSYVideoDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B572631722400CABF15 /* BSYVideoDownloadViewController.m */; };
 		77926B672631761D00CABF15 /* BSYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B662631761D00CABF15 /* BSYBaseViewController.m */; };
 		77926B682631761D00CABF15 /* BSYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B662631761D00CABF15 /* BSYBaseViewController.m */; };
+		77926B722631817E00CABF15 /* BSYDownloadTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B712631817E00CABF15 /* BSYDownloadTableCell.m */; };
+		77926B732631817E00CABF15 /* BSYDownloadTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B712631817E00CABF15 /* BSYDownloadTableCell.m */; };
+		77926B7C2631836C00CABF15 /* BSYDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B7B2631836C00CABF15 /* BSYDownloadProgressView.m */; };
+		77926B7D2631836C00CABF15 /* BSYDownloadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77926B7B2631836C00CABF15 /* BSYDownloadProgressView.m */; };
 		77A3E2892609E26B00001CB7 /* BSYConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E2882609E26B00001CB7 /* BSYConfig.m */; };
 		77A3E28A2609E26B00001CB7 /* BSYConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E2882609E26B00001CB7 /* BSYConfig.m */; };
 		77A3E2A3260A1B3C00001CB7 /* BSYLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A3E2A0260A1B3C00001CB7 /* BSYLiveViewController.m */; };
@@ -283,12 +291,20 @@
 		770C7684262938EC0036A783 /* BSYVideoRateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYVideoRateTableViewCell.m; sourceTree = "<group>"; };
 		770C768E26293CC60036A783 /* BSYVideoResolutionDspModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYVideoResolutionDspModel.h; sourceTree = "<group>"; };
 		770C768F26293CC60036A783 /* BSYVideoResolutionDspModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYVideoResolutionDspModel.m; sourceTree = "<group>"; };
+		77719F3726354D3A00C997A2 /* BSYVideoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYVideoListCell.h; sourceTree = "<group>"; };
+		77719F3826354D3A00C997A2 /* BSYVideoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYVideoListCell.m; sourceTree = "<group>"; };
+		77719F3E26354E1E00C997A2 /* BSYVideoDownloadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYVideoDownloadView.h; sourceTree = "<group>"; };
+		77719F3F26354E1E00C997A2 /* BSYVideoDownloadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYVideoDownloadView.m; sourceTree = "<group>"; };
 		77926B50263171C700CABF15 /* BSYVideoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYVideoListViewController.h; sourceTree = "<group>"; };
 		77926B51263171C700CABF15 /* BSYVideoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYVideoListViewController.m; sourceTree = "<group>"; };
 		77926B562631722400CABF15 /* BSYVideoDownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYVideoDownloadViewController.h; sourceTree = "<group>"; };
 		77926B572631722400CABF15 /* BSYVideoDownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYVideoDownloadViewController.m; sourceTree = "<group>"; };
 		77926B652631761D00CABF15 /* BSYBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYBaseViewController.h; sourceTree = "<group>"; };
 		77926B662631761D00CABF15 /* BSYBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYBaseViewController.m; sourceTree = "<group>"; };
+		77926B702631817E00CABF15 /* BSYDownloadTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYDownloadTableCell.h; sourceTree = "<group>"; };
+		77926B712631817E00CABF15 /* BSYDownloadTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYDownloadTableCell.m; sourceTree = "<group>"; };
+		77926B7A2631836C00CABF15 /* BSYDownloadProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYDownloadProgressView.h; sourceTree = "<group>"; };
+		77926B7B2631836C00CABF15 /* BSYDownloadProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYDownloadProgressView.m; sourceTree = "<group>"; };
 		77A3E2872609E26B00001CB7 /* BSYConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSYConfig.h; sourceTree = "<group>"; };
 		77A3E2882609E26B00001CB7 /* BSYConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSYConfig.m; sourceTree = "<group>"; };
 		77A3E29F260A1B3C00001CB7 /* BSYLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYLiveViewController.h; sourceTree = "<group>"; };
@@ -570,6 +586,8 @@
 		6003F593195388D20070C39A /* Example for BaoShiYun */ = {
 			isa = PBXGroup;
 			children = (
+				77719F3D26354DDE00C997A2 /* VideoList */,
+				77926B782631832800CABF15 /* VideoDownload */,
 				77A3E7D8261DD39600001CB7 /* Video */,
 				77A3E29C260A1B1900001CB7 /* Live */,
 				77A3E383260B453C00001CB7 /* OpenSource */,
@@ -582,10 +600,6 @@
 				77A3E59E260DBA6600001CB7 /* BSYLiveEntryPageController.m */,
 				6003F5A5195388D20070C39A /* BSYViewController.h */,
 				6003F5A6195388D20070C39A /* BSYViewController.m */,
-				77926B50263171C700CABF15 /* BSYVideoListViewController.h */,
-				77926B51263171C700CABF15 /* BSYVideoListViewController.m */,
-				77926B562631722400CABF15 /* BSYVideoDownloadViewController.h */,
-				77926B572631722400CABF15 /* BSYVideoDownloadViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				77A3E4EB260CAD1200001CB7 /* lottie */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -667,6 +681,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		77719F3D26354DDE00C997A2 /* VideoList */ = {
+			isa = PBXGroup;
+			children = (
+				77926B50263171C700CABF15 /* BSYVideoListViewController.h */,
+				77926B51263171C700CABF15 /* BSYVideoListViewController.m */,
+				77719F3726354D3A00C997A2 /* BSYVideoListCell.h */,
+				77719F3826354D3A00C997A2 /* BSYVideoListCell.m */,
+				77719F3E26354E1E00C997A2 /* BSYVideoDownloadView.h */,
+				77719F3F26354E1E00C997A2 /* BSYVideoDownloadView.m */,
+			);
+			path = VideoList;
+			sourceTree = "<group>";
+		};
 		77926B642631760000CABF15 /* BSYBaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +701,35 @@
 				77926B662631761D00CABF15 /* BSYBaseViewController.m */,
 			);
 			path = BSYBaseViewController;
+			sourceTree = "<group>";
+		};
+		77926B6F2631815700CABF15 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				77926B702631817E00CABF15 /* BSYDownloadTableCell.h */,
+				77926B712631817E00CABF15 /* BSYDownloadTableCell.m */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		77926B782631832800CABF15 /* VideoDownload */ = {
+			isa = PBXGroup;
+			children = (
+				77926B792631833F00CABF15 /* CustomView */,
+				77926B562631722400CABF15 /* BSYVideoDownloadViewController.h */,
+				77926B572631722400CABF15 /* BSYVideoDownloadViewController.m */,
+				77926B6F2631815700CABF15 /* CellView */,
+			);
+			path = VideoDownload;
+			sourceTree = "<group>";
+		};
+		77926B792631833F00CABF15 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				77926B7A2631836C00CABF15 /* BSYDownloadProgressView.h */,
+				77926B7B2631836C00CABF15 /* BSYDownloadProgressView.m */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		77A3E295260A1ACD00001CB7 /* CustomView */ = {
@@ -1430,6 +1486,8 @@
 				77A3E3F1260B509C00001CB7 /* DispatchTimer.m in Sources */,
 				77926B582631722400CABF15 /* BSYVideoDownloadViewController.m in Sources */,
 				77A3E353260B42D700001CB7 /* BSYLiveIMImageMsgCellData.m in Sources */,
+				77719F4026354E1E00C997A2 /* BSYVideoDownloadView.m in Sources */,
+				77719F3926354D3A00C997A2 /* BSYVideoListCell.m in Sources */,
 				77A3E2D8260B284400001CB7 /* FavorEmitter.m in Sources */,
 				77A3E2A3260A1B3C00001CB7 /* BSYLiveViewController.m in Sources */,
 				77A3E2B9260B102E00001CB7 /* BSYLiveOperateTopBar.m in Sources */,
@@ -1437,9 +1495,11 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				77A3E2892609E26B00001CB7 /* BSYConfig.m in Sources */,
 				77A3E343260B42D700001CB7 /* BSYLiveIMResponderTextView.m in Sources */,
+				77926B722631817E00CABF15 /* BSYDownloadTableCell.m in Sources */,
 				77A3E45E260B60CB00001CB7 /* YBIBImageScrollView.m in Sources */,
 				77A3E4B9260C783B00001CB7 /* BSYLiveMenuViewController.m in Sources */,
 				77A3E478260B60CB00001CB7 /* YBIBToolViewHandler.m in Sources */,
+				77926B7C2631836C00CABF15 /* BSYDownloadProgressView.m in Sources */,
 				77A3E34B260B42D700001CB7 /* BSYLiveIMImageMsgCell.m in Sources */,
 				77A3E47C260B60CB00001CB7 /* YBIBScreenRotationHandler.m in Sources */,
 				77A3E458260B60CB00001CB7 /* YBIBImageLayout.m in Sources */,
@@ -1484,6 +1544,7 @@
 				77A3E455260B60CB00001CB7 /* YBIBDefaultWebImageMediator.m in Sources */,
 				770C767E2629382A0036A783 /* BSYVideoResolutionController.m in Sources */,
 				77A3E2CE260B27DA00001CB7 /* BSYLiveBottomBar.m in Sources */,
+				77926B732631817E00CABF15 /* BSYDownloadTableCell.m in Sources */,
 				77A3E2E8260B2F2800001CB7 /* UIColor+HexColor.m in Sources */,
 				77A3E463260B60CB00001CB7 /* YBIBImageCell.m in Sources */,
 				77A3E342260B42D700001CB7 /* BSYLiveIMMenuCell.m in Sources */,
@@ -1548,6 +1609,7 @@
 				770C769126293CC60036A783 /* BSYVideoResolutionDspModel.m in Sources */,
 				77A3E36C260B436E00001CB7 /* BSYInteractiveControlView.m in Sources */,
 				77A3E2C6260B13FB00001CB7 /* BSYUtility.m in Sources */,
+				77719F4126354E1E00C997A2 /* BSYVideoDownloadView.m in Sources */,
 				77A3E2F9260B3E3E00001CB7 /* InsetsTextField.m in Sources */,
 				77A3E44B260B60CB00001CB7 /* YYSpriteSheetImage.m in Sources */,
 				77A3E459260B60CB00001CB7 /* YBIBImageLayout.m in Sources */,
@@ -1556,9 +1618,11 @@
 				770C7688262938EC0036A783 /* BSYVideoRateTableViewCell.m in Sources */,
 				77A3E3A3260B453C00001CB7 /* UIView+TYAutoLayout.m in Sources */,
 				77A3E46D260B60CB00001CB7 /* YBIBIconManager.m in Sources */,
+				77719F3A26354D3A00C997A2 /* BSYVideoListCell.m in Sources */,
 				77A3E33A260B42D600001CB7 /* BSYLiveIMFaceView.m in Sources */,
 				77A3E28A2609E26B00001CB7 /* BSYConfig.m in Sources */,
 				77A3E399260B453C00001CB7 /* TYAlertView.m in Sources */,
+				77926B7D2631836C00CABF15 /* BSYDownloadProgressView.m in Sources */,
 				77A3E487260B60CB00001CB7 /* YBIBAnimatedTransition.m in Sources */,
 				77A3E489260B60CB00001CB7 /* NSObject+YBImageBrowser.m in Sources */,
 				77A3E2B8260B102E00001CB7 /* BSYLiveOperateView.m in Sources */,

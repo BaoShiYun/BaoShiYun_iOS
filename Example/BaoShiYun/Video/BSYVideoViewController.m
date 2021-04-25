@@ -77,7 +77,8 @@
         [self initNetworkTools];
         self.qualityModel = self.playerView.qualityModel;
         [self.operateView setVideoTopBarTitle:vodVideo.title];
-        [self.operateView setResolutionTitle:self.qualityModel.resolution];
+        BSYVideoResolutionDspModel *resolutionDspModel = [[BSYVideoResolutionDspModel alloc] initWithResolution:self.qualityModel.resolution];
+        [self.operateView setResolutionTitle:resolutionDspModel.resolutionName];
     };
     
     playInfo.errorBlock = ^(NSError * _Nonnull error) {
@@ -93,7 +94,7 @@
         [self.operateView setVideoTopBarTitle:self.downloadModel.fileName];
         [self.operateView switchNetworkState:BSYVideoTopBarNetworkIcon_Local];
         [self.operateView showLoadingView:YES];
-        [self.operateView setResolutionTitle:self.downloadModel.resolution];
+        [self.operateView setResolutionTitle:self.downloadModel.resolutionDes];
         [self.playerView playLocalVideo:self.downloadModel];
     } else {
         [self.operateView showErrorMsg:@"传入参数错误"];
@@ -332,6 +333,7 @@
         [self.operateView showLoadingView:YES];
         [self.playerView switchQuality:[self getQualityModelWithResolution:resolutionDsp.resolution] withCustomId:nil];
         [self.operateView showOperateView:YES];
+        [self.operateView setResolutionTitle:resolutionDsp.resolutionName];
     };
     resolutionCtrl.cancelBlock = ^{
         @strongify(self);

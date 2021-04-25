@@ -11,6 +11,7 @@
 #import "BSYConfig.h"
 #import "BSYLiveEntryPageController.h"
 #import "BSYVideoViewController.h"
+#import "BSYVideoListViewController.h"
 
 @interface BSYViewController ()
 
@@ -115,8 +116,10 @@
 }
 
 - (void)vodBtnAction {
-    BSYVideoViewController *videoController = [[BSYVideoViewController alloc] init];
-    [self.navigationController pushViewController:videoController animated:YES];
+    BSYVideoListViewController *vodListController = [[BSYVideoListViewController alloc] init];
+    [self.navigationController pushViewController:vodListController animated:YES];
+//    BSYVideoViewController *videoController = [[BSYVideoViewController alloc] init];
+//    [self.navigationController pushViewController:videoController animated:YES];
 }
 
 - (void)interactiveBtnAction {

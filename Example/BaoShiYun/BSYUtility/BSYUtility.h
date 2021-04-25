@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIEdgeInsets)iphoneSafeArea;
 + (NSString *)mainBundleDirectory;
++ (NSString *)fileSizeToString:(NSUInteger)llBytes;
 
 @end
 

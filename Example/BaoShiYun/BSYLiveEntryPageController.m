@@ -11,12 +11,6 @@
 #import "BSYLiveViewController.h"
 
 
-//param.userId = @"5488885";
-//param.tenantId = BSYConfig.tencentId;
-//param.enterCode = @"05d6acd00b414a939b634eb001f298fa";
-//param.liveId = @"live-847494715441152";
-//param.nickName = @"浪里个浪";
-//param.avatarUrl = @"";
 
 @interface BSYLiveEntryPageController ()
 
@@ -138,9 +132,6 @@
     }];
 }
 
-- (BOOL)shouldAutorotate {
-    return NO;
-}
 
 - (UIButton *)returnBtn {
     if(!_returnBtn) {
