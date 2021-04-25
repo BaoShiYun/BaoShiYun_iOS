@@ -41,19 +41,19 @@
         BSYVideoMediaId:@"media-848899839229952",
         BSYVideoName:@"第一段",
         BSYVideoDuration:@(875),
-        BSYVideoCoverImg:@"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201611%2F24%2F20161124123217_sWz8m.png&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621944302&t=0e63d1ae24babc023fae8977fa457b1b"
+        BSYVideoCoverImg:@"https://bkimg.cdn.bcebos.com/pic/9e3df8dcd100baa1cd114d0c2b5bae12c8fcc3ce807b?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto"
     },
     @{
         BSYVideoMediaId:@"media-848899856007168 ",
         BSYVideoName:@"第二段",
         BSYVideoDuration:@(921),
-        BSYVideoCoverImg:@"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwx2.sinaimg.cn%2Flarge%2F007xWHp9ly1gpf1t9mdv1j30q40q44qp.jpg&refer=http%3A%2F%2Fwx2.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621944348&t=b5beb124e5d842e9ca539f9b58bdc6f2"
+        BSYVideoCoverImg:@"https://bkimg.cdn.bcebos.com/pic/86d6277f9e2f0708283888f4816eaf99a9014d0854a6"
     },
     @{
         BSYVideoMediaId:@"media-848899874390016",
         BSYVideoName:@"第三段",
         BSYVideoDuration:@(275),
-        BSYVideoCoverImg:@"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20180918%2F11%2F1537241434-JUxgFjXmBS.jpg&refer=http%3A%2F%2Fimage.biaobaiju.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621944348&t=99014dc0aced8f5533d12971e0b6447c"
+        BSYVideoCoverImg:@"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.sj520.cn%2Fsc%2Fima%2F1%2Fb_jr00146.jpg&refer=http%3A%2F%2Fwww.sj520.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621948860&t=930425a19b0fccb43cbea8e91bc4f14a"
         
     },
     ];
@@ -92,8 +92,8 @@
 - (UIButton *)returnBtn {
     if(!_returnBtn) {
         _returnBtn = [[UIButton alloc] init];
-        [_returnBtn setImage:AssetsImage(@"live_return_light_btn") forState:UIControlStateNormal];
-        [_returnBtn setImage:AssetsImage(@"live_return_light_btn") forState:UIControlStateHighlighted];
+        [_returnBtn setImage:AssetsImage(@"navi_return_dark") forState:UIControlStateNormal];
+        [_returnBtn setImage:AssetsImage(@"navi_return_dark") forState:UIControlStateHighlighted];
     }
     return _returnBtn;
 }

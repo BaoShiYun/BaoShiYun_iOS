@@ -23,6 +23,7 @@
 @property (nonatomic, strong)NSString *mediaId;
 @property (nonatomic, strong)BSYDownloadModel *downloadModel;
 @property (nonatomic, strong)Reachability *reachability;
+@property (nonatomic, assign)NSTimeInterval curTime;
 @property (nonatomic, assign)BOOL isLocal;
 @property (nonatomic, assign)BOOL isPause;
 
@@ -228,6 +229,7 @@
 -(void)videoPlayer:(BSYPlayerView *)playerView timeDidChange:(float)time {
     NSTimeInterval durTime = playerView.duration;
     NSTimeInterval curTime = playerView.currentPlaybackTime;
+    self.curTime = curTime;
     if(durTime>0.0) {
         if(curTime>durTime) {
             curTime=durTime;
@@ -331,7 +333,9 @@
     resolutionCtrl.resolutionSelectBlock = ^(BSYVideoResolutionDspModel *resolutionDsp) {
         @strongify(self);
         [self.operateView showLoadingView:YES];
-        [self.playerView switchQuality:[self getQualityModelWithResolution:resolutionDsp.resolution] withCustomId:nil];
+        self.qualityModel = [self getQualityModelWithResolution:resolutionDsp.resolution];
+        [self.playerView switchQuality:self.qualityModel withCustomId:nil];
+        [self.playerView scrub:self.curTime];
         [self.operateView showOperateView:YES];
         [self.operateView setResolutionTitle:resolutionDsp.resolutionName];
     };
