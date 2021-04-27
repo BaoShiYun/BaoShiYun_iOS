@@ -100,7 +100,7 @@
 
 - (void)updateState:(BSYDownloadState)state withSpeed:(NSUInteger)speed withUpdateProgress:(CGFloat)progress {
     @weakify(self);
-    dispatch_sync(dispatch_get_main_queue(), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         @strongify(self);
         self.downloadProgress.progress = progress;
         switch (state) {

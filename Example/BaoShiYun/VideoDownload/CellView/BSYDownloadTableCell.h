@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
 @interface BSYDownloadTableCell : UITableViewCell
+
+@property (nonatomic, strong) BSYDownloadModel *downloadModel;
+
+- (void)setContentImageUrl:(NSString *)url;
 
 + (CGFloat)cellHeight;
 @end

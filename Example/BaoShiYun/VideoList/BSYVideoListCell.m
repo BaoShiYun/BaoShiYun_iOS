@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UIImageView *coverView;
 @property (nonatomic, strong) UIImageView *coverPlayIcon;
 @property (nonatomic, strong) UILabel *durationLabel;
+@property (nonatomic, strong) NSDictionary *videoInfo;
 
 
 
@@ -29,6 +30,7 @@
         self.backgroundColor = [UIColor clearColor];
         [self createSubView];
         [self setNeedsUpdateConstraints];
+        [self bindViewModel];
     }
     return self;
 }
@@ -81,6 +83,53 @@
         @strongify(self);
         make.top.equalTo(self.coverPlayIcon.mas_bottom).with.offset(9);
         make.centerX.equalTo(self.coverPlayIcon);
+    }];
+}
+
+- (void)bindViewModel {
+    @weakify(self);
+    [[self.downloadView rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        @strongify(self);
+        if (self.downloadAction) {
+            NSString *mediaId = [self.videoInfo objectForKey:BSYVideoMediaId];
+            self.downloadAction(mediaId);
+        }
+    }];
+    [[RACObserve(self, downloadModel.state) takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id  _Nullable x) {
+        NSNumber *stateNume = x;
+        BSYDownloadState state = [stateNume unsignedIntegerValue];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            @strongify(self);
+            switch (state) {
+                case BSYDownloadStateCompleted: {
+                    self.downloadView.icon.image = AssetsImage(@"video_content_downloaded");
+                    self.downloadView.label.text = @"已下载";
+                    [self.downloadView showAnimation:NO];
+                    self.downloadView.enabled = NO;
+                }
+                    break;
+                case BSYDownloadStateSuspended:
+                case BSYDownloadStateFailed:
+                case BSYDownloadStateReadying:
+                case BSYDownloadStateRunning: {
+                    self.downloadView.icon.image = AssetsImage(@"video_content_loading");
+                    self.downloadView.label.text = @"下载中";
+                    [self.downloadView showAnimation:YES];
+                    self.downloadView.enabled = NO;
+                }
+                    break;
+                case BSYDownloadStateNone:
+                default: {
+                    self.downloadView.enabled = YES;
+                    self.downloadView.icon.image = AssetsImage(@"video_content_download");
+                    self.downloadView.label.text = @"下载";
+                   [self.downloadView showAnimation:NO];
+                }
+                    break;
+            }
+        });
+        
+            
     }];
 }
 
@@ -143,13 +192,17 @@
 }
 
 - (void)setVideoInfo:(NSDictionary *)info {
-    NSString *name = [info objectForKey:BSYVideoName];
-    self.nameLabel.text = name;
-    NSUInteger duration = [[info objectForKey:BSYVideoDuration] unsignedIntegerValue];
-    NSString *timeStr = [NSString stringWithFormat:@"%02d:%02d:%02d",(int)duration/3600,(int)duration/60%60,(int)duration%60];
-    self.durationLabel.text = timeStr;
-    NSString *coverImg = [info objectForKey:BSYVideoCoverImg];
-    [self.coverView sd_setImageWithURL:[NSURL URLWithString:coverImg]];
+    if(info) {
+        _videoInfo = info;
+        NSString *name = [info objectForKey:BSYVideoName];
+        self.nameLabel.text = name;
+        NSUInteger duration = [[info objectForKey:BSYVideoDuration] unsignedIntegerValue];
+        NSString *timeStr = [NSString stringWithFormat:@"%02d:%02d:%02d",(int)duration/3600,(int)duration/60%60,(int)duration%60];
+        self.durationLabel.text = timeStr;
+        NSString *coverImg = [info objectForKey:BSYVideoCoverImg];
+        [self.coverView sd_setImageWithURL:[NSURL URLWithString:coverImg]];
+    }
+   
 }
 
 +(CGFloat)cellHeight {

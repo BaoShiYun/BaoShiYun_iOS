@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BSYVideoViewController : BSYBaseViewController
 
 - (instancetype)initWithMediaId:(NSString *)mediaId;
+- (instancetype)initWithLocalVideo:(BSYDownloadModel *)downLoadModel;
 
 @end
 

@@ -9,6 +9,7 @@
 #import "BSYVideoListViewController.h"
 #import "BSYVideoListCell.h"
 #import "BSYVideoViewController.h"
+#import "BSYVideoDownloadViewController.h"
 
 @interface BSYVideoListViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong)UIButton *returnBtn;
@@ -44,7 +45,7 @@
         BSYVideoCoverImg:@"https://bkimg.cdn.bcebos.com/pic/9e3df8dcd100baa1cd114d0c2b5bae12c8fcc3ce807b?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto"
     },
     @{
-        BSYVideoMediaId:@"media-848899856007168 ",
+        BSYVideoMediaId:@"media-848899856007168",
         BSYVideoName:@"第二段",
         BSYVideoDuration:@(921),
         BSYVideoCoverImg:@"https://bkimg.cdn.bcebos.com/pic/86d6277f9e2f0708283888f4816eaf99a9014d0854a6"
@@ -69,7 +70,7 @@
     }];
     [self.downloadBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.right.mas_equalTo(-10);
+        make.right.mas_equalTo(-18);
         make.height.width.mas_equalTo(40);
         make.centerY.equalTo(self.returnBtn);
     }];
@@ -152,6 +153,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *data = self.dataList[indexPath.row];
     BSYVideoListCell *cell = [tableView dequeueReusableCellWithIdentifier: NSStringFromClass(BSYVideoListCell.class)];
+    @weakify(cell);
+    cell.downloadAction = ^(NSString * _Nonnull mediaId) {
+        BSYPlayInfo *playInfo = [[BSYPlayInfo alloc] initWithMediaId:mediaId];
+        playInfo.finishBlock = ^(BSYVodVideoModel * _Nonnull vodVideo) {
+            @strongify(cell);
+            BSYVodVideoQualityModel *quality = vodVideo.mediaMetaInfo.videoGroup.firstObject;
+            BSYDownloadModel *downloadModel = [BSYDownloadSessionManager createVideoDownloadModel:vodVideo withResolution:quality.resolution];
+            cell.downloadModel = downloadModel;
+            [[BSYDownloadSessionManager sharedInstance] addDownloadTask:downloadModel];
+        };
+        playInfo.errorBlock = ^(NSError * _Nonnull error) {
+            [BSYHud  showHUDError:error.domain];
+        };
+        [playInfo start];
+    };
+    NSString *mediaId = data[BSYVideoMediaId];
+    NSArray<BSYDownloadModel *> *downloadList = [[BSYDownloadSessionManager sharedInstance] getDownLoadVideoModelWithMediaId:mediaId];
+    if(downloadList.count>0) {
+        cell.downloadModel = downloadList.firstObject;
+    }
     [cell setVideoInfo:data];
     return cell;
 }
@@ -161,8 +182,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *data = self.dataList[indexPath.row];
     NSString *mediaId = data[BSYVideoMediaId];
-    BSYVideoViewController *videoController = [[BSYVideoViewController alloc] initWithMediaId:mediaId];
-    [self.navigationController pushViewController:videoController animated:YES];
+    NSArray<BSYDownloadModel *> *downloadList = [[BSYDownloadSessionManager sharedInstance] getDownLoadVideoModelWithMediaId:mediaId];
+    if(downloadList.count>0) {
+        BSYVideoViewController *videoController = [[BSYVideoViewController alloc] initWithLocalVideo:downloadList.firstObject];
+        [self.navigationController pushViewController:videoController animated:YES];
+    } else {
+        BSYVideoViewController *videoController = [[BSYVideoViewController alloc] initWithMediaId:mediaId];
+        [self.navigationController pushViewController:videoController animated:YES];
+    }
     
 }
 
@@ -172,7 +199,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)downloadBtnAction {
-    
+    BSYVideoDownloadViewController *downloadController = [[BSYVideoDownloadViewController alloc] init];
+    [self.navigationController pushViewController:downloadController animated:YES];
 }
 
 @end

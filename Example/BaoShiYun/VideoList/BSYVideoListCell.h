@@ -15,7 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 #define BSYVideoDuration   @"Duration"
 #define BSYVideoCoverImg   @"CoverImg"
 
+
+typedef void(^BSYVideoDownloadAction)(NSString *mediaId);
+
 @interface BSYVideoListCell : UITableViewCell
+
+@property (nonatomic, strong) BSYDownloadModel *downloadModel;
+@property (nonatomic, copy) BSYVideoDownloadAction downloadAction;
 
 +(CGFloat)cellHeight;
 - (void)setVideoInfo:(NSDictionary *)info;
