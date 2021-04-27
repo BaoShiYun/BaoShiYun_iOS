@@ -95,7 +95,7 @@
 
 - (void)setFileSize:(NSUInteger)fileSize {
     _fileSize = fileSize;
-    self.downloadLabel.text = [BSYUtility fileSizeToString:fileSize];
+    self.sizeLabel.text = [BSYUtility fileSizeToString:fileSize];
 }
 
 - (void)updateState:(BSYDownloadState)state withSpeed:(NSUInteger)speed withUpdateProgress:(CGFloat)progress {
