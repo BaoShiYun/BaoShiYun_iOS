@@ -98,7 +98,7 @@
     @weakify(self);
     [[[RACObserve(self, downloadModel.fileSize) distinctUntilChanged] takeUntil:self.rac_willDeallocSignal] subscribeNext:^(NSNumber * _Nullable x) {
         NSNumber *fileSizeNume = x;
-        UInt64 fileSize = [fileSizeNume unsignedIntegerValue];
+        UInt64 fileSize = [fileSizeNume unsignedLongLongValue];
         dispatch_async(dispatch_get_main_queue(), ^{
             @strongify(self);
             [self.progressView setFileSize:fileSize];

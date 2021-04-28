@@ -95,7 +95,8 @@
         [self.operateView setVideoTopBarTitle:self.downloadModel.fileName];
         [self.operateView switchNetworkState:BSYVideoTopBarNetworkIcon_Local];
         [self.operateView showLoadingView:YES];
-        [self.operateView setResolutionTitle:self.downloadModel.resolutionDes];
+        BSYVideoResolutionDspModel *resolutionDspModel = [[BSYVideoResolutionDspModel alloc] initWithResolution:self.downloadModel.resolution];
+        [self.operateView setResolutionTitle:resolutionDspModel.resolutionName];
         [self.playerView playLocalVideo:self.downloadModel];
     } else {
         [self.operateView showErrorMsg:@"传入参数错误"];
