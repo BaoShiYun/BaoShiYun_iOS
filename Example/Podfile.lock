@@ -1,5 +1,5 @@
 PODS:
-  - BaoShiYun (1.0.4)
+  - BaoShiYun (1.0.5)
   - lottie-ios (3.2.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.4)
@@ -35,7 +35,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BaoShiYun: 91863288f39560067bfea23d691688daad47a308
+  BaoShiYun: 8bba3c59bf87d24fc647039f1ced95b62de3ea9d
   lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb

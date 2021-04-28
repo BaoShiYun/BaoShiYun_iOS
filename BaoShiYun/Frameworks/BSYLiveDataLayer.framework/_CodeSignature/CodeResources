@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/BSYLiveCommonMsgDetailModel.h</key>
 		<data>
-		InJgRvwkCNlKQ1NDeHedrhA0Pa0=
+		5jhzOaZZvYMwh/KXoOKDDOd/c4M=
 		</data>
 		<key>Headers/BSYLiveConfigDetailModel.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<data>
-		JrEsdBGGOolL4szubFwQDtBhs+k=
+		OGYoCbJv4medbfIu7mXTaKZOxso=
 		</data>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
 		<data>
@@ -47,6 +47,10 @@
 		<key>Headers/BSYLiveFeedbackRequest.h</key>
 		<data>
 		RJae3yPlZoynZdukChbKOKAf7x8=
+		</data>
+		<key>Headers/BSYLiveIMErrorModel.h</key>
+		<data>
+		1xaSOp4PZsX2LqnbD5Q7dIuFw8M=
 		</data>
 		<key>Headers/BSYLiveIMModel.h</key>
 		<data>
@@ -300,11 +304,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			InJgRvwkCNlKQ1NDeHedrhA0Pa0=
+			5jhzOaZZvYMwh/KXoOKDDOd/c4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yn9DmWBRz9QQaeWqDsQAbHa0km+SJyCyJOxOtoDHM6w=
+			9BYOBF+pf24oDLZJS1/y/kLg8mAlznQXu+JajbwdE5o=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveConfigDetailModel.h</key>
@@ -333,11 +337,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JrEsdBGGOolL4szubFwQDtBhs+k=
+			OGYoCbJv4medbfIu7mXTaKZOxso=
 			</data>
 			<key>hash2</key>
 			<data>
-			iiaDZjW2fklleHhj5ov0MQKsW32dGyj2Wv4M6dRX2lg=
+			wMHiEwCdyP9VGLpto2qcCbaC7EDReRnVC+PDFapaJG8=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
@@ -382,6 +386,17 @@
 			<key>hash2</key>
 			<data>
 			Xk/Z9L5j6ZTgntQeh6Ra2N+hQtm4c/BclYOUcTw4z5k=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveIMErrorModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1xaSOp4PZsX2LqnbD5Q7dIuFw8M=
+			</data>
+			<key>hash2</key>
+			<data>
+			8WNq/mmATHSosLxehc17+7w2V6ihS8+nDGn1oTFf3Yo=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMModel.h</key>

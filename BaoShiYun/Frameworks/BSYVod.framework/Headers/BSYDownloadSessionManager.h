@@ -71,10 +71,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @method
- * @abstract 启动下载器
- * @param userId  用户id
+ * @abstract 配置下载数据存储目录，作为多用户下载数据区分
+ * @param path  存储目录
  */
-- (void)setupWithUserId:(NSString *)userId withBaseStorePath:(NSString *)path;
+- (void)configBaseStorePath:(NSString *)path;
 
 /*!
  * @method
