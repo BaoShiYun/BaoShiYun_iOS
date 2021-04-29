@@ -36,7 +36,6 @@
     
     [self.window makeKeyAndVisible];
     [BSYVodSdk configTenantId:[BSYConfig tencentId] customUid:@"12345678" token:[BSYConfig vodToken]];
-    [[BSYDownloadSessionManager sharedInstance] setupWithUserId:@"12345678" withBaseStorePath:[NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/DownloadStoreData/Default"]]];
     return YES;
 }
 
