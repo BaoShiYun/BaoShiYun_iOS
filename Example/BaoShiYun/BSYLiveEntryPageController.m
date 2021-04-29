@@ -325,6 +325,9 @@
 
 
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 - (void)enterBtnAcition {
     BSYLiveParam *param = [[BSYLiveParam alloc] init];
