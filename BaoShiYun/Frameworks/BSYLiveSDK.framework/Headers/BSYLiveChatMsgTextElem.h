@@ -10,9 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+  文本消息体
+ */
 @interface BSYLiveChatMsgTextElem : NSObject
 
-@property (nonatomic, strong, readonly)NSString *message; ///文本消息
+/**
+ *   @brief  文本消息内容
+ */
+@property (nonatomic, strong, readonly)NSString *message;
 
 @end
 

@@ -10,30 +10,34 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+  直播传入参数
+ */
+
 @interface BSYLiveParam : NSObject
 
 /**
- *   @brief   租户id
+ *   @brief   租户id（必填）
  */
 @property (nonatomic, assign)uint64_t tenantId; ///必填
 /**
- *   @brief   用户Uid
+ *   @brief   用户Uid（必填）
  */
 @property (nonatomic, copy)NSString *userId; ///必填
 /**
- *   @brief   用户昵称
+ *   @brief   用户昵称（必填）
  */
 @property (nonatomic, copy)NSString *nickName; ///必填
 /**
- *   @brief   用户头像
+ *   @brief   用户头像（选填）
  */
 @property (nonatomic, copy)NSString *avatarUrl; ///选填
 /**
- *   @brief   直播间id
+ *   @brief   直播间id（必填）
  */
 @property (nonatomic, copy)NSString *liveId; ///必填
 /**
- *   @brief   直播间enterCode
+ *   @brief   直播间enterCode（必填）
  */
 @property (nonatomic, copy)NSString *enterCode; ///必填
 

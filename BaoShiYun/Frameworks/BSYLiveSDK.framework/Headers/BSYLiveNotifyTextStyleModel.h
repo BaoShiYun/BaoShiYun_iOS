@@ -10,10 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ 通知事件显示模版 仅使用在： BSYLiveEventNotifyType_Customize
+ */
+
 @interface BSYLiveNotifyTextStyleModel : NSObject
 
-@property (nonatomic, strong, readonly)NSString *text; ///文字
-@property (nonatomic, strong, readonly)NSString *color; ///颜色值 例如:#00FFFFFF
+/**
+ *   @brief  文字
+ */
+@property (nonatomic, strong, readonly)NSString *text;
+
+/**
+ *   @brief  颜色值 例如:#00FFFFFF
+ */
+@property (nonatomic, strong, readonly)NSString *color;
 
 @end
 

@@ -10,8 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+/**
+ 测验Token
+ */
 @interface BSYLiveQestionTokenModel : NSObject
 
+/**
+ *   @brief  token值
+ */
 @property (nonatomic, strong) NSString *token;
 
 @end

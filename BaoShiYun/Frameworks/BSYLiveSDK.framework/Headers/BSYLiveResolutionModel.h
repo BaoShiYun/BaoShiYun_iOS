@@ -10,10 +10,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+/**
+  清晰度Model
+ */
 @interface BSYLiveResolutionModel : NSObject
 
-@property (nonatomic, strong, readonly)NSString *resolution; ///清晰度 org-原始 lsd-超清  lhd-高清  lud-清晰
-@property (nonatomic, strong, readonly)NSString *resolutionName; /// 对应的清晰度的描述： 原始、超清、高清、清晰
+/**
+ *   @brief  清晰度类型  org 、lsd、  lhd、  lud
+ *   @discussion org-原始 lsd-超清  lhd-高清  lud-清晰
+ */
+@property (nonatomic, strong, readonly)NSString *resolution;
+
+/**
+ *   @brief  清晰度名称描述 ：原始 、超清 、高清 、清晰
+ */
+@property (nonatomic, strong, readonly)NSString *resolutionName;
 
 @end
 

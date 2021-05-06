@@ -12,23 +12,31 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class BSYDownloadModel;
 @class BSYDownloadProgress;
-// 进度更新block
+
+/**
+ * @brief  进度更新回调
+ */
 typedef void (^BSYDownloadProgressBlock)(BSYDownloadModel *downloadModel, BSYDownloadProgress *progress);
-// 状态更新block
-typedef void (^BSYDownloadStateBlock)(BSYDownloadModel *downloadModel, NSError *error);
-
-
-
-@interface BSYDownloadModel : NSObject
 
 
 /**
-*  @brief 资源类型
+ * @brief  状态更新回调
+ */
+typedef void (^BSYDownloadStateBlock)(BSYDownloadModel *downloadModel, NSError *error);
+
+
+/**
+  离线下载
+ */
+@interface BSYDownloadModel : NSObject
+
+/**
+ *  @brief 资源id
 */
 @property (nonatomic, strong, readonly)NSString *mediaId;
 
 /**
-*  @brief 视频id
+ *  @brief  视频id
 */
 @property (nonatomic, strong, readonly)NSString *videoId;
 
@@ -37,10 +45,9 @@ typedef void (^BSYDownloadStateBlock)(BSYDownloadModel *downloadModel, NSError *
  */
 @property(nonatomic, strong, readonly)NSString * fileName;
 
-/*
+/**
  * @brief 文件下载地址
- */
-
+*/
 @property(nonatomic, strong, readonly)NSString *downloadUrl;
 
 
@@ -55,39 +62,46 @@ typedef void (^BSYDownloadStateBlock)(BSYDownloadModel *downloadModel, NSError *
 @property(nonatomic, assign, readonly)BSYDownloadState state;
 
 /**
-*  @brief 资源类型
+ *  @brief 资源类型
 */
 @property (nonatomic, assign, readonly)BSYDownloadType type;
 
 
 /**
-*  @brief 文件大小
+ *  @brief 文件大小
 */
 @property (nonatomic, assign, readonly)UInt64 fileSize;
 
 /**
- *  @brief 下载进度
+ *  @brief 下载进度  请参考：BSYDownloadProgress
  */
 @property(nonatomic, strong ,readonly)BSYDownloadProgress *progress;
 
 
 /**
- *  @brief 下载进度更新block
+ *  @brief 下载进度更新回调
+ *  @see BSYDownloadProgressBlock
  */
 @property(nonatomic, copy)BSYDownloadProgressBlock progressBlock;
 
 /**
- *  @brief 下载状态更新block
+ *  @brief 下载状态更新
+ *  @see BSYDownloadStateBlock
  */
 @property(nonatomic, copy)BSYDownloadStateBlock stateBlock;
 
 
-/*****视频相关******/
 /**
- *  @brief 分辨率，lud：超清，lhd：高清，lsd：标清
+ *  @brief 分辨率，lud、lhd、lsd
+ *  @discussion lud：超清，lhd：高清，lsd：标清
  */
 @property(nonatomic, strong, readonly)NSString *resolution;
 
+
+/**
+ *  @brief 分辨率，超清、高清、标清
+ *  @discussion lud：超清，lhd：高清，lsd：标清
+ */
 @property(nonatomic, strong, readonly)NSString *resolutionDes;
 
 
@@ -98,6 +112,9 @@ typedef void (^BSYDownloadStateBlock)(BSYDownloadModel *downloadModel, NSError *
 
 
 
+/**
+  下载进度
+ */
 @interface BSYDownloadProgress : NSObject
 
 

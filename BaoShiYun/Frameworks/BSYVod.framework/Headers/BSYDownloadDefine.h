@@ -10,20 +10,52 @@
 #ifndef BSYDownloadDefine_h
 #define BSYDownloadDefine_h
 
-// 下载状态
+
+/**
+ 下载状态
+ */
 typedef NS_ENUM(NSUInteger, BSYDownloadState) {
-    BSYDownloadStateNone,        // 未下载 或 下载删除了
-    BSYDownloadStateReadying,    // 等待下载
-    BSYDownloadStateRunning,     // 正在下载
-    BSYDownloadStateSuspended,   // 下载暂停
-    BSYDownloadStateCompleted,   // 下载完成
-    BSYDownloadStateFailed       // 下载失败
+    
+    /**
+     * 未下载或已删除
+     */
+    BSYDownloadStateNone,
+    
+    /**
+     * 等待下载
+     */
+    BSYDownloadStateReadying,
+    
+    /**
+     * 正在下载
+     */
+    BSYDownloadStateRunning,
+    
+    /**
+     * 下载暂停
+     */
+    BSYDownloadStateSuspended,
+    
+    /**
+     * 下载完成
+     */
+    BSYDownloadStateCompleted,
+    
+    /**
+     * 下载失败
+     */
+    BSYDownloadStateFailed
 };
 
 
-// 下载文件类型
+/**
+ 下载文件类型
+ */
 typedef NS_ENUM(NSUInteger, BSYDownloadType) {
-    BSYDownloadTypeVideo,        //视频
+    /**
+     * 视频
+     */
+    BSYDownloadTypeVideo,
 };
 
 

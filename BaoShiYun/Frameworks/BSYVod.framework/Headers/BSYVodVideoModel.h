@@ -86,12 +86,36 @@ NS_ASSUME_NONNULL_BEGIN
  *  媒资状态
  */
 typedef NS_ENUM(NSInteger, BSYVodVideoStatus) {
-    BSYVodVideoStatus_Success = 0, // 申请成功
-    BSYVodVideoStatus_Processing = 1, // 处理中
-    BSYVodVideoStatus_Processed = 2, // 处理完成
-    BSYVodVideoStatus_Published = 3, // 已发布
-    BSYVodVideoStatus_Disable = 4, // 已停用
-    BSYVodVideoStatus_Deleted = 5, // 已删除
+    
+    /**
+     * 申请成功
+     */
+    BSYVodVideoStatus_Success = 0,
+    
+    /**
+     * 处理中
+     */
+    BSYVodVideoStatus_Processing = 1,
+    
+    /**
+     *  处理完成
+     */
+    BSYVodVideoStatus_Processed = 2,
+    
+    /**
+     * 已发布
+     */
+    BSYVodVideoStatus_Published = 3,
+    
+    /**
+     *  已停用
+     */
+    BSYVodVideoStatus_Disable = 4,
+    
+    /**
+     * 已删除
+     */
+    BSYVodVideoStatus_Deleted = 5,
 };
 
 @interface BSYVodVideoModel : BSYMediaModel

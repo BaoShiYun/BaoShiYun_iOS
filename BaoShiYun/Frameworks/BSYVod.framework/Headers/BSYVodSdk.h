@@ -11,12 +11,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSYVodSdk : NSObject
 
+
+/**
+ * @brief 点播Token
+ */
 @property(class, nonatomic, strong, readonly)NSString *token;
 
-// 租户Id
+/**
+ * @brief 租户id
+ */
 @property (class, nonatomic, assign, readonly) uint64_t tenantId;
 
-// 自定义用户uid
+/**
+ * @brief 用户uid
+ */
 @property (class, nonatomic, strong, readonly) NSString *customUid;
 
 /*!
