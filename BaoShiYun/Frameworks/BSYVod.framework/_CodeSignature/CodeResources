@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/BSYDownloadSessionManager.h</key>
 		<data>
-		eCl3hOpBZII/m5tZ0Fgv5kxi1LQ=
+		tRuDRIOk+CR2rVVLs2xjrU3+HXc=
 		</data>
 		<key>Headers/BSYPlayInfo.h</key>
 		<data>
-		a9LHm1uGw9uF0CU501oF7xcBOgQ=
+		cPpND/3XJYFHp7NA6p8EveMwu+A=
 		</data>
 		<key>Headers/BSYPlayerView.h</key>
 		<data>
@@ -26,19 +26,15 @@
 		</data>
 		<key>Headers/BSYVod.h</key>
 		<data>
-		Oeqcgyc+xJfEWTxmlQvF2g0duyU=
-		</data>
-		<key>Headers/BSYVodSdk.h</key>
-		<data>
-		dgLqYihp+IJXWmIxTuWIW0BL580=
+		YE9bHLff00tGm/MKjeR8aaDWr6o=
 		</data>
 		<key>Headers/BSYVodVideoModel.h</key>
 		<data>
-		WSosffb8s75FH0uachr+PIYl1OE=
+		ky2Oyyo5bLwhlcA2nl7FfVckTQ0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0bcPbC7vX7mg4BQ1xUKMdmwBC94=
+		UNNgPqKBXf5rrCtbgiGGIOs91mQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,22 +69,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eCl3hOpBZII/m5tZ0Fgv5kxi1LQ=
+			tRuDRIOk+CR2rVVLs2xjrU3+HXc=
 			</data>
 			<key>hash2</key>
 			<data>
-			vCKY0w9eGGyHFfQu4qYUS/spXt6ANrCaakOdLsI4mvI=
+			uy9t60neJvBLj/zk1dkwe0JD5qcTpeXh91l/OM/KV3k=
 			</data>
 		</dict>
 		<key>Headers/BSYPlayInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a9LHm1uGw9uF0CU501oF7xcBOgQ=
+			cPpND/3XJYFHp7NA6p8EveMwu+A=
 			</data>
 			<key>hash2</key>
 			<data>
-			uOgXq2dMQQRiGjEQ0b6g+VqGnjmD3BIlEDyDYmw5XXs=
+			teb9TObCFp+Y+O9sw8RDxhN4tBepB3VfnEEeA/eyNpg=
 			</data>
 		</dict>
 		<key>Headers/BSYPlayerView.h</key>
@@ -106,33 +102,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Oeqcgyc+xJfEWTxmlQvF2g0duyU=
+			YE9bHLff00tGm/MKjeR8aaDWr6o=
 			</data>
 			<key>hash2</key>
 			<data>
-			TemcO0kE01d/4arBuG3tIQU5t77oyPw7qVJ4u3JoTeU=
-			</data>
-		</dict>
-		<key>Headers/BSYVodSdk.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dgLqYihp+IJXWmIxTuWIW0BL580=
-			</data>
-			<key>hash2</key>
-			<data>
-			VjkM797CgimyuZC0Xaij6ZOYR5GniAMsJBNK7cIRdI0=
+			/6weOtIIJKGHLHsxZ9Dbejeo/Aw2x4eb+ZMGvefS6qg=
 			</data>
 		</dict>
 		<key>Headers/BSYVodVideoModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WSosffb8s75FH0uachr+PIYl1OE=
+			ky2Oyyo5bLwhlcA2nl7FfVckTQ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PQQrm4qPC553gdH1LtCuLSNGJ4oIzA21LW5NGph/tRM=
+			m22SPhP7R7BrEgxaNRTLnqSS+h5LQdDJCrUNWi3wFQY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

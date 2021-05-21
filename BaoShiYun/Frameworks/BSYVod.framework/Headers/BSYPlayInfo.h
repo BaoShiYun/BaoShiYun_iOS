@@ -36,10 +36,10 @@ typedef void (^BSPlayInfoFinishBlock)(BSYVodVideoModel * vodVideo);
  * @method
  * @abstract 初始化方法
  * @discussion 初始化方法
- * @param mediaId 媒资ID
+ * @param media 请求媒资输入
  * @result BSPlayInfo对象
  */
--(id)initWithMediaId:(NSString *)mediaId;
+-(id)initWithMedia:(BSYVodMediaRequest *)media;
 
 /*!
  * @method

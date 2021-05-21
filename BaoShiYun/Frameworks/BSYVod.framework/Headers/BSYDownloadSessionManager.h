@@ -172,6 +172,14 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL)checkLocalResourceWithMediaId:(NSString *)mediaId withResolution:(NSString *)resolution;
 
 
+/*!
+ * @method
+ * @abstract 设置请求视频数据Token
+ * @discussion 设置请求视频数据Token
+ * @param token 视频Token，非空
+ */
+- (void)setVideoToken:(NSString *)token;
+
 @end
 
 NS_ASSUME_NONNULL_END

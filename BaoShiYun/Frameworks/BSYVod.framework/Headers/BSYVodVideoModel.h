@@ -10,6 +10,30 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface BSYVodMediaRequest : BSYMediaModel
+
+/**
+ *  @brief 媒资ID
+ */
+@property(nonatomic, strong)NSString *mediaId;
+
+/**
+ *  @brief 媒资所属租户ID
+ */
+@property(nonatomic, assign)uintID tenantId;
+
+/**
+ *  @brief 用户ID
+ */
+@property(nonatomic, strong)NSString *userId;
+
+/**
+ *  @brief 视频token
+ */
+@property(nonatomic, strong)NSString *token;
+
+@end
+
 @interface BSYVodVideoQualityModel : BSYMediaModel
 
 /**
@@ -155,6 +179,20 @@ typedef NS_ENUM(NSInteger, BSYVodVideoStatus) {
  */
 @property(nonatomic, strong, readonly)NSDate *createTime;
 
+/**
+ *  @brief 媒资所属租户ID
+ */
+@property(nonatomic, assign)uintID tenantId;
+
+/**
+ *  @brief 用户ID
+ */
+@property(nonatomic, strong)NSString *userId;
+
+/**
+ *  @brief 视频token
+ */
+@property(nonatomic, strong)NSString *token;
 
 
 @end
