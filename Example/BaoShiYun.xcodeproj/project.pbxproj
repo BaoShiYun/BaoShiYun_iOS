@@ -1369,7 +1369,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BaoShiYun_Example/Pods-BaoShiYun_Example-frameworks.sh",
-				"${PODS_ROOT}/../../BaoShiYun/Frameworks/AgoraRtcKit.framework",
+				"${PODS_ROOT}/AgoraRtcEngine_iOS/AgoraRtcKit.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLib.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveDataLayer.framework",
 				"${PODS_ROOT}/../../BaoShiYun/Frameworks/BSYLiveSDK.framework",

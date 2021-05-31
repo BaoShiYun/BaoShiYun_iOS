@@ -1,5 +1,7 @@
 PODS:
-  - BaoShiYun (1.0.5)
+  - AgoraRtcEngine_iOS (3.1.2)
+  - BaoShiYun (1.0.8):
+    - AgoraRtcEngine_iOS (~> 3.1.2)
   - lottie-ios (3.2.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.4)
@@ -22,6 +24,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AgoraRtcEngine_iOS
     - lottie-ios
     - Masonry
     - MJExtension
@@ -35,7 +38,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BaoShiYun: 8bba3c59bf87d24fc647039f1ced95b62de3ea9d
+  AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
+  BaoShiYun: 07f53a1ab001bc3df274106dc584408132af2404
   lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
