@@ -11,6 +11,7 @@
 #import "BSYVideoRateController.h"
 #import "BSYVideoResolutionController.h"
 #import "BSYVideoResolutionDspModel.h"
+#import "BSYConfig.h"
 
 
 @interface BSYVideoViewController ()<BSYVodOperateViewDelegate,BSYVideoPlayerDelegate>
@@ -69,7 +70,14 @@
 
 - (void)playOnlineVideo {
     @weakify(self);
-    BSYPlayInfo *playInfo = [[BSYPlayInfo alloc] initWithMediaId:self.mediaId];
+    
+    BSYVodMediaRequest *request = [[BSYVodMediaRequest alloc] init];
+    request.mediaId = self.mediaId;
+    request.token =  [BSYConfig vodToken];
+    request.tenantId = [BSYConfig tencentId];
+    request.userId = @"10086";
+    
+    BSYPlayInfo *playInfo = [[BSYPlayInfo alloc] initWithMedia:request];
     [self.operateView showLoadingView:YES];
     playInfo.finishBlock = ^(BSYVodVideoModel * _Nonnull vodVideo) {
         @strongify(self);

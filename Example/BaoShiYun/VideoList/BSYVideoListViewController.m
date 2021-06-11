@@ -10,6 +10,7 @@
 #import "BSYVideoListCell.h"
 #import "BSYVideoViewController.h"
 #import "BSYVideoDownloadViewController.h"
+#import "BSYConfig.h"
 
 @interface BSYVideoListViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong)UIButton *returnBtn;
@@ -155,7 +156,13 @@
     BSYVideoListCell *cell = [tableView dequeueReusableCellWithIdentifier: NSStringFromClass(BSYVideoListCell.class)];
     @weakify(cell);
     cell.downloadAction = ^(NSString * _Nonnull mediaId) {
-        BSYPlayInfo *playInfo = [[BSYPlayInfo alloc] initWithMediaId:mediaId];
+        BSYVodMediaRequest *request = [[BSYVodMediaRequest alloc] init];
+        request.mediaId = mediaId;
+        request.token =  [BSYConfig vodToken];
+        request.tenantId = [BSYConfig tencentId];
+        request.userId = @"10086";
+        
+        BSYPlayInfo *playInfo = [[BSYPlayInfo alloc] initWithMedia:request];
         playInfo.finishBlock = ^(BSYVodVideoModel * _Nonnull vodVideo) {
             @strongify(cell);
             BSYVodVideoQualityModel *quality = vodVideo.mediaMetaInfo.videoGroup.firstObject;

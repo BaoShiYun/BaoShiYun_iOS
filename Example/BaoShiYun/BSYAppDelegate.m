@@ -35,7 +35,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     [self.window makeKeyAndVisible];
-    [BSYVodSdk configTenantId:[BSYConfig tencentId] customUid:@"12345678" token:[BSYConfig vodToken]];
+    [[BSYDownloadSessionManager sharedInstance] setVideoToken:[BSYConfig vodToken]];
     return YES;
 }
 
