@@ -191,7 +191,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setTeacherVideoContainerView:(UIView *)containerView;
 
 /**
- *   @brief  移除自己的摄像头父View
+ *   @brief  移除老师的摄像头父View
  */
 - (void)removeTeacherVideoContainerView;
 
