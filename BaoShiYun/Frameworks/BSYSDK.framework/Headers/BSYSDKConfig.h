@@ -22,6 +22,9 @@ typedef NS_ENUM(NSInteger, BSYDomainType) {
 // 运行环境
 @property (class, nonatomic, assign) BSYDomainType domainType;
 
+// SDK版本
+@property (class, nonatomic, strong, readonly) NSString *sdkVersion;
+
 @end
 
 NS_ASSUME_NONNULL_END
