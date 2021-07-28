@@ -854,7 +854,7 @@ extern NSString * const kIOSOfflinePushNoSound;
 @property(nonatomic,strong) NSString *groupID;
 
 /// 拉取消息数量
-@property(nonatomic,assign) int count;
+@property(nonatomic,assign) NSUInteger count;
 
 /// 拉取消息的起始消息，如果传 nil，起始消息为会话的最新消息
 @property(nonatomic,strong) V2TIMMessage *lastMsg;

@@ -25,9 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy)NSString *userId; ///必填
 /**
- *   @brief   用户昵称（必填）
+ *   @brief   用户昵称（选填）
  */
-@property (nonatomic, copy)NSString *nickName; ///必填
+@property (nonatomic, copy)NSString *nickName; ///选填
 /**
  *   @brief   用户头像（选填）
  */

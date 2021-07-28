@@ -34,5 +34,6 @@ FOUNDATION_EXPORT const unsigned char BSYLiveSDKVersionString[];
 #import <BSYLiveSDK/BSYLiveQestionTokenModel.h>
 #import <BSYLiveSDK/BSYLiveRedPackageModel.h>
 #import <BSYLiveSDK/BSYLiveFeedback.h>
+#import <BSYLiveSDK/BSYLiveDeleteChatMsgModel.h>
 
 

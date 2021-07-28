@@ -23,6 +23,11 @@
 typedef void (^BSYLiveKitSuccess)(void);
 
 /**
+ * @brief 成功通用回调
+ */
+typedef void (^BSYLiveKitSendMsgSuccess)(BSYLiveChatMsgModel *msg);
+
+/**
  * @brief 失败通用回调，code：错误码   desc：错误描述
  */
 typedef void (^BSYLiveKitFail)(NSInteger code, NSString * desc);

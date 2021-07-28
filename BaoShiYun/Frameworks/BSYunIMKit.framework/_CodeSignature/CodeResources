@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/BSYIMKitDefine.h</key>
 		<data>
-		TJ4JqtInnn9lhnZT7vpmK/3bxTc=
+		weMHURAsr3TvdzVb5kiHAIcBozw=
 		</data>
 		<key>Headers/BSYLiveIMImageMsgModel.h</key>
 		<data>
-		O5HQ7HtLJiv1pmRCghadDvc1d5k=
+		YV5Z76xiecj7ss9wgRnJjLGGZck=
 		</data>
 		<key>Headers/BSYLiveIMKit.h</key>
 		<data>
-		m9GGTbht+ENAENhcxr2ESkOfkxE=
+		UnXt0DjzhgA6EChzsIPdlQi3S7o=
 		</data>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/BSYLiveIMTextMsgModel.h</key>
 		<data>
-		1Buhril7ea3KVMJNtSWQOguOhOU=
+		WYZ1wKdbzlDXC4zAtiHYfYndoGE=
 		</data>
 		<key>Headers/BSYunIMKit.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RSyAEUieTVsgjKWUWksUXrKuRnc=
+		OH14YxqcF5F1oFYP4+tQTVvz6iI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,33 +58,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TJ4JqtInnn9lhnZT7vpmK/3bxTc=
+			weMHURAsr3TvdzVb5kiHAIcBozw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AhE5ErqvkUQgz2vrrWL0DiZclvCMx7hyL+okP1L6TSs=
+			X3yODRll80IylpkIFe34/hDT4+jKH8st7tasedQDlk0=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMImageMsgModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O5HQ7HtLJiv1pmRCghadDvc1d5k=
+			YV5Z76xiecj7ss9wgRnJjLGGZck=
 			</data>
 			<key>hash2</key>
 			<data>
-			5d3ObN3Uk3fxktJiCJvw4N6PI1pGm1A0T5WKhb9wLhA=
+			v0GP6uat740VG11ApEaBRzNr5lf4jJUHo+iNVnM4+Eo=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m9GGTbht+ENAENhcxr2ESkOfkxE=
+			UnXt0DjzhgA6EChzsIPdlQi3S7o=
 			</data>
 			<key>hash2</key>
 			<data>
-			dzdV0HVsFbDAXPFebwvEO/YCI6Kl2TPQa++MYw45eIs=
+			IeNE7s0+jSoLkFnLA3QaNGy7ug7vCgDkMvf/CqmHsi4=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
@@ -102,11 +102,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Buhril7ea3KVMJNtSWQOguOhOU=
+			WYZ1wKdbzlDXC4zAtiHYfYndoGE=
 			</data>
 			<key>hash2</key>
 			<data>
-			7BcsAa5/jP5NS+ORv0ifDMEw5TCaNzcXB/s+Ecr7cpc=
+			imacHljMrZOiGXDZwV9DZ2wvghDwcgt6lcc6w4i/KF0=
 			</data>
 		</dict>
 		<key>Headers/BSYunIMKit.h</key>

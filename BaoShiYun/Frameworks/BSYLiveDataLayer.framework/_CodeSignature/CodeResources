@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<data>
-		OGYoCbJv4medbfIu7mXTaKZOxso=
+		6cP4Yi/lTUYj4H9xy+HS1rWXo2M=
 		</data>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
 		<data>
@@ -88,6 +88,18 @@
 		<data>
 		4+1RTc5trKV/x63MM+IHuTeIpEc=
 		</data>
+		<key>Headers/BSYLiveMsgHistoryItemModel.h</key>
+		<data>
+		zwh346exfjg9be9UE5DqAz5mh8E=
+		</data>
+		<key>Headers/BSYLiveMsgHistoryModel.h</key>
+		<data>
+		pug3twWbeR1h6fUgpftQSF/oTa4=
+		</data>
+		<key>Headers/BSYLiveMsgHistoryRequest.h</key>
+		<data>
+		znroC3Iv3qr0OhuD/mpVwmli/xM=
+		</data>
 		<key>Headers/BSYLiveOnlineNumSwitchConfigModel.h</key>
 		<data>
 		2UGse++TOb2BenhE2gXHIRChreY=
@@ -99,6 +111,10 @@
 		<key>Headers/BSYLiveProtoCustomMsgModel.h</key>
 		<data>
 		dy2ETEOT8b2XdCIY4S6GEHc/xI4=
+		</data>
+		<key>Headers/BSYLiveProtoDeleteMsg.h</key>
+		<data>
+		dvX+d+NwMlkN/l9h/I+RBA61fiM=
 		</data>
 		<key>Headers/BSYLiveProtoGroupAllMuteModel.h</key>
 		<data>
@@ -158,7 +174,7 @@
 		</data>
 		<key>Headers/BSYLiveProtocalModel.h</key>
 		<data>
-		stvOK3KqlyEwh35dbMkuUhJ6Nsk=
+		8komkhsI2PFlZSRAjPs+fAe96Mw=
 		</data>
 		<key>Headers/BSYLivePullStreamModel.h</key>
 		<data>
@@ -234,7 +250,7 @@
 		</data>
 		<key>Headers/BSYLiveScriptMsgModel.h</key>
 		<data>
-		PfhK+TWmfFBy5z0cqLIenIfLgMc=
+		ffdzNlB1bw3opBrSpfiVNzdzncM=
 		</data>
 		<key>Headers/BSYLiveSelfSeatAudioDisableModel.h</key>
 		<data>
@@ -252,13 +268,17 @@
 		<data>
 		3Y+6P4+bsJS/+cw1eId+dbmumkQ=
 		</data>
+		<key>Headers/BSYMsgHistoryMsgBodyModel.h</key>
+		<data>
+		Jth5NaR46ULOnZuYnVdfn9lIAZE=
+		</data>
 		<key>Headers/BSYRtcLiveInfoModel.h</key>
 		<data>
 		w7PDbx9AtRA7qk+qu9cBuemNwxU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tDK8UFwFR9/C9g5JrcExU6bfdcQ=
+		LtolploPezKRpOk03hG4Q2BVGu4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -337,11 +357,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OGYoCbJv4medbfIu7mXTaKZOxso=
+			6cP4Yi/lTUYj4H9xy+HS1rWXo2M=
 			</data>
 			<key>hash2</key>
 			<data>
-			wMHiEwCdyP9VGLpto2qcCbaC7EDReRnVC+PDFapaJG8=
+			T2oihAbr5WWMXg8DtR9nbfTPfh87tVuVwvqzwXmExps=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
@@ -498,6 +518,39 @@
 			28RbLnnW9GcoAZ6G1MMP3rDWSQB5jrAjLxW7mCML1pI=
 			</data>
 		</dict>
+		<key>Headers/BSYLiveMsgHistoryItemModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zwh346exfjg9be9UE5DqAz5mh8E=
+			</data>
+			<key>hash2</key>
+			<data>
+			mpNs7SSYNleZcZdFw83R08lhSDI/3dUtApDVk8lSuso=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveMsgHistoryModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pug3twWbeR1h6fUgpftQSF/oTa4=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Eb85XBdgXdutXBUSmHE3IfQB6YIcGRZYhCHZux4xFg=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveMsgHistoryRequest.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			znroC3Iv3qr0OhuD/mpVwmli/xM=
+			</data>
+			<key>hash2</key>
+			<data>
+			h9TxmO6MyGFPi5whrlw462b3Xe6YdOjfhn5KuXHxHzQ=
+			</data>
+		</dict>
 		<key>Headers/BSYLiveOnlineNumSwitchConfigModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -529,6 +582,17 @@
 			<key>hash2</key>
 			<data>
 			3A1JHr5dJXPDDsjPpR7hHuZ6EoBsSTeqPfxgX0R7wWk=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveProtoDeleteMsg.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dvX+d+NwMlkN/l9h/I+RBA61fiM=
+			</data>
+			<key>hash2</key>
+			<data>
+			KR8oajuX5jyyjeuFvcugGvjX9MQeTodSwbyfJAr3dk4=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveProtoGroupAllMuteModel.h</key>
@@ -689,11 +753,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			stvOK3KqlyEwh35dbMkuUhJ6Nsk=
+			8komkhsI2PFlZSRAjPs+fAe96Mw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3VN2QZob62zgpEnsoibb75DRnKc4aEVgEnhIkKQ7nOw=
+			DdI69h2bclEbvkr1ZPHWJymrJwD853WLlA7DhhzCGOY=
 			</data>
 		</dict>
 		<key>Headers/BSYLivePullStreamModel.h</key>
@@ -898,11 +962,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PfhK+TWmfFBy5z0cqLIenIfLgMc=
+			ffdzNlB1bw3opBrSpfiVNzdzncM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ikuhrj90y5zQv0llJmkNJGnOgIbHnJrjqHg7/SkS7U8=
+			un3QIjbwKZf4dk5/kbNJmSO9T84v4gg8Cx209Z328hc=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveSelfSeatAudioDisableModel.h</key>
@@ -947,6 +1011,17 @@
 			<key>hash2</key>
 			<data>
 			9Zblsg8EbOhZdtN/2Gal1nyD6gkty6ysBpWvc+d/7xw=
+			</data>
+		</dict>
+		<key>Headers/BSYMsgHistoryMsgBodyModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jth5NaR46ULOnZuYnVdfn9lIAZE=
+			</data>
+			<key>hash2</key>
+			<data>
+			kLwR6UJ4ybUokuDNMV8tH32PV07LckVXUzlbPnatcMk=
 			</data>
 		</dict>
 		<key>Headers/BSYRtcLiveInfoModel.h</key>

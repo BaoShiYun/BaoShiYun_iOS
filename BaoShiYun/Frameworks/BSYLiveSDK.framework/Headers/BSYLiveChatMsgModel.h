@@ -38,6 +38,12 @@ typedef NS_ENUM(NSInteger, BSYLiveChatMsgType) {
  *   @brief  群id
  */
 @property (nonatomic, assign, readonly)uint64_t groupId;
+
+/**
+ *   @brief  消息序列号云端生成，在群里是严格递增且唯一的
+ */
+@property (nonatomic, assign,readonly)uint64_t msgSeq;
+
 /**
  *   @brief  抱石云ID，用户id转换后的抱石云uid （注：用于角色匹配使用）
  */

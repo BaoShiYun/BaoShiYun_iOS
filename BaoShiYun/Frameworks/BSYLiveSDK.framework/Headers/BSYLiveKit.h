@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class BSYLiveEventNotifyModel;
 @class BSYLiveInteractiveConfigModel;
 @class BSYLiveBroadcastUserModel;
+@class BSYLiveDeleteChatMsgModel;
 @protocol  BSYLiveKitDelegate;
 
 /**
@@ -327,6 +328,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)sendTextMsg:(NSString *)text  succ:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
 
+
+/**
+ *   @brief   发送直播群聊天文本消息并回调发送成功的消息内容
+ *   @param   text  文本内容
+ *   @param   succ 成功回调及消息体内容
+ *   @param   fail 失败回调
+ *   @see BSYLiveKitSuccess
+ *   @see BSYLiveKitFail
+ */
+- (void)sendTextMsg:(NSString *)text  succWithMsg:(BSYLiveKitSendMsgSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+
 /**
  *   @brief   获取im历史记录 每次20条
  *   @param   succ 成功回调
@@ -334,7 +347,17 @@ NS_ASSUME_NONNULL_BEGIN
  *   @see BSYLiveKitIMGetMsgSuccess
  *   @see BSYLiveKitFail
  */
-- (int)getLastMessageHistorySucc:(BSYLiveKitIMGetMsgSuccess)succ fail:(BSYLiveKitFail __nullable)fail;
+- (int)getLastMessageHistorySucc:(BSYLiveKitIMGetMsgSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+/**
+ *   @brief   获取im历史记录
+ *   @param   pageSize  每页请求的数据条数 每页请求最少1条 最多100条
+ *   @param   succ 成功回调
+ *   @param   fail 失败回调
+ *   @see BSYLiveKitIMGetMsgSuccess
+ *   @see BSYLiveKitFail
+ */
+- (int)getLastMessageHistoryWithPageSize:(NSInteger)pageSize succ:(BSYLiveKitIMGetMsgSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
 
 
 ///———————————————————————————————————————————————————————
@@ -539,11 +562,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)onRecvWhiteboardMode:(BOOL)hasWhiteboard;
 
+
+
+///———————————————————————————————————————————————————————
+///
+///                               聊天消息相关回调
+///
+///———————————————————————————————————————————————————————
+
+
 /**
  *     @brief  聊天消息
  *     @param  msg  消息内容，包含文本或者图片信息 请参考：BSYLiveChatMsgModel
  */
 - (void)onRecvChatMessage:(BSYLiveChatMsgModel *)msg;
+
+
+
+/**
+ *     @brief  删除聊天消息
+ *     @param  deleteMsg  消息内容，请参考：BSYLiveDeleteChatMsgModel
+ */
+- (void)onRecvDeleteChatMessage:(BSYLiveDeleteChatMsgModel *)deleteMsg;
+
 
 
 ///———————————————————————————————————————————————————————
