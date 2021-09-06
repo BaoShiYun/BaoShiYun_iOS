@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BSYReport.h</key>
 		<data>
-		fpO91sozuZfox1wBGFBt+xwsRTc=
+		tDNO8blUGpht9zCWkOBznzGT/+4=
 		</data>
 		<key>Headers/BSYReportLearnModel.h</key>
 		<data>
@@ -19,6 +19,10 @@
 		<key>Headers/BSYReportLearnVodPositionModel.h</key>
 		<data>
 		OWSr6uDKbe+rhTZOBIBNEiHezGk=
+		</data>
+		<key>Headers/BSYReportLiveErrorModel.h</key>
+		<data>
+		z/6QGr5KBI9/2tsWStpkCS7RnNk=
 		</data>
 		<key>Headers/BSYReportLiveHeartBeatModel.h</key>
 		<data>
@@ -39,6 +43,10 @@
 		<key>Headers/BSYReportModel.h</key>
 		<data>
 		F6ocK0z6VaHaC5BukOR6Uf8xt9s=
+		</data>
+		<key>Headers/BSYReportVodErrorModel.h</key>
+		<data>
+		skwyrP5LNKZQgORgMqCB36ch1bQ=
 		</data>
 		<key>Headers/BSYReportVodHeartBeatModel.h</key>
 		<data>
@@ -70,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		whyPHN4fRKDWiQ/2qfqWp1s4H3I=
+		L7IAEPB57gGpWF/GB6Ij1kHDKVA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fpO91sozuZfox1wBGFBt+xwsRTc=
+			tDNO8blUGpht9zCWkOBznzGT/+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/4YvM7WYTCvUWK2TCuPnmwKxNKtgjsWrxjRhlXIi8TM=
+			sFaKT4l+V/AkV+b/EVhrnblRDsqOK6nWBvSDXojBHHk=
 			</data>
 		</dict>
 		<key>Headers/BSYReportLearnModel.h</key>
@@ -121,6 +129,17 @@
 			<key>hash2</key>
 			<data>
 			9jCOBHar/+3VrjbBGa05KxBXzf5QI+9rzXewnAVSwCg=
+			</data>
+		</dict>
+		<key>Headers/BSYReportLiveErrorModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z/6QGr5KBI9/2tsWStpkCS7RnNk=
+			</data>
+			<key>hash2</key>
+			<data>
+			8VNsZTT1RuTrln60MzKrHiMSWozmn4I1lfdArFFGT5M=
 			</data>
 		</dict>
 		<key>Headers/BSYReportLiveHeartBeatModel.h</key>
@@ -176,6 +195,17 @@
 			<key>hash2</key>
 			<data>
 			RSNQVEcX1tdzTwI7W+26sN8iJs3nzlMbKxWAkBwPWCY=
+			</data>
+		</dict>
+		<key>Headers/BSYReportVodErrorModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			skwyrP5LNKZQgORgMqCB36ch1bQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			81WUzBW+8fflmnuDv0O9ZkpG+RDqBrWqzpQDdEihBEQ=
 			</data>
 		</dict>
 		<key>Headers/BSYReportVodHeartBeatModel.h</key>

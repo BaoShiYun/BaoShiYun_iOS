@@ -30,7 +30,7 @@ typedef void (^V2TIMFriendOperationResultSucc)(V2TIMFriendOperationResult *resul
 /// 好友列表操作成功回调
 typedef void (^V2TIMFriendOperationResultListSucc)(NSArray<V2TIMFriendOperationResult *> *resultList);
 /// 好友检查成功回调
-typedef void (^V2TIMFriendCheckResultSucc)(V2TIMFriendCheckResult *result);
+typedef void (^V2TIMFriendCheckResultListSucc)(NSArray<V2TIMFriendCheckResult *> *resultList);
 /// 获取群分组列表成功回调
 typedef void (^V2TIMFriendGroupListSucc)(NSArray<V2TIMFriendGroup *> * groups);
 /// 获取好友申请列表成功回调
@@ -111,9 +111,18 @@ typedef NS_ENUM(NSInteger, V2TIMFriendAcceptType) {
 - (void)deleteFromFriendList:(NSArray *)userIDList deleteType:(V2TIMFriendType)deleteType succ:(V2TIMFriendOperationResultListSucc)succ fail:(V2TIMFail)fail;
 
 /**
- *  2.6 检查指定用户的好友关系
+ * 2.6 检查指定用户的好友关系
+ * @param userIDList 要检查的 userID 列表
+ * @param checkType 检查类型 （单向好友检查、双向好友检查）
+ * @param succ 成功后的回调
+ * @param fail 失败后的回调
+ *
+ * @note checkType 的使用需要注意：
+ * - checkType 如果传入 V2TIM_FRIEND_TYPE_SINGLE，结果返回：V2TIM_FRIEND_RELATION_TYPE_NONE、V2TIM_FRIEND_RELATION_TYPE_IN_MY_FRIEND_LIST 两种情况
+ * - checkType 如果传入 V2TIM_FRIEND_TYPE_BOTH，结果返回：V2TIM_FRIEND_RELATION_TYPE_NONE、V2TIM_FRIEND_RELATION_TYPE_IN_MY_FRIEND_LIST、
+ *                                                 V2TIM_FRIEND_RELATION_TYPE_IN_OTHER_FRIEND_LIST、V2TIM_FRIEND_RELATION_TYPE_BOTH_WAY 四种情况
  */
-- (void)checkFriend:(NSString *)userID succ:(V2TIMFriendCheckResultSucc)succ fail:(V2TIMFail)fail;
+- (void)checkFriend:(NSArray<NSString *> *)userIDList checkType:(V2TIMFriendType)checkType succ:(V2TIMFriendCheckResultListSucc)succ fail:(V2TIMFail)fail;
 
 /////////////////////////////////////////////////////////////////////////////////
 //

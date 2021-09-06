@@ -116,16 +116,16 @@ NS_SWIFT_NAME(removeSignalingListener(listener:));
 @protocol V2TIMSignalingListener <NSObject>
 @optional
 /// 收到邀请的回调
--(void)onReceiveNewInvitation:(NSString *)inviteID inviter:(NSString *)inviter groupID:(NSString *)groupID inviteeList:(NSArray<NSString *> *)inviteeList data:(NSString *)data;
+-(void)onReceiveNewInvitation:(NSString *)inviteID inviter:(NSString *)inviter groupID:(NSString *)groupID inviteeList:(NSArray<NSString *> *)inviteeList data:(NSString * __nullable)data;
 
 /// 被邀请者接受邀请
--(void)onInviteeAccepted:(NSString *)inviteID invitee:(NSString *)invitee data:(NSString *)data;
+-(void)onInviteeAccepted:(NSString *)inviteID invitee:(NSString *)invitee data:(NSString * __nullable)data;
 
 /// 被邀请者拒绝邀请
--(void)onInviteeRejected:(NSString *)inviteID invitee:(NSString *)invitee data:(NSString *)data;
+-(void)onInviteeRejected:(NSString *)inviteID invitee:(NSString *)invitee data:(NSString * __nullable)data;
 
 /// 邀请被取消
--(void)onInvitationCancelled:(NSString *)inviteID inviter:(NSString *)inviter data:(NSString *)data;
+-(void)onInvitationCancelled:(NSString *)inviteID inviter:(NSString *)inviter data:(NSString * __nullable)data;
 
 /// 邀请超时
 -(void)onInvitationTimeout:(NSString *)inviteID inviteeList:(NSArray<NSString *> *)inviteeList;
@@ -147,7 +147,7 @@ typedef NS_ENUM(NSInteger,SignalingActionType) {
 @property(nonatomic,strong) NSString *groupID;
 @property(nonatomic,strong) NSString *inviter;
 @property(nonatomic,strong) NSMutableArray *inviteeList;
-@property(nonatomic,strong) NSString *data;
+@property(nonatomic,strong) NSString * __nullable data;
 @property(nonatomic,assign) uint32_t timeout;
 @property(nonatomic,assign) SignalingActionType actionType;
 @end

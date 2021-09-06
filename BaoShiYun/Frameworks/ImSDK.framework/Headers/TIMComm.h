@@ -1101,16 +1101,27 @@ typedef void (^TIMGetGroupOnlineMemberCountSucc)(NSInteger count);
 
 @end
 
+/// 填入 sound 字段表示接收时不会播放声音
+extern NSString * const kIOSOfflinePushNoSound;
+/// 填入 sound 字段表示接收时播放系统声音
+extern NSString * const kIOSOfflinePushDefaultSound;
+
 /// APNs 配置
 @interface TIMAPNSConfig : NSObject
 
 ///是否开启推送：0-不进行设置 1-开启推送 2-关闭推送
 @property(nonatomic,assign) uint32_t openPush;
 
-///C2C 消息声音,不设置传入 nil
+///C2C 消息声音
+///当 c2cSound = kIOSOfflinePushNoSound，表示接收时不会播放声音。
+///当 c2cSound = kIOSOfflinePushDefaultSound，表示接收时播放系统声音。
+///如果要自定义 c2cSound，需要先把语音文件链接进 Xcode 工程，然后把语音文件名（带后缀）设置给 c2cSound。
 @property(nonatomic,strong) NSString * c2cSound;
 
-///Group 消息声音,不设置传入 nil
+///Group 消息声音
+///当 c2cSound = kIOSOfflinePushNoSound，表示接收时不会播放声音。
+///当 c2cSound = kIOSOfflinePushDefaultSound，表示接收时播放系统声音。
+///如果要自定义 groupSound，需要先把语音文件链接进 Xcode 工程，然后把语音文件名（带后缀）设置给 groupSound。
 @property(nonatomic,strong) NSString * groupSound;
 
 ///Video 音视频邀请声音,不设置传入 nil (暂不支持)
@@ -1218,15 +1229,15 @@ typedef void (^TIMGetGroupOnlineMemberCountSucc)(NSInteger count);
 @property(nonatomic,strong) NSString * desc;
 
 ///离线 Push 时声音字段信息
+///当 sound = kIOSOfflinePushNoSound，表示接收时不会播放声音。
+///当 sound = kIOSOfflinePushDefaultSound，表示接收时播放系统声音。
+///如果要自定义 sound，需要先把语音文件链接进 Xcode 工程，然后把语音文件名（带后缀）设置给 sound。
 @property(nonatomic,strong) NSString * sound;
 
 ///忽略 badge 计数,如果设置为 YES，在 iOS 接收端，这条消息不会使 APP 的应用图标未读计数增加
 @property(nonatomic,assign) BOOL ignoreBadge;
 
 @end
-
-/// 填入 sound 字段表示接收时不会播放声音
-extern NSString * const kIOSOfflinePushNoSound;
 
 /// 自定义消息 push
 @interface TIMOfflinePushInfo : NSObject

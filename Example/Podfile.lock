@@ -1,7 +1,7 @@
 PODS:
-  - AgoraRtcEngine_iOS (3.1.2)
-  - BaoShiYun (1.1.3.1):
-    - AgoraRtcEngine_iOS (~> 3.1.2)
+  - AgoraRtcEngine_iOS (3.4.7)
+  - BaoShiYun (1.1.4):
+    - AgoraRtcEngine_iOS (~> 3.4.7)
   - lottie-ios (3.2.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.4)
@@ -38,8 +38,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AgoraRtcEngine_iOS: 0628532d3475471d1c352ba548cee98492850cc0
-  BaoShiYun: eb98a48668e47be28cf0d1fbea3d14cf82758c90
+  AgoraRtcEngine_iOS: 3fc231da5f851db500e573ea6982a11a5db4b603
+  BaoShiYun: 80c1164c9b6b30ef0a551d28ae25d465b8578611
   lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb

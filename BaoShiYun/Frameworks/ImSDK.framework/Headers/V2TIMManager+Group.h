@@ -234,7 +234,9 @@ typedef NS_ENUM(NSInteger, V2TIMGroupApplicationHandleResult) {
  *  @note 请注意不同类型的群有如下限制：
  *  - 公开群（Public）和会议群（Meeting）：只有群主才能对群成员进行普通成员和管理员之间的角色切换。
  *  - 其他群不支持设置群成员角色。
- *  - 转让群组请调用 transferGroupOwner 接口。
+ *  - 转让群组请调用 @ref transferGroupOwner 接口。
+ *  - 会议群（Meeting）切换群成员角色之后，不会有 onGrantAdministrator 和 onRevokeAdministrator 通知回调
+ *  - 切换的角色支持普通群成员（ V2TIM_GROUP_MEMBER_ROLE_MEMBER） 和管理员（V2TIM_GROUP_MEMBER_ROLE_ADMIN
  */
 - (void)setGroupMemberRole:(NSString*)groupID member:(NSString *)userID newRole:(V2TIMGroupMemberRole)role succ:(V2TIMSucc)succ fail:(V2TIMFail)fail;
 

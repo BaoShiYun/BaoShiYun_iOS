@@ -806,8 +806,10 @@ typedef NS_ENUM(NSInteger, V2TIMMessageGetType){
 //                         苹果 APNS 离线推送
 /////////////////////////////////////////////////////////////////////////////////
 
-// 填入 sound 字段表示接收时不会播放声音
+/// 填入 sound 字段表示接收时不会播放声音
 extern NSString * const kIOSOfflinePushNoSound;
+/// 填入 sound 字段表示接收时播放系统声音
+extern NSString * const kIOSOfflinePushDefaultSound;
 
 /// 自定义消息 push。
 @interface V2TIMOfflinePushInfo : NSObject
@@ -826,7 +828,8 @@ extern NSString * const kIOSOfflinePushNoSound;
 @property(nonatomic,assign) BOOL disablePush;
 
 /// 离线推送声音设置（仅对 iOS 生效），
-/// 当 sound = kIOSOfflinePushNoSound，表示接收时不会播放声音。
+/// 当 iOSSound = kIOSOfflinePushNoSound，表示接收时不会播放声音。
+/// 当 iOSSound = kIOSOfflinePushDefaultSound，表示接收时播放系统声音。
 /// 如果要自定义 iOSSound，需要先把语音文件链接进 Xcode 工程，然后把语音文件名（带后缀）设置给 iOSSound。
 @property(nonatomic,strong) NSString * iOSSound;
 
