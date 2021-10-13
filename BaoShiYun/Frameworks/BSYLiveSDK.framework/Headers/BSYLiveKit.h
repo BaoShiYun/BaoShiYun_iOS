@@ -70,6 +70,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getLiveName;
 
 /**
+ *   @brief   获取直播间静态透传数据
+ */
+- (NSString *)getCustomStaticData;
+
+/**
  *   @brief   判段直播间类型
  *   @return  true为RTC直播   false为LIVE直播
  *   @discussion 说明：直播间登录成功后有效
@@ -338,6 +343,19 @@ NS_ASSUME_NONNULL_BEGIN
  *   @see BSYLiveKitFail
  */
 - (void)sendTextMsg:(NSString *)text  succWithMsg:(BSYLiveKitSendMsgSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+
+/**
+ *   @brief   发送直播群聊天文本消息和附加自定义内容并回调发送成功的消息内容
+ *   @param   text  文本内容
+ *   @param   customPayloadData  消息体附加自定义内容
+ *   @param   succ 成功回调及消息体内容
+ *   @param   fail 失败回调
+ *   @see BSYLiveKitSuccess
+ *   @see BSYLiveKitFail
+ */
+- (void)sendTextMsg:(NSString *)text withCustomPaylodData:(NSString * __nullable)customPayloadData  succWithMsg:(BSYLiveKitSendMsgSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
 
 
 /**

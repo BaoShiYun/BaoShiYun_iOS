@@ -408,7 +408,7 @@
 		</data>
 		<key>Headers/BSYLibMacro.h</key>
 		<data>
-		jwqFAt0lN0D8KsYam8nZqqDvgfg=
+		2x+gdNfEJ4SVuWROB55VyTcha+Y=
 		</data>
 		<key>Headers/BSYMJFoundation.h</key>
 		<data>
@@ -560,7 +560,7 @@
 		</data>
 		<key>Headers/NSString+format.h</key>
 		<data>
-		9VWmDGFSOGhC2N3lz+6jmA46R6c=
+		Wbw4nZ6Hhct4WzMSiqAtSyfCxO8=
 		</data>
 		<key>Headers/NSString+pinyin.h</key>
 		<data>
@@ -576,7 +576,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		brmDrjJ82Njm+/zOdmBmZxt0q0I=
+		Drx+3ZtKMRjxMU3izZmSnG3yzDI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1201,11 +1201,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jwqFAt0lN0D8KsYam8nZqqDvgfg=
+			2x+gdNfEJ4SVuWROB55VyTcha+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			Es1yvimVKzxFupo8xB8r1Q26lg6HVp3kKAlDVinUuP4=
+			EUy0LomY4i2qWi9KMPgqMo+Nph9ZA3fdqbADN3XHxHg=
 			</data>
 		</dict>
 		<key>Headers/BSYMJFoundation.h</key>
@@ -1619,11 +1619,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9VWmDGFSOGhC2N3lz+6jmA46R6c=
+			Wbw4nZ6Hhct4WzMSiqAtSyfCxO8=
 			</data>
 			<key>hash2</key>
 			<data>
-			3XYJubdCHnmx4yXD7pBktVKWeshnfMhVeoRPjb+5Vog=
+			WRj/PVWq11ODpqpmxeVjXz78xhOu5MzhD5r2vm71hso=
 			</data>
 		</dict>
 		<key>Headers/NSString+pinyin.h</key>

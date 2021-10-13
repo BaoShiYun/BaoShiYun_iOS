@@ -14,19 +14,19 @@
 		</data>
 		<key>Headers/BSYLiveIMImageMsgModel.h</key>
 		<data>
-		YV5Z76xiecj7ss9wgRnJjLGGZck=
+		RmELG+QrlT+BHRE+7kUEwg4jSL4=
 		</data>
 		<key>Headers/BSYLiveIMKit.h</key>
 		<data>
-		UnXt0DjzhgA6EChzsIPdlQi3S7o=
+		NlOc7T/JdgO3EcQ6WfWsc88WdBU=
 		</data>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
 		<data>
-		CRbZc10Iusi9k+bCRYo5coeBdyc=
+		CHlnkfPZJ3+CmEa4CtG8AOlodYc=
 		</data>
 		<key>Headers/BSYLiveIMTextMsgModel.h</key>
 		<data>
-		WYZ1wKdbzlDXC4zAtiHYfYndoGE=
+		9q13v2UaPnkeiPCyVeTvxf03t2Y=
 		</data>
 		<key>Headers/BSYunIMKit.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SLf+/Wl/DeqNTjk0CalOwfU7a9U=
+		6dF5+DpCQf3AZUG8qfsd6jj3/wA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,44 +69,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YV5Z76xiecj7ss9wgRnJjLGGZck=
+			RmELG+QrlT+BHRE+7kUEwg4jSL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			v0GP6uat740VG11ApEaBRzNr5lf4jJUHo+iNVnM4+Eo=
+			KmlRTlWWmDDsbxOcbu/3f7jXTY3vyxYMQMxpmCBDIUc=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UnXt0DjzhgA6EChzsIPdlQi3S7o=
+			NlOc7T/JdgO3EcQ6WfWsc88WdBU=
 			</data>
 			<key>hash2</key>
 			<data>
-			IeNE7s0+jSoLkFnLA3QaNGy7ug7vCgDkMvf/CqmHsi4=
+			K3aMNBgEsu3sAoyzFdEfGBSRTejBujbMqWD8VC8fdyc=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CRbZc10Iusi9k+bCRYo5coeBdyc=
+			CHlnkfPZJ3+CmEa4CtG8AOlodYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			hC8XNzcamdgPWAzrYaJMmgg2Me7m79F/OcEsxvygQRw=
+			Ydjl7/Bs05NFg2J5oIl/G7dum/+gm8aMY58GDjNutI4=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMTextMsgModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WYZ1wKdbzlDXC4zAtiHYfYndoGE=
+			9q13v2UaPnkeiPCyVeTvxf03t2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			imacHljMrZOiGXDZwV9DZ2wvghDwcgt6lcc6w4i/KF0=
+			ps3yfzJHa7lTVsqRMv/VDs2H5k9t8mKCTnKnAgEXkFM=
 			</data>
 		</dict>
 		<key>Headers/BSYunIMKit.h</key>

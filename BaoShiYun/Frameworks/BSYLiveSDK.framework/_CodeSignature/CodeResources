@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/BSYLiveChatMsgModel.h</key>
 		<data>
-		eEh8dE9suZ8jcj+3+im2Cdvvi+4=
+		SHkPFNOdcovKFfS2RFhUBuvJsC4=
 		</data>
 		<key>Headers/BSYLiveChatMsgTextElem.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/BSYLiveKit.h</key>
 		<data>
-		mZpn5U9v1TDBZPzyTctYzX7lqoU=
+		OOAyMa8uc1RD5NIMHeyXWWaY2D0=
 		</data>
 		<key>Headers/BSYLiveKitDefine.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/BSYLiveParam.h</key>
 		<data>
-		lttzMGNhi4ShbVNnGnC0w7PI+A4=
+		jkoAeBqqBq1sfXjNnW6Qj2UKrnc=
 		</data>
 		<key>Headers/BSYLiveQestionTokenModel.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aWDTXVuzoqwPCxNrxpIX3fz6z88=
+		NzYbcRqk3PB+GhZ0qZvH5jrYo4E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Whiteboard.bundle/Info.plist</key>
 		<data>
-		YIa80AB9VBk3ByNSHd25bNy1aEc=
+		fd2gOPYDfroM1HkoXgK0YWVpZZU=
 		</data>
 		<key>Whiteboard.bundle/index.html</key>
 		<data>
@@ -157,11 +157,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eEh8dE9suZ8jcj+3+im2Cdvvi+4=
+			SHkPFNOdcovKFfS2RFhUBuvJsC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nq4TQCLpNk268QTVrfr6uSrumItIWATDBgUrAuOg0t0=
+			G2EdRk8+SQLpkfnphdrBKrhvjBrxBmdG/i/PNXwU0N0=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveChatMsgTextElem.h</key>
@@ -223,11 +223,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mZpn5U9v1TDBZPzyTctYzX7lqoU=
+			OOAyMa8uc1RD5NIMHeyXWWaY2D0=
 			</data>
 			<key>hash2</key>
 			<data>
-			q4eJGkpkHjLsJAiB5M/eZXh9heURq2vfkhqQPeNvh+w=
+			anORoQFs+e0Z2gMtlvXpoo70U3+fNU/lc7hehpTuVQM=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveKitDefine.h</key>
@@ -267,11 +267,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lttzMGNhi4ShbVNnGnC0w7PI+A4=
+			jkoAeBqqBq1sfXjNnW6Qj2UKrnc=
 			</data>
 			<key>hash2</key>
 			<data>
-			rNgcmGHKwdX12KnE5WVbvxa6zza1BrL96yAuIKAwl6s=
+			pMQV2Ur7tkL7aG7OshKeSPHbUZm4PYTafgwt8KF9P+M=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveQestionTokenModel.h</key>
@@ -377,11 +377,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YIa80AB9VBk3ByNSHd25bNy1aEc=
+			fd2gOPYDfroM1HkoXgK0YWVpZZU=
 			</data>
 			<key>hash2</key>
 			<data>
-			PFOcdd1Y/VE4MYPnUHTfWyePtQGVodf/uaXUably2Jo=
+			zcoE7MKoruzIgjUKMZ4VJu5e6mCK83IAsAOJhHxsJrY=
 			</data>
 		</dict>
 		<key>Whiteboard.bundle/index.html</key>

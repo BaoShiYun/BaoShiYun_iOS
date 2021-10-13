@@ -64,6 +64,18 @@ typedef NS_ENUM(NSInteger, BSYLiveChatMsgType) {
  *   @brief  是否来源于剧本   true -来源于剧本    false-来源于聊天
  */
 @property (nonatomic, assign, readonly)BOOL fromScript;
+
+/**
+ *   @brief 聊天消息中附加的自定义信息
+ */
+@property (nonatomic, strong, readonly)NSString *customPayloadData;
+
+/**
+ *   @brief 直播间静态透传附加的自定义信息
+ */
+@property (nonatomic, strong, readonly)NSString *customStaticData;
+
+
 /**
  *   @brief  消息类型
  *   @see BSYLiveChatMsgType

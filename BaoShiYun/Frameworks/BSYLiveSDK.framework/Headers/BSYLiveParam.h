@@ -41,6 +41,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy)NSString *enterCode; ///必填
 
+/**
+ *   @brief   直播间静态透传数据,数据长度不大于128字符, 否则无效 （选填)
+ */
+@property (nonatomic, copy)NSString *customStaticData; ///选填
+
 
 @end
 

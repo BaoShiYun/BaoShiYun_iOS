@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/BSYLiveMsgHistoryItemModel.h</key>
 		<data>
-		zwh346exfjg9be9UE5DqAz5mh8E=
+		OXaazSoba7Zl7jY9zzBflh8RwvQ=
 		</data>
 		<key>Headers/BSYLiveMsgHistoryModel.h</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>Headers/BSYLiveScriptMsgModel.h</key>
 		<data>
-		ffdzNlB1bw3opBrSpfiVNzdzncM=
+		SIU9KAH5+T+gyysuD4qDLcBfM5Y=
 		</data>
 		<key>Headers/BSYLiveSelfSeatAudioDisableModel.h</key>
 		<data>
@@ -278,7 +278,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		O9eTHpXeSs16rQ9F+eU7QIhWeY0=
+		QURdRTprpCGuvj0ahf8z5fw+wIs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -522,11 +522,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zwh346exfjg9be9UE5DqAz5mh8E=
+			OXaazSoba7Zl7jY9zzBflh8RwvQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			mpNs7SSYNleZcZdFw83R08lhSDI/3dUtApDVk8lSuso=
+			F4LjuQC69HOYVNi4W1hYcwe/ye4wInZhG4kAgzC4Ne4=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveMsgHistoryModel.h</key>
@@ -962,11 +962,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ffdzNlB1bw3opBrSpfiVNzdzncM=
+			SIU9KAH5+T+gyysuD4qDLcBfM5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			un3QIjbwKZf4dk5/kbNJmSO9T84v4gg8Cx209Z328hc=
+			QxDSA4D4UPo0VKqO/YHXzBdSzU3ZWMiYRM8fbjzumaE=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveSelfSeatAudioDisableModel.h</key>
