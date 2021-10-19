@@ -346,9 +346,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /**
- *   @brief   发送直播群聊天文本消息和附加自定义内容并回调发送成功的消息内容
+ *   @brief   发送直播群聊天文本消息和附加自定义透传内容并回调发送成功的消息内容.(透传自定义内容长度不超过128字符)
  *   @param   text  文本内容
- *   @param   customPayloadData  消息体附加自定义内容
+ *   @param   customPayloadData  消息体附加自定义透传内容,透传内容长度不超过128字符,否则发送失败
  *   @param   succ 成功回调及消息体内容
  *   @param   fail 失败回调
  *   @see BSYLiveKitSuccess
