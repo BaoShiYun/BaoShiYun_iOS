@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class BSYLiveInteractiveConfigModel;
 @class BSYLiveBroadcastUserModel;
 @class BSYLiveDeleteChatMsgModel;
+@class BSYLiveCustomGroupMsgModel;
 @protocol  BSYLiveKitDelegate;
 
 /**
@@ -305,6 +306,25 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)modifyBroadcastMuteAudio:(BOOL)isAudioMute;
 
+
+///———————————————————————————————————————————————————————
+///
+///                                   自定义消息相关
+///
+///———————————————————————————————————————————————————————
+
+/**
+ *   @brief   发送群组自定义消息
+ *   @param   customData 自定义消息内容
+ *   @param   customData 自定义消息内容  字符串长度不大于2000字符
+ *   @param   succ 成功回调
+ *   @param   fail 失败回调
+ */
+- (void)sendGroupCustomMsg:(NSString *)customData succ:(BSYLiveKitSuccess __nullable)succ fail:(BSYLiveKitFail __nullable)fail;
+
+
+
+
 ///———————————————————————————————————————————————————————
 ///
 ///                                   直播业务相关
@@ -582,6 +602,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+
 ///———————————————————————————————————————————————————————
 ///
 ///                               聊天消息相关回调
@@ -728,6 +749,29 @@ NS_ASSUME_NONNULL_BEGIN
  *    @param remoteUserList   其他连麦用户信息列表  请参考：BSYLiveBroadcastUserModel
  */
 - (void)onRecvRemoteBroadcastUserListChange:(NSArray<BSYLiveBroadcastUserModel *> * __nullable)remoteUserList;
+
+
+
+///———————————————————————————————————————————————————————
+///
+///                                   自定义消息相关回调
+///
+///———————————————————————————————————————————————————————
+
+/**
+ *   @brief   接收群组自定义消息
+ *   @param   customData 自定义消息内容  请参考：BSYLiveCustomGroupMsgModel
+ */
+- (void)onRecvCustomGroupMsg:(BSYLiveCustomGroupMsgModel *)customData;
+
+
+/**
+ *   @brief   接收单播自定义消息
+ *   @param   customData 自定义消息内容
+ */
+- (void)onRecvCustomPersonMsg:(NSString *)customData;
+
+
 
 
 ///———————————————————————————————————————————————————————

@@ -28,9 +28,13 @@
 		<data>
 		jimPD/ysqC600ZHyZTyySVxrJwo=
 		</data>
+		<key>Headers/BSYLiveCustomMsgRequest.h</key>
+		<data>
+		2vOdb3sCD3RnnszBx43l6OCvimQ=
+		</data>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<data>
-		nYjme22+mbzwetD7PKhuYX34Rug=
+		8jI2WWecAmPV/DQHU4EzPqmrE/8=
 		</data>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
 		<data>
@@ -150,7 +154,7 @@
 		</data>
 		<key>Headers/BSYLiveProtoKickClientModel.h</key>
 		<data>
-		Vd7pXGHNQFL9I1AWe6owTY6mx1g=
+		DJsJOJ78VAdvRuZlo9Ujl7JccTc=
 		</data>
 		<key>Headers/BSYLiveProtoLiveCommonMsg.h</key>
 		<data>
@@ -172,13 +176,21 @@
 		<data>
 		fvkVxw4qZUgmq/jGMLcc9Ea/gtI=
 		</data>
+		<key>Headers/BSYLiveProtoTenantCustomGroupMsgModel.h</key>
+		<data>
+		MoVReZZN8SJajLhThtxFg7BAuj4=
+		</data>
+		<key>Headers/BSYLiveProtoTenantCustomPersonMsgModel.h</key>
+		<data>
+		Q/qkHqZXXAwB7Mm/agf0IK2Oeeg=
+		</data>
 		<key>Headers/BSYLiveProtoTopicAskModel.h</key>
 		<data>
 		qfC88mgzQNIsDtd2yD1nEFrGk2c=
 		</data>
 		<key>Headers/BSYLiveProtocalModel.h</key>
 		<data>
-		lAfKtS2aNrcJyBF3MhnOBlxPgSA=
+		lHvLyx7vSuxBXRCALqUxuSah4B4=
 		</data>
 		<key>Headers/BSYLivePullStreamModel.h</key>
 		<data>
@@ -274,7 +286,7 @@
 		</data>
 		<key>Headers/BSYMsgHistoryMsgBodyModel.h</key>
 		<data>
-		Jth5NaR46ULOnZuYnVdfn9lIAZE=
+		wmUcjXEvwIqSMC9P2nHxvRBAjcE=
 		</data>
 		<key>Headers/BSYRtcLiveInfoModel.h</key>
 		<data>
@@ -282,7 +294,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dgJaaW0XoHqcOEDC15V3t0Fgkyc=
+		/96y/JwH++WO/n9aY2acnkyMTbo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -357,15 +369,26 @@
 			IL9EUi2b+cgOrvL/DGYPw6o9y3AG8eiH+ASZj74nBto=
 			</data>
 		</dict>
+		<key>Headers/BSYLiveCustomMsgRequest.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2vOdb3sCD3RnnszBx43l6OCvimQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			GwtXrr8I+ZygT+gwCqGH5aLg435vNxaBwllwcvT7yg0=
+			</data>
+		</dict>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nYjme22+mbzwetD7PKhuYX34Rug=
+			8jI2WWecAmPV/DQHU4EzPqmrE/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			QpeYQZk0PPSad3cgsjH2/KZbZCl49/Ygtf5DtCqvw6Y=
+			iGpAdojxg2Gtb6ekDnB+l0Pa4Thym0Chv5SYEKrK6KE=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
@@ -691,11 +714,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vd7pXGHNQFL9I1AWe6owTY6mx1g=
+			DJsJOJ78VAdvRuZlo9Ujl7JccTc=
 			</data>
 			<key>hash2</key>
 			<data>
-			iYfPBlPb91ymlwcxqvIAsn5sD5erMnQUuJLPw273mfQ=
+			KgL0YRjmPH1vQ4Y29SGEI7Ne7858pFrGJL/AdrMzK2s=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveProtoLiveCommonMsg.h</key>
@@ -753,6 +776,28 @@
 			7oAk8k9lAjJOmMJu4NLdBZJFgJXXJf7ASr4gYZ9uObA=
 			</data>
 		</dict>
+		<key>Headers/BSYLiveProtoTenantCustomGroupMsgModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MoVReZZN8SJajLhThtxFg7BAuj4=
+			</data>
+			<key>hash2</key>
+			<data>
+			6m6E5kpshrRL5lWxO7GJokNHAM0JvTN+BnP2QjQ1TXE=
+			</data>
+		</dict>
+		<key>Headers/BSYLiveProtoTenantCustomPersonMsgModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q/qkHqZXXAwB7Mm/agf0IK2Oeeg=
+			</data>
+			<key>hash2</key>
+			<data>
+			U3lxNEpv8yVObWye+jv6rx5EuMYZxyVngIaAUG2fokI=
+			</data>
+		</dict>
 		<key>Headers/BSYLiveProtoTopicAskModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -768,11 +813,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lAfKtS2aNrcJyBF3MhnOBlxPgSA=
+			lHvLyx7vSuxBXRCALqUxuSah4B4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Db+x1x/VAs0ifQdBqtsZzvt0gdcfCvw+u+rajZiks9Y=
+			nI5IuuUzg4t8ksDr08rUUQfIywskxwmQYFhJ55Skn18=
 			</data>
 		</dict>
 		<key>Headers/BSYLivePullStreamModel.h</key>
@@ -1032,11 +1077,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jth5NaR46ULOnZuYnVdfn9lIAZE=
+			wmUcjXEvwIqSMC9P2nHxvRBAjcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			kLwR6UJ4ybUokuDNMV8tH32PV07LckVXUzlbPnatcMk=
+			yj9tZxZ4eg/wFIe1dxI4EwZdDHftfbwHvKaB6cnDjE4=
 			</data>
 		</dict>
 		<key>Headers/BSYRtcLiveInfoModel.h</key>

@@ -20,6 +20,10 @@
 		<data>
 		5yPnX5ODstW9keJxfZIX6KR41m0=
 		</data>
+		<key>Headers/BSYLiveCustomGroupMsgModel.h</key>
+		<data>
+		H1iQk5ufLBUiUapjMFaYVSVVR9I=
+		</data>
 		<key>Headers/BSYLiveDeleteChatMsgModel.h</key>
 		<data>
 		loElQ2uJfJanBsjEwGdCTxsIxJc=
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/BSYLiveKit.h</key>
 		<data>
-		06/QXdpnDw420WjeWlbOylOxiaE=
+		VQEJxVPVuPXi3Lr58yX29wnJSmw=
 		</data>
 		<key>Headers/BSYLiveKitDefine.h</key>
 		<data>
@@ -74,7 +78,7 @@
 		</data>
 		<key>Headers/BSYLiveSDK.h</key>
 		<data>
-		NiOKcIbOmM+zBgW7iOF6NKvJc3w=
+		4fL6WbOUJsF70QovdiJ7GSx1GX0=
 		</data>
 		<key>Headers/BSYLiveShelfModel.h</key>
 		<data>
@@ -86,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sAkTU1KeQKi9xefLPwRkrDFEY+g=
+		vLXV7y6z58FQBKmb6oinbOwsq8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +102,7 @@
 		</data>
 		<key>Whiteboard.bundle/Info.plist</key>
 		<data>
-		fd2gOPYDfroM1HkoXgK0YWVpZZU=
+		YqCnKtCHPKrvNYseZ18sisCnOqw=
 		</data>
 		<key>Whiteboard.bundle/index.html</key>
 		<data>
@@ -175,6 +179,17 @@
 			ryByaRq1fBEC7KTt26S4lGkrXwPkw4dPATB6TvXvcec=
 			</data>
 		</dict>
+		<key>Headers/BSYLiveCustomGroupMsgModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H1iQk5ufLBUiUapjMFaYVSVVR9I=
+			</data>
+			<key>hash2</key>
+			<data>
+			IAv/6PhfUnJ7XtRmhRVKKeI4wNi5UesiDMKybyJJa1I=
+			</data>
+		</dict>
 		<key>Headers/BSYLiveDeleteChatMsgModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -223,11 +238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			06/QXdpnDw420WjeWlbOylOxiaE=
+			VQEJxVPVuPXi3Lr58yX29wnJSmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			IVXzgB+jLf5fRgVDKHanJQtfAeiWLQasabB/Uy+G6Mw=
+			HQ0L6Fl0pzcUKXPdE/1kAP/uwqsS66crGeQ/PPTgL9E=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveKitDefine.h</key>
@@ -322,11 +337,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NiOKcIbOmM+zBgW7iOF6NKvJc3w=
+			4fL6WbOUJsF70QovdiJ7GSx1GX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			AvlWUd0MtuW8PnKOjKM46WBGK/8niqzXy63oGEef75M=
+			V0A9GGPMX1k3h4sKr5QzwfdBHLDaQf87dhhfSWwVvR4=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveShelfModel.h</key>
@@ -377,11 +392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fd2gOPYDfroM1HkoXgK0YWVpZZU=
+			YqCnKtCHPKrvNYseZ18sisCnOqw=
 			</data>
 			<key>hash2</key>
 			<data>
-			zcoE7MKoruzIgjUKMZ4VJu5e6mCK83IAsAOJhHxsJrY=
+			SM9IoqAmTZ9cMtTvhc8Hn9GdsmeJqAj7C2GgYWvowIk=
 			</data>
 		</dict>
 		<key>Whiteboard.bundle/index.html</key>
