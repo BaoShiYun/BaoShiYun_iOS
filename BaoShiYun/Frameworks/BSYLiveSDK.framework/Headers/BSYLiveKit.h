@@ -789,8 +789,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *     @brief  url链接
  *     @param  url  通用url地址
+ *     @param  ext  活动id相关信息
  */
-- (void)onRecvCommonUrl:(NSString *)url;
+- (void)onRecvCommonUrl:(NSString *)url extInfo:(NSString *)ext;
 
 /**
  *     @brief   通知
@@ -808,8 +809,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *     @brief  红包/口令红包
  *     @param  url   口令回报url地址
+ *     @param  ext  红包id相关信息
  */
-- (void)onRecvRedPacketUrl:(NSString *)url;
+- (void)onRecvRedPacketUrl:(NSString *)url extInfo:(NSString *)ext;
 
 /**
  *     @brief    显示货架

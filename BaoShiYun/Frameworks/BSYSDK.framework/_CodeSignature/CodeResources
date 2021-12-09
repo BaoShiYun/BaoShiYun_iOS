@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/BSYSDKConst.h</key>
 		<data>
-		rJL+me6P0N3eSvZW6YF5pOBrdl4=
+		kE3xhtCDNYSrOLsiv3cnFxgdZ4A=
 		</data>
 		<key>Headers/BSYSDKDataType.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xVZtDXzupq4BMcIzKNbXi0LGJyg=
+		ZY/rKibMsQZL1J6ICHYBK83LBMw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rJL+me6P0N3eSvZW6YF5pOBrdl4=
+			kE3xhtCDNYSrOLsiv3cnFxgdZ4A=
 			</data>
 			<key>hash2</key>
 			<data>
-			nWJXgBzoT0PmgHqUTqPg3doDEGYHLe1oL0my7X7aC0I=
+			uhd6tEFofurH+rtSR8ZgiI/5YnTEnsxggqBhQ3NM90A=
 			</data>
 		</dict>
 		<key>Headers/BSYSDKDataType.h</key>
