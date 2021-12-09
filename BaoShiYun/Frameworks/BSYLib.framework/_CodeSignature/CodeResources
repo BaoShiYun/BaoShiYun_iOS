@@ -396,7 +396,7 @@
 		</data>
 		<key>Headers/BSYDataType.h</key>
 		<data>
-		b65bFEPvynf6s1ZMwazYL6lo1oA=
+		67yI2roSRc/BktW+BsNNexNrZr8=
 		</data>
 		<key>Headers/BSYHTTPSessionManager.h</key>
 		<data>
@@ -408,7 +408,7 @@
 		</data>
 		<key>Headers/BSYLibMacro.h</key>
 		<data>
-		2x+gdNfEJ4SVuWROB55VyTcha+Y=
+		53xzdHnNtHIkqVS4UbPW/U2KbU0=
 		</data>
 		<key>Headers/BSYMJFoundation.h</key>
 		<data>
@@ -576,7 +576,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9gqkknOA4hSWuyWI1MrMc5oyBaQ=
+		+F0Bkycp+4iJnlIs1Qh7JGHg/Xk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1168,11 +1168,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b65bFEPvynf6s1ZMwazYL6lo1oA=
+			67yI2roSRc/BktW+BsNNexNrZr8=
 			</data>
 			<key>hash2</key>
 			<data>
-			UqFSA48QIjt0bpEIkjgH0LcC7ZHrbIrjnOTSaUnLl/w=
+			QDND0epG4OwwyiQhrmQlCeFaVwHChz8rpxStZAjWcw8=
 			</data>
 		</dict>
 		<key>Headers/BSYHTTPSessionManager.h</key>
@@ -1201,11 +1201,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2x+gdNfEJ4SVuWROB55VyTcha+Y=
+			53xzdHnNtHIkqVS4UbPW/U2KbU0=
 			</data>
 			<key>hash2</key>
 			<data>
-			EUy0LomY4i2qWi9KMPgqMo+Nph9ZA3fdqbADN3XHxHg=
+			wjx5nOgm26pV6bdFKaDyhw1MjniP1DIPFZIqZxM3enE=
 			</data>
 		</dict>
 		<key>Headers/BSYMJFoundation.h</key>

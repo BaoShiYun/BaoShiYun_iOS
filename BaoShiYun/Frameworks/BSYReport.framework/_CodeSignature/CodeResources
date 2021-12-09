@@ -38,11 +38,11 @@
 		</data>
 		<key>Headers/BSYReportManager.h</key>
 		<data>
-		Uf/GrmeQk4OsO+P9pUDHr4h3l9w=
+		dhB3c4lQI+zztuZDG7xv+pY/yiI=
 		</data>
 		<key>Headers/BSYReportModel.h</key>
 		<data>
-		F6ocK0z6VaHaC5BukOR6Uf8xt9s=
+		P0eT2UvWzyNBbTdtfoO+ECBnVug=
 		</data>
 		<key>Headers/BSYReportVodErrorModel.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eli89Ln+IuI4vHfKdLRz2DF5OKQ=
+		A+Hspi/vWD4P7l5bHVVv31Hsbvs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -179,22 +179,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Uf/GrmeQk4OsO+P9pUDHr4h3l9w=
+			dhB3c4lQI+zztuZDG7xv+pY/yiI=
 			</data>
 			<key>hash2</key>
 			<data>
-			18TFMj6v+kX4zEG83l3WsyQQTDxrw5EsY8CmGGse1mY=
+			HFdYuGy8WqfulL4x7nhKLuRss8Kch7Q8BkoIxF1NUH8=
 			</data>
 		</dict>
 		<key>Headers/BSYReportModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F6ocK0z6VaHaC5BukOR6Uf8xt9s=
+			P0eT2UvWzyNBbTdtfoO+ECBnVug=
 			</data>
 			<key>hash2</key>
 			<data>
-			RSNQVEcX1tdzTwI7W+26sN8iJs3nzlMbKxWAkBwPWCY=
+			sBHekroGjag5Vj0n6m3a6k8MME1W+O5p/A7Jz4waNME=
 			</data>
 		</dict>
 		<key>Headers/BSYReportVodErrorModel.h</key>
