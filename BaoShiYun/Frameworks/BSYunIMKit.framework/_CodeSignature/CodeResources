@@ -4,21 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/BSYErrorCode.h</key>
-		<data>
-		CmT6esxLej1rw+Xb5+OTsWg7ndg=
-		</data>
-		<key>Headers/BSYIMKitDefine.h</key>
-		<data>
-		weMHURAsr3TvdzVb5kiHAIcBozw=
-		</data>
 		<key>Headers/BSYLiveIMImageMsgModel.h</key>
 		<data>
 		RmELG+QrlT+BHRE+7kUEwg4jSL4=
 		</data>
 		<key>Headers/BSYLiveIMKit.h</key>
 		<data>
-		Ryla1JAuNzCEu+wUCArF7Se+9jg=
+		rerjUaSOWiHrSwTef/Wn9MTke5c=
 		</data>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
 		<data>
@@ -30,11 +22,11 @@
 		</data>
 		<key>Headers/BSYunIMKit.h</key>
 		<data>
-		I41aVwG8Y+EOcrWhoOLMkXbL9C0=
+		2vOt61dJQZK7woMFB92Q5KmXX/A=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fhad3NEX63szQLMK1bWtTwcDFtc=
+		rBqVPPc+Bez7GORCfscR6kgzg6w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,28 +35,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/BSYErrorCode.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CmT6esxLej1rw+Xb5+OTsWg7ndg=
-			</data>
-			<key>hash2</key>
-			<data>
-			x5jNVf7IGV8BO1Bz/oyGZG9SbHP9KOIdNT1s7qCl8Aw=
-			</data>
-		</dict>
-		<key>Headers/BSYIMKitDefine.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			weMHURAsr3TvdzVb5kiHAIcBozw=
-			</data>
-			<key>hash2</key>
-			<data>
-			X3yODRll80IylpkIFe34/hDT4+jKH8st7tasedQDlk0=
-			</data>
-		</dict>
 		<key>Headers/BSYLiveIMImageMsgModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -80,11 +50,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ryla1JAuNzCEu+wUCArF7Se+9jg=
+			rerjUaSOWiHrSwTef/Wn9MTke5c=
 			</data>
 			<key>hash2</key>
 			<data>
-			A6mxmXx6RXxti2wTNxaFfVGHU93o6K892bnn5/RJDqc=
+			89bhO8UFdea4Q+71MtS1pmpZR/dHhBL5tM1Z6EupAGc=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveIMLoginParam.h</key>
@@ -113,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I41aVwG8Y+EOcrWhoOLMkXbL9C0=
+			2vOt61dJQZK7woMFB92Q5KmXX/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			aSBDzjOGdPbeM+jWZXYRW6wRAdmGZO86Fng45n3p0rQ=
+			kFSKZ6kIOcKFJhOhXnYWu5vht+hz4hG6ydJ/vp8Q6pc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

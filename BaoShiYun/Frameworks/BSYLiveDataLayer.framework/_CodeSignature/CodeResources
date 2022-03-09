@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/BSYLiveCommonMsgDetailModel.h</key>
 		<data>
-		5jhzOaZZvYMwh/KXoOKDDOd/c4M=
+		xmohYiCkT5ybFZwqkME15Uq/aMY=
 		</data>
 		<key>Headers/BSYLiveConfigDetailModel.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/BSYLiveDataLayer.h</key>
 		<data>
-		8jI2WWecAmPV/DQHU4EzPqmrE/8=
+		lzmzVnygcY2BdGtwF24ODdUvS/Y=
 		</data>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
 		<data>
@@ -92,6 +92,10 @@
 		<data>
 		4+1RTc5trKV/x63MM+IHuTeIpEc=
 		</data>
+		<key>Headers/BSYLiveMediaCenterMsgModel.h</key>
+		<data>
+		NAiDOkaKnYz92/+KidTx21eI0Rk=
+		</data>
 		<key>Headers/BSYLiveMsgHistoryItemModel.h</key>
 		<data>
 		OXaazSoba7Zl7jY9zzBflh8RwvQ=
@@ -126,7 +130,7 @@
 		</data>
 		<key>Headers/BSYLiveProtoGroupCommonControlModel.h</key>
 		<data>
-		MfgBFsB5d9yO6CzF2NNv7M+EoeE=
+		T1GXBtHscKYADnY81HSWkkPRnQI=
 		</data>
 		<key>Headers/BSYLiveProtoGroupEventNotifyModel.h</key>
 		<data>
@@ -164,6 +168,10 @@
 		<data>
 		DvUYn5bwP0UWz0pyG4BPSWFhaP8=
 		</data>
+		<key>Headers/BSYLiveProtoMediaCenterModel.h</key>
+		<data>
+		3KQlLYpUQrxjOLGbYjL3y8IUoUc=
+		</data>
 		<key>Headers/BSYLiveProtoMulitPullAddressChangedModel.h</key>
 		<data>
 		ogLo8fgRgns6SGoSNbU/RXQVFCE=
@@ -190,7 +198,7 @@
 		</data>
 		<key>Headers/BSYLiveProtocalModel.h</key>
 		<data>
-		lHvLyx7vSuxBXRCALqUxuSah4B4=
+		bTHIia1LS+/63EDa34q5ETiE0os=
 		</data>
 		<key>Headers/BSYLivePullStreamModel.h</key>
 		<data>
@@ -294,7 +302,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eTY9v1eXVfm1QqxDQgee8wcODV8=
+		j+tLsKj7BTBN4l5tDXRXE4ZgHxw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -340,11 +348,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5jhzOaZZvYMwh/KXoOKDDOd/c4M=
+			xmohYiCkT5ybFZwqkME15Uq/aMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			9BYOBF+pf24oDLZJS1/y/kLg8mAlznQXu+JajbwdE5o=
+			iLJV6HfKJWu5Pbwl4/GvIpq5P3eqGc/0OSQXgMSXZK8=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveConfigDetailModel.h</key>
@@ -384,11 +392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8jI2WWecAmPV/DQHU4EzPqmrE/8=
+			lzmzVnygcY2BdGtwF24ODdUvS/Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			iGpAdojxg2Gtb6ekDnB+l0Pa4Thym0Chv5SYEKrK6KE=
+			ecO4pU5lAyjtH3QYmf+rNKUCfycsI4cIPZNwwMJ6jyE=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveDataTokenManager.h</key>
@@ -545,6 +553,17 @@
 			28RbLnnW9GcoAZ6G1MMP3rDWSQB5jrAjLxW7mCML1pI=
 			</data>
 		</dict>
+		<key>Headers/BSYLiveMediaCenterMsgModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NAiDOkaKnYz92/+KidTx21eI0Rk=
+			</data>
+			<key>hash2</key>
+			<data>
+			kKGSUlFbeBEqv7UAWRaBhRd5ZGeEYYFIsibc/91gwJU=
+			</data>
+		</dict>
 		<key>Headers/BSYLiveMsgHistoryItemModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -637,11 +656,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MfgBFsB5d9yO6CzF2NNv7M+EoeE=
+			T1GXBtHscKYADnY81HSWkkPRnQI=
 			</data>
 			<key>hash2</key>
 			<data>
-			FZ+unJGOlB13JDzqyd4sdfPMGl8QWZgOv07CqXdPMY4=
+			cioy6Qk6pHpR0NgmyE8dwVtzvIQXkUZCEl7vS0VJbnY=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveProtoGroupEventNotifyModel.h</key>
@@ -743,6 +762,17 @@
 			JxY59OUL9FsVPHFnsT9YgJ2s9sUVUeNxkKhUKBsz2qw=
 			</data>
 		</dict>
+		<key>Headers/BSYLiveProtoMediaCenterModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3KQlLYpUQrxjOLGbYjL3y8IUoUc=
+			</data>
+			<key>hash2</key>
+			<data>
+			pRGPTPKNrbnYXOF1+rT/u9zRYC2aQstIbPMUy56wWQ0=
+			</data>
+		</dict>
 		<key>Headers/BSYLiveProtoMulitPullAddressChangedModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -813,11 +843,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lHvLyx7vSuxBXRCALqUxuSah4B4=
+			bTHIia1LS+/63EDa34q5ETiE0os=
 			</data>
 			<key>hash2</key>
 			<data>
-			nI5IuuUzg4t8ksDr08rUUQfIywskxwmQYFhJ55Skn18=
+			4JJE2nfCJ6zN4bYvC5V0h5m0QAbCN1Yo4QbIm7cvkOo=
 			</data>
 		</dict>
 		<key>Headers/BSYLivePullStreamModel.h</key>
