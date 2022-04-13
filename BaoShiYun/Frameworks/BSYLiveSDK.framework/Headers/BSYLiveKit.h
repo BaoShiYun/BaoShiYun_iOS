@@ -315,7 +315,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  *   @brief   发送群组自定义消息
- *   @param   customData 自定义消息内容
  *   @param   customData 自定义消息内容  字符串长度不大于2000字符
  *   @param   succ 成功回调
  *   @param   fail 失败回调
