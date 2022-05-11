@@ -1,7 +1,8 @@
 PODS:
   - AgoraRtcEngine_iOS (3.4.11)
-  - BaoShiYun (1.2.6):
+  - BaoShiYun (1.2.8):
     - AgoraRtcEngine_iOS (= 3.4.11)
+    - TXIMSDK_Plus_iOS_Bitcode (= 6.2.2363)
   - lottie-ios (3.2.1)
   - Masonry (1.1.0)
   - MJExtension (3.2.4)
@@ -11,6 +12,7 @@ PODS:
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
   - SVProgressHUD (2.2.5)
+  - TXIMSDK_Plus_iOS_Bitcode (6.2.2363)
 
 DEPENDENCIES:
   - BaoShiYun (from `../`)
@@ -32,6 +34,7 @@ SPEC REPOS:
     - ReactiveObjC
     - SDWebImage
     - SVProgressHUD
+    - TXIMSDK_Plus_iOS_Bitcode
 
 EXTERNAL SOURCES:
   BaoShiYun:
@@ -39,7 +42,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AgoraRtcEngine_iOS: 08e519dc7805e4072be683c104113ca6d68ffb45
-  BaoShiYun: 302bde4ac29da0859dc564a07db04bff0529fd9a
+  BaoShiYun: 53aa84f9264497c7356d5e976b907cd90025cc68
   lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
@@ -47,7 +50,8 @@ SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TXIMSDK_Plus_iOS_Bitcode: a483507c340fabedf339e896a7bcb474418de6a8
 
 PODFILE CHECKSUM: d8d2ab1aebe6c22bb78392ee99e7b19bf970e789
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
