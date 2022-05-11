@@ -51,8 +51,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong, readonly)NSString *resolution;
 
-
-
 /**
  *  @brief 播放地址
  */
@@ -70,6 +68,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly)CGFloat duration;
 
 
++(instancetype) alloc __attribute__((unavailable("video model create instance disabled")));
++(instancetype) new __attribute__((unavailable("video model create instance disabled")));
+-(instancetype) copy __attribute__((unavailable("video model create instance disabled")));
+-(instancetype) mutableCopy __attribute__((unavailable("video model create instance disabled")));
 
 @end
 
@@ -193,7 +195,6 @@ typedef NS_ENUM(NSInteger, BSYVodVideoStatus) {
  *  @brief 视频token
  */
 @property(nonatomic, strong)NSString *token;
-
 
 @end
 

@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/BSYLiveKit.h</key>
 		<data>
-		l5jj1ANr/8ok4kbyjd32XYne8b0=
+		1Yw9rct2qbUIvdR00vvc4OiCkOg=
 		</data>
 		<key>Headers/BSYLiveKitDefine.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/BSYLiveRedPackageModel.h</key>
 		<data>
-		FKmryBkY1pHk1v+1KJSfaAJ14ms=
+		FHZSG1/Loe6vocGbIv0OnPF9y8c=
 		</data>
 		<key>Headers/BSYLiveResolutionModel.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qDp24/LV8aaAjQbs2lhDZ8hlr/g=
+		ppR3ZbQOwxtb1tJm+Os6CavqXdk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Whiteboard.bundle/Info.plist</key>
 		<data>
-		d6uUpP5IT8LrX0Fg+LxhV9p52fA=
+		sJrKOcQbWJ54i8VyxYCKemAc5Mk=
 		</data>
 		<key>Whiteboard.bundle/index.html</key>
 		<data>
@@ -238,11 +238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l5jj1ANr/8ok4kbyjd32XYne8b0=
+			1Yw9rct2qbUIvdR00vvc4OiCkOg=
 			</data>
 			<key>hash2</key>
 			<data>
-			NlOj3lzqorVhnJjLNtVn+nr3O64g09QpXQ/CTwxV4VI=
+			/EXnIKuKtz8jbvG8miCXHBbuURsv+o2avip3XNS1hG8=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveKitDefine.h</key>
@@ -315,11 +315,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FKmryBkY1pHk1v+1KJSfaAJ14ms=
+			FHZSG1/Loe6vocGbIv0OnPF9y8c=
 			</data>
 			<key>hash2</key>
 			<data>
-			8BxycVLCa2BCO3XBzeMMItAAia0kkfuNWzVhnrWeSag=
+			O14UwZApXMVjoNfkVeuaXzb94KukbD4ns7t7IpCnw1U=
 			</data>
 		</dict>
 		<key>Headers/BSYLiveResolutionModel.h</key>
@@ -392,11 +392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d6uUpP5IT8LrX0Fg+LxhV9p52fA=
+			sJrKOcQbWJ54i8VyxYCKemAc5Mk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sy0LSFeXdUdYGpH/SESrvIvvFUaYC/Q43o2p8Y6BuwY=
+			kwIO/nUWrcE78i4Ga1tecoDlGbXjvvxNuL+AsIUSeVo=
 			</data>
 		</dict>
 		<key>Whiteboard.bundle/index.html</key>

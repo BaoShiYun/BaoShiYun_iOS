@@ -10,6 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// 活动类型
+typedef NS_ENUM(NSInteger, BSYLiveRedPackageType) {
+    BSYLiveRedPackageTypeKeyword = 1, // 口令活动
+    BSYLiveRedPackageTypeGroup = 2, // 群发活动
+};
+
 @class BSYLiveRedPackageExtModel;
 
 /**
@@ -26,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
  *   @brief  红包名称
  */
 @property (nonatomic, strong) NSString *name; // "测试口令",
+
+/**
+ *   @brief  红包类型
+ */
+@property (nonatomic, assign) BSYLiveRedPackageType type; // "活动类型",
 
 /**
  *   @brief  红包展示页面地址   请参考：BSYLiveRedPackageExtModel

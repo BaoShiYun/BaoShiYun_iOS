@@ -28,6 +28,11 @@ typedef void (^BSPlayInfoFinishBlock)(BSYVodVideoModel * vodVideo);
 @property(copy, nonatomic)BSPlayInfoErrorBlock errorBlock;
 
 /**
+ *  @brief 默认清晰度，默认值：lhd ( lsd-超清  lhd-高清  lud-清晰)
+ */
+@property(copy, nonatomic)NSString *resolution;
+
+/**
  *  @brief 请求完成回调
  */
 @property(copy, nonatomic)BSPlayInfoFinishBlock finishBlock;

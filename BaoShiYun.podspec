@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BaoShiYun'
-  s.version          = '1.2.7'
+  s.version          = '1.2.8'
   s.summary          = 'iOS SDK of BaoShiYun.'
 
 # This description is used to generate tags and improve search results.
@@ -43,5 +43,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AgoraRtcEngine_iOS', '3.4.11'
-  
+  s.dependency 'TXIMSDK_Plus_iOS_Bitcode', '6.2.2363'
+
 end

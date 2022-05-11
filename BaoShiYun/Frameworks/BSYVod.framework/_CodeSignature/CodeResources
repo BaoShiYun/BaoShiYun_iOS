@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/BSYPlayInfo.h</key>
 		<data>
-		cPpND/3XJYFHp7NA6p8EveMwu+A=
+		MSwKW3y6m4OVf4kEcS2fF6wkpJ0=
 		</data>
 		<key>Headers/BSYPlayerView.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Headers/BSYVodVideoModel.h</key>
 		<data>
-		ky2Oyyo5bLwhlcA2nl7FfVckTQ0=
+		8VPjbIm6J+BVWsHsU6ASCVtVJf0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2TfIwc8KylgxiSj6h73MxhErXss=
+		uDtu477Apa2MhfWTOxbXpdcik9Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,11 +80,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cPpND/3XJYFHp7NA6p8EveMwu+A=
+			MSwKW3y6m4OVf4kEcS2fF6wkpJ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			teb9TObCFp+Y+O9sw8RDxhN4tBepB3VfnEEeA/eyNpg=
+			QEw2vNtY2garOQ/krsEuP3QLGamZZDVRlwqbdacEqvE=
 			</data>
 		</dict>
 		<key>Headers/BSYPlayerView.h</key>
@@ -113,11 +113,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ky2Oyyo5bLwhlcA2nl7FfVckTQ0=
+			8VPjbIm6J+BVWsHsU6ASCVtVJf0=
 			</data>
 			<key>hash2</key>
 			<data>
-			m22SPhP7R7BrEgxaNRTLnqSS+h5LQdDJCrUNWi3wFQY=
+			MsJe+7tVRt8ZaKDp0hMShp9LzGcQ3AG5oSEl+YZaqXs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

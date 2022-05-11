@@ -184,6 +184,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)quitWhiteboard;
 
+/**
+ *   @brief 刷新白板
+ */
+- (void)refreshWhiteboard;
 
 ///———————————————————————————————————————————————————————
 ///
