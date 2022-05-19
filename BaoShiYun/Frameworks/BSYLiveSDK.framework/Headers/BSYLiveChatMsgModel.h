@@ -45,6 +45,12 @@ typedef NS_ENUM(NSInteger, BSYLiveChatMsgType) {
 @property (nonatomic, assign,readonly)uint64_t msgSeq;
 
 /**
+ *   @brief  用户uid, 发消息的用户,初始化sdk时传入的userId
+ */
+@property (nonatomic, strong, readonly)NSString *tuid;
+
+
+/**
  *   @brief  抱石云ID，用户id转换后的抱石云uid （注：用于角色匹配使用）
  */
 @property (nonatomic, strong, readonly)NSString *buid;

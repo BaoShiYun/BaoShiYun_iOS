@@ -1,6 +1,6 @@
 PODS:
   - AgoraRtcEngine_iOS (3.4.11)
-  - BaoShiYun (1.2.8):
+  - BaoShiYun (1.3.0):
     - AgoraRtcEngine_iOS (= 3.4.11)
     - TXIMSDK_Plus_iOS_Bitcode (= 6.2.2363)
   - lottie-ios (3.2.1)
@@ -42,7 +42,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AgoraRtcEngine_iOS: 08e519dc7805e4072be683c104113ca6d68ffb45
-  BaoShiYun: 53aa84f9264497c7356d5e976b907cd90025cc68
+  BaoShiYun: 2997be27dde39862d79e8d8fcab1d3a33fb05c92
   lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 88e0900751b6cac8de1cf724ca9838a0b28d5acb
