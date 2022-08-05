@@ -34,7 +34,8 @@ TODO: Add long description of the pod here.
 
   # s.source_files = 'BaoShiYun/Classes/**/*'
   
-  s.vendored_frameworks = "BaoShiYun/Frameworks/*.framework"
+  s.vendored_frameworks = "BaoShiYun/Frameworks/*.xcframework"
+  # s.vendored_frameworks = "BaoShiYun/Frameworks/*.framework"
 
   # s.resource_bundles = {
   #   'BaoShiYun' => ['BaoShiYun/Assets/*.png']
